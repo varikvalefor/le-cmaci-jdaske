@@ -169,9 +169,7 @@ record Jdanunza'omro : Set
 \subsection{le me'oi .\AgdaKeyword{instance}.}
 
 \begin{code}
-instance
-  eqJdanunza'omro : Eq Jdanunza'omro
-  eqJdanunza'omro = record {_≟_ = {!!}}
+postulate instance eqJdanunza'omro : Eq Jdanunza'omro
 \end{code}
 
 \section{la'oi .\F{Marde}.}
@@ -218,9 +216,7 @@ record Prenu : Set
 \subsection{le me'oi .\AgdaKeyword{instance}.}
 
 \begin{code}
-instance
-  eqPrenu : Eq Prenu
-  eqPrenu = record {_≟_ = {!!}}
+postulate instance eqPrenu : Eq Prenu
 \end{code}
 
 \section{la'oi .\F{Lijda}.}
