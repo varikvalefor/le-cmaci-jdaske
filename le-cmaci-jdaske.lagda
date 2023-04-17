@@ -127,7 +127,11 @@ record Jdanunza'omro : Set
     cmene : Selcmima String
     velski : Selcmima Bridi
     krinu : Selcmima Bridi
+\end{code}
 
+\subsection{le me'oi .\AgdaKeyword{instance}.}
+
+\begin{code}
 instance
   eqJdanunza'omro : Eq Jdanunza'omro
   eqJdanunza'omro = record {_≟_ = {!!}}
@@ -172,7 +176,11 @@ record Prenu : Set
   mardyfasnu = Data.List.map Marde.fasnuJaco'e $ Selcmima.liste marde
   field
     ,nimarde : nu,iork mardyfasnu
+\end{code}
 
+\subsection{le me'oi .\AgdaKeyword{instance}.}
+
+\begin{code}
 instance
   eqPrenu : Eq Prenu
   eqPrenu = record {_≟_ = {!!}}
