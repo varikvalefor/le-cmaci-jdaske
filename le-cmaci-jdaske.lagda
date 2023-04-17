@@ -76,20 +76,57 @@ open import Data.Product
 open import Data.Rational
 open import Truthbrary.Record.Eq
 open import Truthbrary.Record.LLC
+\end{code}
 
+\chapter{le jicmu}
+
+\section{la'oi .\F{Selcmima}.}
+ni'o lo ctaipe be la'oi .\F{Selcmima}.\ cu liste  .i ku'i lo nuncnici cu na vajni fi lo nu facki lo jei dunli
+
+\begin{code}
 record Selcmima {a} (A : Set a) : Set a
   where
   field
     liste : List A
+\end{code}
 
-postulate
-  Bridi
-   Selpre
-   Mrena'u : Set
-  instance
-    eqBridi : Eq Bridi
-    eqSelpre : Eq Selpre
-    eqMrena'u : Eq Mrena'u
+\section{la'oi .\F{Bridi}.}
+ni'o lo'i ro ctaipe be la'oi .\F{Bridi}.\ cu me'oi .isomorphic.\ lo'i ro bridi
+
+\begin{code}
+postulate Bridi : Set
+\end{code}
+
+\subsection{le me'oi .\AgdaKeyword{instance}.}
+
+\begin{code}
+postulate instance eqBridi : Eq Bridi
+\end{code}
+
+\section{la'oi .\F{Selpre}.}
+ni'o lo'i ro ctaipe be la'oi .\F{Selpre}.\ cu me'oi .isomorphic.\ lo'i ro selpre
+
+\begin{code}
+postulate Selpre : Set
+\end{code}
+
+\subsection{le me'oi .\AgdaKeyword{instance}.}
+
+\begin{code}
+postulate instance eqSelpre : Eq Selpre
+\end{code}
+
+\section{la'oi .\F{Mrena'u}.}
+ni'o lo'i ro ctaipe be la'oi .\F{Mrena'u}.\ cu me'oi .isomorphic.\ lo'i ro mrena'u
+
+\begin{code}
+postulate Mrena'u : Set
+\end{code}
+
+\subsection{le me'oi .\AgdaKeyword{instance}.}
+
+\begin{code}
+postulate instance eqMrena'u : Eq Mrena'u
 \end{code}
 
 \chapter{le vrici je fancu}
