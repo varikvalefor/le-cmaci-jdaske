@@ -173,8 +173,9 @@ record Prenu : Set
   field
     ,nimarde : nu,iork mardyfasnu
 
-eqPrenu : Eq Prenu
-eqPrenu = record {_≟_ = {!!}}
+instance
+  eqPrenu : Eq Prenu
+  eqPrenu = record {_≟_ = {!!}}
 \end{code}
 
 \section{la'oi .\F{Lijda}.}
