@@ -67,15 +67,35 @@ open import Data.Nat
   )
 open import Function
 open import Data.List
+  using (
+    map;
+    List
+  )
 open import Data.Maybe
   renaming (
     map to mapₘ
   )
 open import Data.String
+  using (
+    String
+  )
 open import Data.Product
+  using (
+    Σ;
+    _×_;
+    _,_;
+    proj₁;
+    proj₂
+  )
 open import Data.Rational
+  using (
+    ℚ
+  )
 open import Truthbrary.Record.Eq
 open import Truthbrary.Record.LLC
+  using (
+    nu,iork
+  )
 \end{code}
 
 \chapter{le jicmu}
