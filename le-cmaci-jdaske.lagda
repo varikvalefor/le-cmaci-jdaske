@@ -172,8 +172,8 @@ ni'o ro da poi ke'a jdanunza'omro zo'u ga jo la'o zoi.\ \B a .zoi.\ ctaipe la'o 
 	\item ga je la'o zoi.\ \F{Jdanunza'omro.cmene} \B a .zoi.\ cmene da gi
 	\item krici\ldots
 	\begin{itemize}
-		\item ga je ga jo la'o zoi.\ \B s .zoi.\ selvau la'o zoi.\ \F{Selcmima.liste} \Sym \$ \F{Jdanunza'omro.velski} \B a .zoi.\ gi la'o zoi.\ \B b .zoi.\ jetnu je cu velski da gi
-		\item ro de poi ke'a prenu zo'u ga naja de zukte lo nu jetnu fa lo selvau be la'o zoi.\ \F{Selcmima.liste} \Sym \$ \F{Jdanunza'omro.krinu} \B a .zoi.\ gi da jdanunza'omro de
+		\item ga je ga jo la'o zoi.\ \B s .zoi.\ selvau la'o zoi.\ \F{Multiset.liste} \Sym \$ \F{Jdanunza'omro.velski} \B a .zoi.\ gi la'o zoi.\ \B b .zoi.\ jetnu je cu velski da gi
+		\item ro de poi ke'a prenu zo'u ga naja de zukte lo nu jetnu fa lo selvau be la'o zoi.\ \F{Multiset.liste} \Sym \$ \F{Jdanunza'omro.krinu} \B a .zoi.\ gi da jdanunza'omro de
 	\end{itemize}
 \end{itemize}
 
@@ -215,7 +215,7 @@ ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\F{Prenu}.\ gi\ldots
 \begin{itemize}
 	\item ga je lo ro selvau be la'o zoi.\ \F{Sectaipe.liste} \Sym \$ \F{Prenu.cmene} \B a .zoi.\ cu cmene ko'a gi
 	\item ga je la'o zoi.\ \F{Prenu.marde} \B a .zoi.\ marde ko'a gi
-	\item la'o zoi.\ \F{Prenu.selpre} \B a .zoi.\ selpre ko'a
+	\item ko'a prenu la'o zoi.\ \F{Prenu.selpre} \B a .zoi.
 \end{itemize}
 
 .i la .varik.\ cu sorpa'a lo nu na sarcu fa lo nu ciksi la'o zoi.\ \F{Prenu.,nimarde} .zoi.
@@ -246,13 +246,13 @@ ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\F{Lijda}.\ gi\ldots
 	\begin{itemize}
 		\item ga je lo ro seljda be ko'a cu selcei gi\ldots
 		\begin{itemize}
-			\item ko'e goi la'o zoi.\ \F{mapₘ} (\F{Selcmima.liste} \Sym ∘ \F{proj₁}) \Sym \$ \F{Lijda.cevni} \B a .zoi.\ cu me'oi .\F{just}.\ la'o zoi.\ \B C .zoi.\ goi lo liste be lo cevni ja co'e be ko'a gi
-			\item ga jo la'o zoi.\ \F{mapₘ} (\F{Selcmima.liste} ∘ \F{proj₂}) \Sym \$ \F{Lijda.cevni} \B a .zoi.\ me'oi .\F{just}.\ lo vasru be la'o zoi.\ \B J .zoi.\ gi la'o zoi.\ \F{Data.List.lookup} \B C \Sym \$ \F{proj₂} \Sym \$ \F{proj₂} \Sym \$ \F{proj₂} \B J .zoi.\ ni la'o zoi.\ \F{proj₁} \B J .zoi.\ nelci la'o zoi.\ \F{Data.List.lookup} \B C \Sym \$ \F{proj₁} \Sym \$ \F{proj₂} \Sym \$ \F{proj₂} \B J .zoi.\ gi
+			\item ko'e goi la'o zoi.\ \F{mapₘ} (\F{Multiset.liste} \Sym ∘ \F{proj₁}) \Sym \$ \F{Lijda.cevni} \B a .zoi.\ cu me'oi .\F{just}.\ la'o zoi.\ \B C .zoi.\ goi lo liste be lo cevni ja co'e be ko'a gi
+			\item ga jo la'o zoi.\ \F{mapₘ} (\F{Multiset.liste} ∘ \F{proj₂}) \Sym \$ \F{Lijda.cevni} \B a .zoi.\ me'oi .\F{just}.\ lo vasru be la'o zoi.\ \B J .zoi.\ gi la'o zoi.\ \F{Data.List.lookup} \B C \Sym \$ \F{proj₂} \Sym \$ \F{proj₂} \Sym \$ \F{proj₂} \B J .zoi.\ ni la'o zoi.\ \F{proj₁} \B J .zoi.\ nelci la'o zoi.\ \F{Data.List.lookup} \B C \Sym \$ \F{proj₁} \Sym \$ \F{proj₂} \Sym \$ \F{proj₂} \B J .zoi.\ gi
 		\end{itemize}
 		\item gi ko'e du la'oi .\F{nothing}.\ gi
         \end{itemize}
 	\item ga je la'o zoi.\ \F{Lijda.marde} .zoi.\ marde lo seljda be ko'a gi
-	\item ga jonai ga je lo su'o co'e cu jdanunza'omro fi ko'a gi ko'e goi la'o zoi.\ \F{mapₘ} \F{Selcmima.liste} \Sym \$ Lijda.jdanunza'omro \B a .zoi.\ me'oi .\F{just}.\ lo vasru be lo jdanunza'omro be fi ko'a gi ko'e du la'oi .\F{nothing}.
+	\item ga jonai ga je lo su'o co'e cu jdanunza'omro fi ko'a gi ko'e goi la'o zoi.\ \F{mapₘ} \F{Multiset.liste} \Sym \$ Lijda.jdanunza'omro \B a .zoi.\ me'oi .\F{just}.\ lo vasru be lo jdanunza'omro be fi ko'a gi ko'e du la'oi .\F{nothing}.
 \end{itemize}
 
 \begin{code}
