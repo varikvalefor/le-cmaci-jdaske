@@ -38,6 +38,8 @@
 \newunicodechar{₁}{\ensuremath{_1}}
 \newunicodechar{₂}{\ensuremath{_2}}
 \newunicodechar{ₘ}{\ensuremath{_\mathsf{m}}}
+\newunicodechar{⦃}{\ensuremath{\mathnormal{\lbrace\!\lbrace}}}
+\newunicodechar{⦄}{\ensuremath{\mathnormal{\rbrace\!\rbrace}}}
 
 \newcommand\Sym\AgdaSymbol
 \newcommand\D\AgdaDatatype
@@ -100,14 +102,25 @@ open import Truthbrary.Record.LLC
 
 \chapter{le jicmu}
 
-\section{la'oi .\F{Selcmima}.}
-ni'o lo ctaipe be la'oi .\F{Selcmima}.\ cu liste  .i ku'i lo nuncnici cu na vajni fi lo nu facki lo jei dunli
+\section{la'oi .\F{Multiset}.}
+ni'o lo ro ctaipe be la'oi .\F{Multiset}.\ cu me'oi .multiset.\  .i lo me'oi .multiset.\ cu smimlu lo liste  .i ku'i lo nuncnici be lo me'oi .multiset.\ cu na vajni fi lo nu facki lo jei dunli
 
 \begin{code}
-record Selcmima {a} (A : Set a) : Set a
+record Multiset {a} (A : Set a) : Set a
   where
   field
     liste : List A
+\end{code}
+
+\section{la'oi .\F{Selcmima}.}
+ni'o lo'i ro ctaipe be la'oi .\F{Selcmima}.\ cu smimlu lo'i ro ctaipe be la'oi .\F{Multiset}.  .i ku'i ga naja la'o zoi.\ \B a .zoi.\ ctaipe la'o zoi.\ \F{Selcmima} \B A .zoi.\ gi la'o zoi.\ \F{Selcmima.narpanra} \B a .zoi.\ ctaipe lo du'u ro da poi ke'a selvau la'o zoi.\ \F{Selcmima.multiset} \B a .zoi.\ zo'u li pa nilzilcmi lo'i ro selvau be la'o zoi.\ \F{Selcmima.multiset} \B a .zoi.\ poi ke'a du la'o zoi.\ \B a .zoi.
+
+\begin{code}
+record Selcmima {a} (A : Set a) ⦃ _ : Eq A ⦄ : Set a
+  where
+  field
+    liste : List A
+    narpanra : nu,iork liste
 \end{code}
 
 \section{la'oi .\F{Bridi}.}
@@ -155,13 +168,10 @@ postulate instance eqMrena'u : Eq Mrena'u
 ni'o tu'a la'oi .\F{grfx}.\ filri'a tu'a lo grafu
 
 \begin{code}
-grfx : ∀ {a b} → {A : Set a} → (B : Set b) → Selcmima A → Set b
-grfx S L = Σ grf $ nu,iork ∘ edgeLoc ∘ Selcmima.liste
+grfx : ∀ {a b} → {A : Set a} → (B : Set b) → ⦃ Eq B ⦄ → ⦃ _ : Eq A ⦄ → Selcmima A → Set b
+grfx S L = Selcmima $ 𝔽L × 𝔽L × S
   where
-  grf = Selcmima $ 𝔽L × 𝔽L × S
-    where
-    𝔽L = Fin $ Data.List.length $ Selcmima.liste L
-  edgeLoc = Data.List.map $ λ q → proj₁ q , proj₁ (proj₂ q)
+  𝔽L = Fin $ Data.List.length $ Selcmima.liste L
 \end{code}
 
 \chapter{le srana be lo lijda ja zo'e}
@@ -181,9 +191,9 @@ ni'o ro da poi ke'a jdanunza'omro zo'u ga jo la'o zoi.\ \B a .zoi.\ ctaipe la'o 
 record Jdanunza'omro : Set
   where
   field
-    cmene : Selcmima String
-    velski : Selcmima Bridi
-    krinu : Selcmima Bridi
+    cmene : Multiset String
+    velski : Multiset Bridi
+    krinu : Multiset Bridi
 \end{code}
 
 \subsection{le me'oi .\AgdaKeyword{instance}.}
@@ -224,11 +234,11 @@ ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\F{Prenu}.\ gi\ldots
 record Prenu : Set
   where
   field
-    cmene : Selcmima String
-    marde : Selcmima Marde
+    cmene : Multiset String
+    marde : Multiset Marde
     selpre : Selpre
   mardyfasnu : List Bridi
-  mardyfasnu = Data.List.map Marde.fasnuJaco'e $ Selcmima.liste marde
+  mardyfasnu = Data.List.map Marde.fasnuJaco'e $ Multiset.liste marde
   field
     ,nimarde : nu,iork mardyfasnu
 \end{code}
