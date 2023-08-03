@@ -272,7 +272,7 @@ ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\F{Lijda}.\ gi\ldots
 			\item ga jo la'o zoi.\ \F{mapₘ} (\F{Multiset.liste} ∘ \F{proj₂}) \Sym \$ \F{Lijda.cevni} \B a .zoi.\ me'oi .\F{just}.\ lo vasru be la'o zoi.\ \B J .zoi.\ gi la'o zoi.\ \F{Data.List.lookup} \B C \Sym \$ \F{proj₂} \Sym \$ \F{proj₂} \Sym \$ \F{proj₂} \B J .zoi.\ ni la'o zoi.\ \F{proj₁} \B J .zoi.\ nelci la'o zoi.\ \F{Data.List.lookup} \B C \Sym \$ \F{proj₁} \Sym \$ \F{proj₂} \Sym \$ \F{proj₂} \B J .zoi.\ gi
 		\end{itemize}
 		\item ko'e du la'oi .\F{nothing}.\ gi
-        \end{itemize}
+	\end{itemize}
 	\item ga je la'o zoi.\ \F{Lijda.marde} .zoi.\ marde lo seljda be ko'a gi
 	\item ga jonai ga je lo su'o co'e cu jdanunza'omro fi ko'a gi ko'e goi la'o zoi.\ \F{mapₘ} \F{Multiset.liste} \Sym \$ Lijda.jdanunza'omro \B a .zoi.\ me'oi .\F{just}.\ lo vasru be lo jdanunza'omro be fi ko'a gi ko'e du la'oi .\F{nothing}.
 \end{itemize}
