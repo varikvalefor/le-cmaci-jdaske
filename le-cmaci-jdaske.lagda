@@ -216,6 +216,8 @@ record Marde : Set
   field
     fasnuJaco'e : Bridi
     lenixamgu : ℚ
+
+postulate instance eqMarde : Eq Marde
 \end{code}
 
 \section{la'oi .\F{Prenu}.}
