@@ -170,7 +170,11 @@ postulate instance eqMrena'u : Eq Mrena'u
 ni'o tu'a la'oi .\F{grfx}.\ filri'a tu'a lo grafu
 
 \begin{code}
-grfx : ∀ {a b} → {A : Set a} → (B : Set b) → ⦃ Eq B ⦄ → ⦃ _ : Eq A ⦄ → Selcmima A → Set b
+grfx : ∀ {a b} → {A : Set a}
+     → (B : Set b)
+     → ⦃ Eq B ⦄ → ⦃ _ : Eq A ⦄
+     → Selcmima A
+     → Set b
 grfx S L = Selcmima $ 𝔽L × 𝔽L × S
   where
   𝔽L = Fin $ Data.List.length $ Selcmima.liste L
