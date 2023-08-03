@@ -216,7 +216,11 @@ record Marde : Set
   field
     fasnuJaco'e : Bridi
     lenixamgu : ℚ
+\end{code}
 
+\subsection{le me'oi .\AgdaKeyword{instance}.}
+
+\begin{code}
 postulate instance eqMarde : Eq Marde
 \end{code}
 
