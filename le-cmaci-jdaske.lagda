@@ -240,7 +240,7 @@ ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\F{Prenu}.\ gi\ldots
 	\item ko'a prenu la'o zoi.\ \F{Prenu.selpre} \B a .zoi.
 \end{itemize}
 
-.i la .varik.\ cu sorpa'a lo nu na sarcu fa lo nu ciksi la'o zoi.\ \F{Prenu.,nimarde} .zoi.
+.i la .varik.\ cu sorpa'a lo nu na sarcu fa lo nu ciksi la'o zoi.\ \F{Prenu.,nimarde} .zoi.\ bau la .lojban.
 
 \begin{code}
 record Prenu : Set
