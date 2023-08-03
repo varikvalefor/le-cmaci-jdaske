@@ -126,7 +126,7 @@ record Selcmima {a} (A : Set a) ⦃ _ : Eq A ⦄ : Set a
 \end{code}
 
 \section{la'oi .\F{Bridi}.}
-ni'o lo'i ro ctaipe be la'oi .\F{Bridi}.\ cu me'oi .isomorphic.\ lo'i ro bridi
+ni'o ro da zo'u da ctaipe la'oi .\F{Bridi}.\ jo cu bridi
 
 \begin{code}
 postulate Bridi : Set
@@ -139,7 +139,7 @@ postulate instance eqBridi : Eq Bridi
 \end{code}
 
 \section{la'oi .\F{Selpre}.}
-ni'o lo'i ro ctaipe be la'oi .\F{Selpre}.\ cu me'oi .isomorphic.\ lo'i ro selpre
+ni'o ro da zo'u da ctaipe la'oi .\F{Selpre}.\ jo cu selpre
 
 \begin{code}
 postulate Selpre : Set
@@ -152,7 +152,7 @@ postulate instance eqSelpre : Eq Selpre
 \end{code}
 
 \section{la'oi .\F{Mrena'u}.}
-ni'o lo'i ro ctaipe be la'oi .\F{Mrena'u}.\ cu me'oi .isomorphic.\ lo'i ro mrena'u
+ni'o ro da zo'u da ctaipe la'oi .\F{Mrena'u}.\ jo cu mrena'u
 
 \begin{code}
 postulate Mrena'u : Set
@@ -227,7 +227,7 @@ postulate instance eqMarde : Eq Marde
 \end{code}
 
 \section{la'oi .\F{Prenu}.}
-ni'o lo ro ctaipe be la'oi .\F{Prenu}.\ cu prenu
+ni'o ro da zo'u da ctaipe la'oi .\F{Prenu}.\ jo cu prenu
 
 ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\F{Prenu}.\ gi\ldots
 \begin{itemize}
