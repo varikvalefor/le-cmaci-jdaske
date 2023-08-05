@@ -151,19 +151,6 @@ postulate Selpre : Set
 postulate instance eqSelpre : Eq Selpre
 \end{code}
 
-\section{la'oi .\F{Mrena'u}.}
-ni'o ro da zo'u da ctaipe la'oi .\F{Mrena'u}.\ jo cu mrena'u
-
-\begin{code}
-postulate Mrena'u : Set
-\end{code}
-
-\subsection{le me'oi .\AgdaKeyword{instance}.}
-
-\begin{code}
-postulate instance eqMrena'u : Eq Mrena'u
-\end{code}
-
 \chapter{le vrici je fancu}
 
 \section{la'oi .\F{grfx}.}
