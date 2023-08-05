@@ -98,7 +98,8 @@ open import Data.Rational
 open import Truthbrary.Record.Eq
 open import Truthbrary.Record.LLC
   using (
-    nu,iork
+    nu,iork;
+    length
   )
 \end{code}
 
@@ -164,7 +165,7 @@ grfx : ∀ {a b} → {A : Set a}
      → Set b
 grfx S L = Selcmima $ 𝔽L × 𝔽L × S
   where
-  𝔽L = Fin $ Data.List.length $ Selcmima.liste L
+  𝔽L = Fin $ length $ Selcmima.liste L
 \end{code}
 
 \chapter{le srana be lo lijda ja zo'e}
