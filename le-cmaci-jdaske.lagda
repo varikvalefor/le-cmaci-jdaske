@@ -125,17 +125,17 @@ record Selcmima {a} (A : Set a) ⦃ _ : Eq A ⦄ : Set a
     narpanra : nu,iork liste
 \end{code}
 
-\section{la'oi .\F{Bridi}.}
-ni'o ro da zo'u da ctaipe la'oi .\F{Bridi}.\ jo cu bridi
+\section{la'oi .\F{Fasnu}.}
+ni'o ro da zo'u da ctaipe la'oi .\F{Fasnu}.\ jo cu fasnu
 
 \begin{code}
-postulate Bridi : Set
+postulate Fasnu : Set
 \end{code}
 
 \subsection{le me'oi .\AgdaKeyword{instance}.}
 
 \begin{code}
-postulate instance eqBridi : Eq Bridi
+postulate instance eqFasnu : Eq Fasnu
 \end{code}
 
 \section{la'oi .\F{Selpre}.}
@@ -198,8 +198,8 @@ record Jdanunza'omro : Set
   where
   field
     cmene : Multiset String
-    velski : Multiset Bridi
-    krinu : Multiset Bridi
+    velski : Multiset Fasnu
+    krinu : Multiset Fasnu
 \end{code}
 
 \subsection{le me'oi .\AgdaKeyword{instance}.}
@@ -220,7 +220,7 @@ ni'o lo ro ctaipe be la'oi .\F{Marde}.\ cu marde
 record Marde : Set
   where
   field
-    fasnuJaco'e : Bridi
+    fasnuJaco'e : Fasnu
     lenixamgu : ℚ
 \end{code}
 
@@ -249,7 +249,7 @@ record Prenu : Set
     cmene : Multiset String
     marde : Multiset Marde
     selpre : Selpre
-  mardyfasnu : List Bridi
+  mardyfasnu : List Fasnu
   mardyfasnu = Data.List.map Marde.fasnuJaco'e $ Multiset.liste marde
   field
     ,nimarde : nu,iork mardyfasnu
