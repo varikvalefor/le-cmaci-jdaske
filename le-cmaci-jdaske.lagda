@@ -181,19 +181,11 @@ postulate instance eqJdanunza'omro : Eq Jdanunza'omro
 \end{code}
 
 \section{la'oi .\F{Marde}.}
-ni'o lo ro ctaipe be la'oi .\F{Marde}.\ cu marde
-
-.i ga naja la'o zoi.\ \B x .zoi.\ ctaipe la'oi .\F{Marde}.\ gi\ldots
-\begin{itemize}
-	\item la'o zoi.\ \F{Marde.lenixamgu} \B x .zoi.\ ni la'o zoi.\ \F{Marde.fasnuJaco'e} \B x .zoi.\ vrude lo se marde be la'o zoi.\ \B x .zoi.
-\end{itemize}
+ni'o ga jo la'oi .\F{f}.\ ctaipe la'oi .\F{Marde}.\ gi la'o zoi.\ \F f \B x\ .zoi.\ ni la'oi .\B{x}.\ vrude la'oi .\F{f}.
 
 \begin{code}
-record Marde : Set
-  where
-  field
-    fasnuJaco'e : Fasnu
-    lenixamgu : ℚ
+Marde : Set
+Marde = Fasnu → ℚ
 \end{code}
 
 \subsection{le me'oi .\AgdaKeyword{instance}.}
@@ -219,12 +211,8 @@ record Prenu : Set
   where
   field
     cmene : Multiset String
-    marde : Multiset Marde
+    marde : Marde
     selpre : Selpre
-  mardyfasnu : List Fasnu
-  mardyfasnu = Data.List.map Marde.fasnuJaco'e $ Multiset.liste marde
-  field
-    ,nimarde : nu,iork mardyfasnu
 \end{code}
 
 \subsection{le me'oi .\AgdaKeyword{instance}.}
@@ -257,7 +245,7 @@ record Lijda : Set
     𝔽L = Fin ∘ length ∘ Selcmima.liste
   field
     cevni : Maybe $ Σ (Selcmima Prenu) $ (λ X → X → X → ℚ) ∘ 𝔽L
-    marde : Selcmima Marde
+    marde : Marde
     jdanunza'omro : Maybe $ Selcmima Jdanunza'omro
 \end{code}
 \end{document}
