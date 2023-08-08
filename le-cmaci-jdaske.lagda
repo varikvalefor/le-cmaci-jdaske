@@ -160,8 +160,8 @@ ni'o ro da poi ke'a jdanunza'omro zo'u ga jo la'o zoi.\ \B a .zoi.\ ctaipe la'o 
 	\item ga je la'o zoi.\ \F{Jdanunza'omro.cmene} \B a .zoi.\ cmene da gi
 	\item krici\ldots
 	\begin{itemize}
-		\item ga je ga jo la'o zoi.\ \B s .zoi.\ selvau la'o zoi.\ \F{Selcmima.liste} \Sym \$ \F{Jdanunza'omro.velski} \B a .zoi.\ gi la'o zoi.\ \B b .zoi.\ jetnu je cu velski da gi
-		\item ro de poi ke'a prenu zo'u ga naja de zukte lo nu jetnu fa lo selvau be la'o zoi.\ \F{Selcmima.liste} \Sym \$ \F{Jdanunza'omro.krinu} \B a .zoi.\ gi da jdanunza'omro de
+		\item ga je ga jo la'o zoi.\ \B s .zoi.\ selvau la'o zoi.\ \F{Selcmima.liste} \F \$ \F{Jdanunza'omro.velski} \B a .zoi.\ gi la'o zoi.\ \B b .zoi.\ jetnu je cu velski da gi
+		\item ro de poi ke'a prenu zo'u ga naja de zukte lo nu jetnu fa lo selvau be la'o zoi.\ \F{Selcmima.liste} \F \$ \F{Jdanunza'omro.krinu} \B a .zoi.\ gi da jdanunza'omro de
 	\end{itemize}
 \end{itemize}
 
@@ -199,7 +199,7 @@ ni'o ro da zo'u da ctaipe la'oi .\F{Prenu}.\ jo cu prenu
 
 ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\F{Prenu}.\ gi\ldots
 \begin{itemize}
-	\item ga je lo ro selvau be la'o zoi.\ \F{Sectaipe.liste} \Sym \$ \F{Prenu.cmene} \B a .zoi.\ cu cmene ko'a gi
+	\item ga je lo ro selvau be la'o zoi.\ \F{Sectaipe.liste} \F \$ \F{Prenu.cmene} \B a .zoi.\ cu cmene ko'a gi
 	\item ga je la'o zoi.\ \F{Prenu.marde} \B a .zoi.\ marde ko'a gi
 	\item ko'a prenu la'o zoi.\ \F{Prenu.selpre} \B a .zoi.
 \end{itemize}
@@ -228,13 +228,13 @@ ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\F{Lijda}.\ gi\ldots
 	\begin{itemize}
 		\item ga je lo ro seljda be ko'a cu selcei gi\ldots
 		\begin{itemize}
-			\item ko'e goi la'o zoi.\ \F{mapₘ} (\F{Selcmima.liste} \Sym ∘ \F{proj₁}) \Sym \$ \F{Lijda.cevni} \B a .zoi.\ cu me'oi .\F{just}.\ lo liste be lo cevni ja co'e be ko'a gi
-			\item ga jo la'o zoi.\ \B t\ .zoi.\ ctaipe la'o zoi.\ \F{Is-just} \Sym \$ \F{Lijda.cevni} \B a\ .zoi.\ gi ga jo la'o zoi.\ \B Z\ .zoi.\ du la'o zoi.\ \F{Data.Maybe.to-witness} \B t\ .zoi.\ gi la'o zoi.\ \Sym(\F{proj₂} \B Z\Sym) \B x \B y\ .zoi.\ ni la'o zoi.\ \F{proj₁} \B Z \F !\ \B x\ .zoi.\ nelci la'o zoi.\ \F{proj₁} \B Z \F !\ \B y\ .zoi.\ gi
+			\item ko'e goi la'o zoi.\ \F{mapₘ} \Sym(\F{Selcmima.liste} \F ∘ \F{proj₁}\Sym) \F \$ \F{Lijda.cevni} \B a .zoi.\ cu me'oi .\F{just}.\ lo liste be lo cevni ja co'e be ko'a gi
+			\item ga jo la'o zoi.\ \B t\ .zoi.\ ctaipe la'o zoi.\ \F{Is-just} \F \$ \F{Lijda.cevni} \B a\ .zoi.\ gi ga jo la'o zoi.\ \B Z\ .zoi.\ du la'o zoi.\ \F{Data.Maybe.to-witness} \B t\ .zoi.\ gi la'o zoi.\ \Sym(\F{proj₂} \B Z\Sym) \B x \B y\ .zoi.\ ni la'o zoi.\ \F{proj₁} \B Z \F !\ \B x\ .zoi.\ nelci la'o zoi.\ \F{proj₁} \B Z \F !\ \B y\ .zoi.\ gi
 		\end{itemize}
 		\item ko'e du la'oi .\F{nothing}.\ gi
 	\end{itemize}
 	\item ga je la'o zoi.\ \F{Lijda.marde} .zoi.\ marde lo seljda be ko'a gi
-	\item ga jonai ga je jdanunza'omro fi ko'a gi ko'e goi la'o zoi.\ \F{mapₘ} \F{Selcmima.liste} \Sym \$ Lijda.jdanunza'omro \B a .zoi.\ me'oi .\F{just}.\ lo vasru be lo jdanunza'omro be fi ko'a gi ko'e du la'oi .\F{nothing}.
+	\item ga jonai ga je jdanunza'omro fi ko'a gi ko'e goi la'o zoi.\ \F{mapₘ} \F{Selcmima.liste} \F \$ Lijda.jdanunza'omro \B a .zoi.\ me'oi .\F{just}.\ lo vasru be lo jdanunza'omro be fi ko'a gi ko'e du la'oi .\F{nothing}.
 \end{itemize}
 
 \begin{code}
