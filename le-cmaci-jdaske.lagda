@@ -229,7 +229,7 @@ ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\F{Lijda}.\ gi\ldots
 		\item ga je lo ro seljda be ko'a cu selcei gi\ldots
 		\begin{itemize}
 			\item ko'e goi la'o zoi.\ \F{mapₘ} (\F{Selcmima.liste} \Sym ∘ \F{proj₁}) \Sym \$ \F{Lijda.cevni} \B a .zoi.\ cu me'oi .\F{just}.\ lo liste be lo cevni ja co'e be ko'a gi
-			\item ga jo la'o zoi.\ \B t\ .zoi.\ ctaipe la'o zoi.\ \F{Is-just} \Sym \$ \F{Lijda.cevni} \B a\ .zoi.\ gi la'o zoi.\ (\F{proj₂} \Sym \$ \F{Data.Maybe.to-witness} \B t) \B x \B y\ .zoi.\ ni la'o zoi.\ \B x\ .zoi.\ nelci la'o zoi.\ \B y\ .zoi. gi
+			\item ga jo la'o zoi.\ \B t\ .zoi.\ ctaipe la'o zoi.\ \F{Is-just} \Sym \$ \F{Lijda.cevni} \B a\ .zoi.\ gi ga jo la'o zoi.\ \B Z\ .zoi.\ du la'o zoi.\ \F{Data.Maybe.to-witness} \B t\ .zoi.\ gi la'o zoi.\ \Sym(\F{proj₂} \B Z\Sym) \B x \B y\ .zoi.\ ni la'o zoi.\ \F{proj₁} \B Z \F !\ \B x\ .zoi.\ nelci la'o zoi.\ \F{proj₁} \B Z \F !\ \B y\ .zoi.\ gi
 		\end{itemize}
 		\item ko'e du la'oi .\F{nothing}.\ gi
 	\end{itemize}
