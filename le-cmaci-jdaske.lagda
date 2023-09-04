@@ -155,13 +155,13 @@ postulate instance eqSelpre : Eq Selpre
 \chapter{le srana be lo lijda ja zo'e}
 
 \section{la'oi .\F{Jdanunza'omro}.}
-ni'o ro da poi ke'a jdanunza'omro zo'u ga jo la'o zoi.\ \B a .zoi.\ ctaipe la'o zoi.\ \F{Jdanunza'omro} .zoi.\ je cu sinxa da gi\ldots
+ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'o zoi.\ \F{Jdanunza'omro} .zoi.\ gi ga je ko'a jdanuza'omro gi\ldots
 \begin{itemize}
-	\item ga je la'o zoi.\ \F{Jdanunza'omro.cmene} \B a .zoi.\ cmene da gi
+	\item ga je la'o zoi.\ \F{Jdanunza'omro.cmene} \B a .zoi.\ cmene ko'a gi
 	\item krici le du'u\ldots
 	\begin{itemize}
-		\item ga je ga jo la'o zoi.\ \B s .zoi.\ selvau la'o zoi.\ \F{Selcmima.liste} \F \$ \F{Jdanunza'omro.velski} \B a .zoi.\ gi la'o zoi.\ \B b .zoi.\ jetnu je cu velski da gi
-		\item ro de poi ke'a prenu zo'u ga naja de zukte lo selvau be la'o zoi.\ \F{Selcmima.liste} \F \$ \F{Jdanunza'omro.krinu} \B a .zoi.\ gi da jdanunza'omro de
+		\item ga je ga jo la'o zoi.\ \B s .zoi.\ selvau la'o zoi.\ \F{Selcmima.liste} \F \$ \F{Jdanunza'omro.velski} \B a .zoi.\ gi la'o zoi.\ \B b .zoi.\ jetnu je cu velski ko'a gi
+		\item ro da poi ke'a prenu zo'u ga naja da zukte lo selvau be la'o zoi.\ \F{Selcmima.liste} \F \$ \F{Jdanunza'omro.krinu} \B a .zoi.\ gi ko'a jdanunza'omro da
 	\end{itemize}
 \end{itemize}
 
