@@ -161,7 +161,7 @@ ni'o ro da poi ke'a jdanunza'omro zo'u ga jo la'o zoi.\ \B a .zoi.\ ctaipe la'o 
 	\item krici\ldots
 	\begin{itemize}
 		\item ga je ga jo la'o zoi.\ \B s .zoi.\ selvau la'o zoi.\ \F{Selcmima.liste} \F \$ \F{Jdanunza'omro.velski} \B a .zoi.\ gi la'o zoi.\ \B b .zoi.\ jetnu je cu velski da gi
-		\item ro de poi ke'a prenu zo'u ga naja de zukte lo nu jetnu fa lo selvau be la'o zoi.\ \F{Selcmima.liste} \F \$ \F{Jdanunza'omro.krinu} \B a .zoi.\ gi da jdanunza'omro de
+		\item ro de poi ke'a prenu zo'u ga naja de zukte lo selvau be la'o zoi.\ \F{Selcmima.liste} \F \$ \F{Jdanunza'omro.krinu} \B a .zoi.\ gi da jdanunza'omro de
 	\end{itemize}
 \end{itemize}
 
