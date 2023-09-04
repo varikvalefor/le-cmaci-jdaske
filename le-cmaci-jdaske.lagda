@@ -232,7 +232,7 @@ ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\F{Lijda}.\ gi\ldots
 		\item ko'e du la'oi .\F{nothing}.\ gi
 	\end{itemize}
 	\item ga je la'o zoi.\ \F{Lijda.marde} .zoi.\ marde lo seljda be ko'a gi
-	\item ga jonai ga je jdanunza'omro fi ko'a gi ko'e goi la'o zoi.\ \F{mapₘ} \F{Selcmima.liste} \F \$ Lijda.jdanunza'omro \B a .zoi.\ me'oi .\F{just}.\ lo vasru be lo jdanunza'omro be fi ko'a gi ko'e du la'oi .\F{nothing}.
+	\item ga jonai ga je su'o da zo'u da jdanunza'omro fi ko'a gi ko'e goi la'o zoi.\ \F{mapₘ} \F{Selcmima.liste} \F \$ Lijda.jdanunza'omro \B a .zoi.\ me'oi .\F{just}.\ lo vasru be lo jdanunza'omro be fi ko'a gi ko'e du la'oi .\F{nothing}.
 \end{itemize}
 
 \begin{code}
