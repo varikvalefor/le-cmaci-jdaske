@@ -197,8 +197,6 @@ postulate instance eqMarde : Eq Marde
 \end{code}
 
 \section{la'oi .\F{Prenu}.}
-ni'o ro da zo'u da ctaipe la'oi .\F{Prenu}.\ jo cu prenu
-
 ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\F{Prenu}.\ gi\ldots
 \begin{itemize}
 	\item ga je lo ro selvau be la'o zoi.\ \F{Sectaipe.liste} \OpF \$ \F{Prenu.cmene} \B a .zoi.\ cu cmene ko'a gi
