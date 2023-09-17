@@ -45,6 +45,8 @@
 \newcommand\D\AgdaDatatype
 \newcommand\F\AgdaFunction
 \newcommand\B\AgdaBound
+% | ni'o cadga fa lo nu la'oi .BlS. mo  .i selneimau fi la .varik.
+\newcommand\OpF[1]{\AgdaOperator{\AgdaFunction{#1}}}
 
 \title{le cmaci jdaske}
 \author{la .varik.\ .VALefor.}
@@ -160,8 +162,8 @@ ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'o zoi.\ \F{Jdanunza'omro} .
 	\item ga je la'o zoi.\ \F{Jdanunza'omro.cmene} \B a .zoi.\ cmene ko'a gi
 	\item krici le du'u\ldots
 	\begin{itemize}
-		\item ga je ga jo la'o zoi.\ \B s .zoi.\ selvau la'o zoi.\ \F{Selcmima.liste} \F \$ \F{Jdanunza'omro.velski} \B a .zoi.\ gi la'o zoi.\ \B s .zoi.\ jetnu je cu velski ko'a gi
-		\item ro da poi ke'a prenu zo'u ga naja da zukte lo cmima be la'o zoi.\ \F{Selcmima.liste} \F \$ \F{Jdanunza'omro.krinu} \B a .zoi.\ gi ko'a jdanunza'omro da
+		\item ga je ga jo la'o zoi.\ \B s .zoi.\ selvau la'o zoi.\ \F{Selcmima.liste} \OpF \$ \F{Jdanunza'omro.velski} \B a .zoi.\ gi la'o zoi.\ \B s .zoi.\ jetnu je cu velski ko'a gi
+		\item ro da poi ke'a prenu zo'u ga naja da zukte lo cmima be la'o zoi.\ \F{Selcmima.liste} \OpF \$ \F{Jdanunza'omro.krinu} \B a .zoi.\ gi ko'a jdanunza'omro da
 	\end{itemize}
 \end{itemize}
 
@@ -181,7 +183,7 @@ postulate instance eqJdanunza'omro : Eq Jdanunza'omro
 \end{code}
 
 \section{la'oi .\F{Marde}.}
-ni'o ga jo la'oi .\F{f}.\ ctaipe la'oi .\F{Marde}.\ gi la'o zoi.\ \F f \B x\ .zoi.\ ni la'oi .\B{x}.\ vrude la'oi .\F{f}.
+ni'o ga jo la'oi .\OpF{f}.\ ctaipe la'oi .\F{Marde}.\ gi la'o zoi.\ \OpF f \B x\ .zoi.\ ni la'oi .\B{x}.\ vrude la'oi .\F{f}.
 
 \begin{code}
 Marde : Set
@@ -199,7 +201,7 @@ ni'o ro da zo'u da ctaipe la'oi .\F{Prenu}.\ jo cu prenu
 
 ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\F{Prenu}.\ gi\ldots
 \begin{itemize}
-	\item ga je lo ro selvau be la'o zoi.\ \F{Sectaipe.liste} \F \$ \F{Prenu.cmene} \B a .zoi.\ cu cmene ko'a gi
+	\item ga je lo ro selvau be la'o zoi.\ \F{Sectaipe.liste} \OpF \$ \F{Prenu.cmene} \B a .zoi.\ cu cmene ko'a gi
 	\item ga je la'o zoi.\ \F{Prenu.marde} \B a .zoi.\ marde ko'a gi
 	\item ko'a prenu la'o zoi.\ \F{Prenu.selpre} \B a .zoi.
 \end{itemize}
@@ -226,13 +228,13 @@ ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\F{Lijda}.\ gi\ldots
 	\begin{itemize}
 		\item ga je lo ro seljda be ko'a cu selcei gi\ldots
 		\begin{itemize}
-			\item ko'e goi la'o zoi.\ \F{mapₘ} \Sym(\F{Selcmima.liste} \F ∘ \F{proj₁}\Sym) \F \$ \F{Lijda.cevni} \B a .zoi.\ cu me'oi .\F{just}.\ lo liste be lo cevni ja co'e be ko'a gi
-			\item ga jo la'o zoi.\ \B t\ .zoi.\ ctaipe la'o zoi.\ \F{Is-just} \F \$ \F{Lijda.cevni} \B a\ .zoi.\ gi ga jo la'o zoi.\ \B Z\ .zoi.\ du la'o zoi.\ \F{Data.Maybe.to-witness} \B t\ .zoi.\ gi la'o zoi.\ \Sym(\F{proj₂} \B Z\Sym) \B x \B y\ .zoi.\ ni la'o zoi.\ \F{proj₁} \B Z \F !\ \B x\ .zoi.\ nelci la'o zoi.\ \F{proj₁} \B Z \F !\ \B y\ .zoi.\ gi
+			\item ko'e goi la'o zoi.\ \F{mapₘ} \Sym(\F{Selcmima.liste} \OpF ∘ \F{proj₁}\Sym) \OpF \$ \F{Lijda.cevni} \B a .zoi.\ cu me'oi .\F{just}.\ lo liste be lo cevni ja co'e be ko'a gi
+			\item ga jo la'o zoi.\ \B t\ .zoi.\ ctaipe la'o zoi.\ \F{Is-just} \OpF \$ \F{Lijda.cevni} \B a\ .zoi.\ gi ga jo la'o zoi.\ \B Z\ .zoi.\ du la'o zoi.\ \F{Data.Maybe.to-witness} \B t\ .zoi.\ gi la'o zoi.\ \Sym(\F{proj₂} \B Z\Sym) \B x \B y\ .zoi.\ ni la'o zoi.\ \F{proj₁} \B Z \OpF !\ \B x\ .zoi.\ nelci la'o zoi.\ \F{proj₁} \B Z \OpF !\ \B y\ .zoi.\ gi
 		\end{itemize}
 		\item ko'e du la'oi .\F{nothing}.\ gi
 	\end{itemize}
 	\item ga je la'o zoi.\ \F{Lijda.marde} .zoi.\ marde lo seljda be ko'a gi
-	\item ga jonai ga je su'o da zo'u da jdanunza'omro fi ko'a gi ko'e goi la'o zoi.\ \F{mapₘ} \F{Selcmima.liste} \F \$ Lijda.jdanunza'omro \B a .zoi.\ me'oi .\F{just}.\ lo porsi be fi lo'i jdanunza'omro be fi ko'a gi ko'e du la'oi .\F{nothing}.
+	\item ga jonai ga je su'o da zo'u da jdanunza'omro fi ko'a gi ko'e goi la'o zoi.\ \F{mapₘ} \F{Selcmima.liste} \OpF \$ Lijda.jdanunza'omro \B a .zoi.\ me'oi .\F{just}.\ lo porsi be fi lo'i jdanunza'omro be fi ko'a gi ko'e du la'oi .\F{nothing}.
 \end{itemize}
 
 \begin{code}
