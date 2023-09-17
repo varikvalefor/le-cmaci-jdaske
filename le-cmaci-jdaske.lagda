@@ -201,7 +201,7 @@ ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\F{Prenu}.\ gi\ldots
 \begin{itemize}
 	\item ga je lo ro selvau be la'o zoi.\ \F{Sectaipe.liste} \OpF \$ \F{Prenu.cmene} \B a .zoi.\ cu cmene ko'a gi
 	\item ga je la'o zoi.\ \F{Prenu.marde} \B a .zoi.\ marde ko'a gi
-	\item ko'a prenu la'o zoi.\ \F{Prenu.selpre} \B a .zoi.
+	\item la'o zoi.\ \F{Prenu.selpre} \B a .zoi.\ selpre ko'a
 \end{itemize}
 
 \begin{code}
