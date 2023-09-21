@@ -156,8 +156,8 @@ postulate instance eqSelpre : Eq Selpre
 
 \chapter{le srana be lo lijda ja zo'e}
 
-\section{la'oi .\F{Jdanunza'omro}.}
-ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'o zoi.\ \F{Jdanunza'omro} .zoi.\ gi ga je ko'a jdanuza'omro gi\ldots
+\section{la'oi .\AgdaRecord{Jdanunza'omro}.}
+ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'o zoi.\ \AgdaRecord{Jdanunza'omro} .zoi.\ gi ga je ko'a jdanuza'omro gi\ldots
 \begin{itemize}
 	\item ga je la'o zoi.\ \F{Jdanunza'omro.cmene} \B a .zoi.\ cmene ko'a gi
 	\item krici le du'u\ldots
@@ -197,7 +197,7 @@ postulate instance eqMarde : Eq Marde
 \end{code}
 
 \section{la'oi .\F{Prenu}.}
-ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\F{Prenu}.\ gi\ldots
+ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\AgdaRecord{Prenu}.\ gi\ldots
 \begin{itemize}
 	\item ga je ko'a se cmene lo ro cmima be la'o zoi.\ \F{Selcmima.liste} \OpF \$ \F{Prenu.cmene} \B a .zoi.\ gi
 	\item ga je la'o zoi.\ \F{Prenu.marde} \B a .zoi.\ marde ko'a gi
@@ -220,7 +220,7 @@ postulate instance eqPrenu : Eq Prenu
 \end{code}
 
 \section{la'oi .\F{Lijda}.}
-ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\F{Lijda}.\ gi\ldots
+ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\AgdaRecord{Lijda}.\ gi\ldots
 \begin{itemize}
 	\item ga je ga jonai ga je\ldots
 	\begin{itemize}
