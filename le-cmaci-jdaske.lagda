@@ -225,7 +225,9 @@ postulate instance eqPrenu : Eq Prenu
 \section{la'oi .\F{Lijda}.}
 ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\AgdaRecord{Lijda}.\ gi\ldots
 \begin{itemize}
-	\item ga je ga jonai\ldots
+	\item ga je la'o zoi.\ \F{Lijda.marde} .zoi.\ marde lo seljda be ko'a gi
+	\item ga je ga jonai ga je su'o da zo'u da jdanunza'omro fi ko'a gi ko'e goi la'o zoi.\ \F{mapₘ} \F{Selcmima.liste} \OpF \$ Lijda.jdanunza'omro \B a .zoi.\ me'oi .\F{just}.\ lo'i jdanunza'omro be fi ko'a gi ko'e du la'oi .\F{nothing}.\ gi
+	\item ga jonai\ldots
 	\begin{itemize}
 		\item ko'e goi la'o zoi.\ \F{mapₘ} \Sym(\F{Selcmima.liste} \OpF ∘ \F{proj₁}\Sym) \OpF \$ \F{Lijda.cevni} \B a .zoi.\ cu du la'oi .\F{nothing}.\ gi
 		\item ga je lo ro seljda be ko'a cu selcei gi\ldots
@@ -234,8 +236,6 @@ ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\AgdaRecord{Lijda}.\ gi
 			\item ga jo la'o zoi.\ \B t\ .zoi.\ ctaipe la'o zoi.\ \F{Is-just} \OpF \$ \F{Lijda.cevni} \B a\ .zoi.\ gi ga jo la'o zoi.\ \B Z\ .zoi.\ du la'o zoi.\ \F{Data.Maybe.to-witness} \B t\ .zoi.\ gi la'o zoi.\ \Sym(\F{proj₂} \B Z\Sym) \B x \B y\ .zoi.\ ni la'o zoi.\ \F{proj₁} \B Z \OpF !\ \B x\ .zoi.\ nelci la'o zoi.\ \F{proj₁} \B Z \OpF !\ \B y\ .zoi.\ gi
 		\end{itemize}
 	\end{itemize}
-	\item ga je la'o zoi.\ \F{Lijda.marde} .zoi.\ marde lo seljda be ko'a gi
-	\item ga jonai ga je su'o da zo'u da jdanunza'omro fi ko'a gi ko'e goi la'o zoi.\ \F{mapₘ} \F{Selcmima.liste} \OpF \$ Lijda.jdanunza'omro \B a .zoi.\ me'oi .\F{just}.\ lo'i jdanunza'omro be fi ko'a gi ko'e du la'oi .\F{nothing}.
 \end{itemize}
 
 \begin{code}
