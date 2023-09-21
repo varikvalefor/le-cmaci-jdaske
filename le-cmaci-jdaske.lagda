@@ -118,7 +118,7 @@ record Multiset {a} (A : Set a) : Set a
 \end{code}
 
 \section{la'oi .\AgdaRecord{Selcmima}.}
-ni'o la'oi .\AgdaRecord{Selcmima}.\ smimlu la'oi .\AgdaRecord{Multiset}.  .i ku'i ga jo la'o zoi.\ \B a .zoi.\ ctaipe la'o zoi.\ \AgdaKeyword{Selcmima} \B A .zoi.\ gi la'o zoi.\ \F{Selcmima.narpanra} \B a .zoi.\ ctaipe lo du'u ro da poi ke'a selvau la'o zoi.\ \F{Selcmima.multiset} \B a .zoi.\ zo'u li pa nilzilcmi lo'i ro selvau be la'o zoi.\ \F{Selcmima.multiset} \B a .zoi.\ poi ke'a du da
+ni'o la'oi .\AgdaRecord{Selcmima}.\ smimlu la'oi .\AgdaRecord{Multiset}.  .i ku'i ga jo la'o zoi.\ \B a .zoi.\ ctaipe la'o zoi.\ \AgdaKeyword{Selcmima} \B A .zoi.\ gi la'o zoi.\ \F{Selcmima.narpanra} \B a .zoi.\ ctaipe lo du'u ro da poi ke'a cmima ja co'e la'o zoi.\ \F{Selcmima.multiset} \B a .zoi.\ zo'u li pa nilzilcmi lo'i ro selvau be la'o zoi.\ \F{Selcmima.multiset} \B a .zoi.\ poi ke'a du da
 
 \begin{code}
 record Selcmima {a} (A : Set a) ⦃ _ : Eq A ⦄ : Set a
