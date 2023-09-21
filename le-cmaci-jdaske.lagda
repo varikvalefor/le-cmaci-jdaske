@@ -98,6 +98,9 @@ open import Data.Rational
     ℚ
   )
 open import Truthbrary.Record.Eq
+  using (
+    Eq
+  )
 open import Truthbrary.Record.LLC
   using (
     nu,iork;
