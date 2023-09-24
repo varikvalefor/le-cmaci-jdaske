@@ -78,6 +78,9 @@ open import Data.List
     List
   )
 open import Data.Maybe
+  using (
+    Maybe
+  )
   renaming (
     map to mapₘ
   )
