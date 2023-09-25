@@ -107,7 +107,9 @@ open import Truthbrary.Record.Eq
 open import Truthbrary.Record.LLC
   using (
     nu,iork;
-    length
+    length;
+    LL;
+    UL
   )
 \end{code}
 
@@ -232,11 +234,11 @@ ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\AgdaRecord{Lijda}.\ gi
 	\item ga je ga jonai ga je su'o da zo'u da jdanunza'omro fi ko'a gi ko'e goi la'o zoi.\ \F{mapₘ} \F{Selcmima.liste} \OpF \$ Lijda.jdanunza'omro \B a .zoi.\ me'oi .\F{just}.\ lo'i jdanunza'omro be fi ko'a gi ko'e du la'oi .\F{nothing}.\ gi
 	\item ga jonai\ldots
 	\begin{itemize}
-		\item ko'e goi la'o zoi.\ \F{mapₘ} \Sym(\F{Selcmima.liste} \OpF ∘ \F{proj₁}\Sym) \OpF \$ \F{Lijda.cevni} \B a .zoi.\ cu du la'oi .\F{nothing}.\ gi
+		\item ko'e goi la'o zoi.\ \F{mapₘ} \Sym(\F{proj₁} \OpF ∘ \F{proj₁}\Sym) \OpF \$ \F{Lijda.cevni} \B a .zoi.\ cu du la'oi .\F{nothing}.\ gi
 		\item ga je lo ro seljda be ko'a cu selcei gi\ldots
 		\begin{itemize}
 			\item ga je ko'e me'oi .\F{just}.\ lo'i cevni ja co'e be ko'a gi
-			\item ga jo la'o zoi.\ \B t\ .zoi.\ ctaipe la'o zoi.\ \F{Is-just} \OpF \$ \F{Lijda.cevni} \B a\ .zoi.\ gi ga jo la'o zoi.\ \B Z\ .zoi.\ du la'o zoi.\ \F{Data.Maybe.to-witness} \B t\ .zoi.\ gi la'o zoi.\ \Sym(proj₂ \B Z\Sym) \B m \B n\ .zoi.\ co'e ja ni la'o zoi.\ \F{Selcmima.liste} \OpF \Sym(\F{proj₁} \OpF \$ \B Z\Sym) \OpF !\ \B m .zoi.\ nelci la'o zoi.\ \F{Selcmima.liste} \OpF \Sym(\F{proj₁} \OpF \$ \B Z\Sym) \OpF !\ \B n .zoi.
+			\item ga jo la'o zoi.\ \B t\ .zoi.\ ctaipe la'o zoi.\ \F{Is-just} \OpF \$ \F{Lijda.cevni} \B a\ .zoi.\ gi ga jo la'o zoi.\ \B Z\ .zoi.\ du la'o zoi.\ \F{Data.Maybe.to-witness} \B t\ .zoi.\ gi la'o zoi.\ \Sym(proj₂ \B Z\Sym) \B m \B n\ .zoi.\ co'e ja ni la'o zoi.\ \F{proj₁} \OpF \Sym(\F{proj₁} \OpF \$ \B Z\Sym) \OpF !\ \B m .zoi.\ nelci la'o zoi.\ \F{proj₁} \OpF \Sym(\F{proj₁} \OpF \$ \B Z\Sym) \OpF !\ \B n .zoi.
 		\end{itemize}
 	\end{itemize}
 \end{itemize}
@@ -245,10 +247,12 @@ ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\AgdaRecord{Lijda}.\ gi
 record Lijda : Set
   where
   private
-    𝔽L : ∀ {a} → {A : Set a} → ⦃ _ : Eq A ⦄ → Selcmima A → Set
-    𝔽L = Fin ∘ length ∘ Selcmima.liste
+    𝔽L : ∀ {a} → {A : Set a}
+       → ⦃ Q : LL A ⦄ → ⦃ _ : Eq $ LL.e Q ⦄
+       → UL A → Set
+    𝔽L = Fin ∘ length ∘ proj₁
   field
-    cevni : Maybe $ Σ (Selcmima Prenu) $ (λ X → X → X → ℚ) ∘ 𝔽L
+    cevni : Maybe $ Σ (UL $ List Prenu) $ (λ X → X → X → ℚ) ∘ 𝔽L
     marde : Marde
     jdanunza'omro : Maybe $ Selcmima Jdanunza'omro
 \end{code}
