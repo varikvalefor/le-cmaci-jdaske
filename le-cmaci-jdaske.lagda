@@ -204,7 +204,7 @@ Marde = Fasnu → ℚ
 postulate instance eqMarde : Eq Marde
 \end{code}
 
-\section{la'oi .\F{Prenu}.}
+\section{la'oi .\AgdaRecord{Prenu}.}
 ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\AgdaRecord{Prenu}.\ gi\ldots
 \begin{itemize}
 	\item ga je ko'a se cmene lo ro cmima be la'o zoi.\ \F{Selcmima.liste} \OpF \$ \F{Prenu.cmene} \B a .zoi.\ gi
