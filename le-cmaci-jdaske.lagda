@@ -227,7 +227,7 @@ record Prenu : Set
 postulate instance eqPrenu : Eq Prenu
 \end{code}
 
-\section{la'oi .\F{Lijda}.}
+\section{la'oi .\AgdaRecord{Lijda}.}
 ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\AgdaRecord{Lijda}.\ gi\ldots
 \begin{itemize}
 	\item ga je la'o zoi.\ \F{Lijda.marde} .zoi.\ marde lo seljda be ko'a gi
