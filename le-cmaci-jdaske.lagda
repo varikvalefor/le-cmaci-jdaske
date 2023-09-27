@@ -191,7 +191,7 @@ postulate instance eqJdanunza'omro : Eq Jdanunza'omro
 \end{code}
 
 \section{la'oi .\F{Marde}.}
-ni'o ga jo la'oi .\F{f}.\ ctaipe la'oi .\F{Marde}.\ gi la'o zoi.\ \F f \B x\ .zoi.\ ni la'oi .\B{x}.\ vrude la'oi .\F{f}.
+ni'o ga naja la'oi .\F{f}.\ ctaipe la'oi .\F{Marde}.\ gi la'o zoi.\ \F f \B x\ .zoi.\ ni la'oi .\B{x}.\ vrude la'oi .\F{f}.
 
 \begin{code}
 Marde : Set
