@@ -235,7 +235,7 @@ postulate instance eqPrenu : Eq Prenu
 \section{la'oi .\AgdaRecord{Lijda}.}
 ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\AgdaRecord{Lijda}.\ gi\ldots
 \begin{itemize}
-	\item ga je la'o zoi.\ \F{Lijda.marde} .zoi.\ marde lo seljda be ko'a gi
+	\item ga je la'o zoi.\ \F{Lijda.marde} \B a .zoi.\ marde lo seljda be ko'a gi
 	\item ga je ga jonai ga je su'o da zo'u da jdanunza'omro fi ko'a gi ko'e goi la'o zoi.\ \F{mapₘ} \F{Selcmima.liste} \OpF \$ Lijda.jdanunza'omro \B a .zoi.\ me'oi .\F{just}.\ lo'i jdanunza'omro be fi ko'a gi ko'e du la'oi .\F{nothing}.\ gi
 	\item ga jonai\ldots
 	\begin{itemize}
