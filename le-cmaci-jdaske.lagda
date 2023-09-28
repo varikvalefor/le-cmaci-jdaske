@@ -241,7 +241,7 @@ ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\AgdaRecord{Lijda}.\ gi
 		\item ga je lo ro seljda be ko'a cu selcei gi\ldots
 		\begin{itemize}
 			\item ga je ko'e me'oi .\F{just}.\ lo'i cevni ja co'e be ko'a gi
-			\item ga jo la'o zoi.\ \B t\ .zoi.\ ctaipe la'o zoi.\ \F{Is-just} \OpF \$ \F{Lijda.cevni} \B a\ .zoi.\ gi ga jo la'o zoi.\ \B Z\ .zoi.\ du la'o zoi.\ \F{Data.Maybe.to-witness} \B t\ .zoi.\ gi la'o zoi.\ \Sym(proj₂ \B Z\Sym) \B m \B n\ .zoi.\ co'e ja ni la'o zoi.\ \F{proj₁} \OpF \Sym(\F{proj₁} \OpF \$ \B Z\Sym) \OpF !\ \B m .zoi.\ nelci la'o zoi.\ \F{proj₁} \OpF \Sym(\F{proj₁} \OpF \$ \B Z\Sym) \OpF !\ \B n .zoi.
+			\item ga jo la'o zoi.\ \B t\ .zoi.\ ctaipe la'o zoi.\ \F{Is-just} \OpF \$ \F{Lijda.cevni} \B a\ .zoi.\ gi ga jo la'o zoi.\ \B Z\ .zoi.\ du la'o zoi.\ \F{Data.Maybe.to-witness} \B t\ .zoi.\ gi la'o zoi.\ \Sym(proj₂ \B Z\Sym) \B m \B n\ .zoi.\ co'e ja ni la'o zoi.\ \F{proj₁} \OpF \Sym(\F{proj₁} \B Z\Sym) \OpF !\ \B m .zoi.\ nelci la'o zoi.\ \F{proj₁} \OpF \Sym(\F{proj₁} \B Z\Sym) \OpF !\ \B n .zoi.
 		\end{itemize}
 	\end{itemize}
 \end{itemize}
