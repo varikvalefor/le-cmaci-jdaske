@@ -171,7 +171,7 @@ ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'o zoi.\ \AgdaRecord{Jdanunz
 	\item krici le du'u\ldots
 	\begin{itemize}
 		\item ga je ga jo la'o zoi.\ \B s .zoi.\ selvau la'o zoi.\ \F{Selcmima.liste} \OpF \$ \F{Jdanunza'omro.velski} \B a .zoi.\ gi la'o zoi.\ \B s .zoi.\ jetnu je cu velski ko'a gi
-		\item ro da poi ke'a prenu zo'u ga naja da zukte lo cmima be la'o zoi.\ \F{Selcmima.liste} \OpF \$ \F{Jdanunza'omro.krinu} \B a .zoi.\ gi ko'a jdanunza'omro da
+		\item ko'a jdanunza'omro lo ro prenu poi ke'a zukte lo cmima be la'o zoi.\ \F{Selcmima.liste} \OpF \$ \F{Jdanunza'omro.krinu} \B a .zoi.
 	\end{itemize}
 \end{itemize}
 
