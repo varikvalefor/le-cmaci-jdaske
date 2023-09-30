@@ -239,7 +239,7 @@ ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\AgdaRecord{Lijda}.\ gi
 	\item ga je ga jonai ga je su'o da zo'u da jdanunza'omro fi ko'a gi ko'e goi la'o zoi.\ \F{mapₘ} \F{Selcmima.liste} \OpF \$ Lijda.jdanunza'omro \B a .zoi.\ me'oi .\F{just}.\ lo'i jdanunza'omro be fi ko'a gi ko'e du la'oi .\F{nothing}.\ gi
 	\item ga jonai\ldots
 	\begin{itemize}
-		\item la'oi .\F{nothing}.\ du ko'e goi la'o zoi.\ \F{mapₘ} \Sym(\F{proj₁} \OpF ∘ \F{proj₁}\Sym) \OpF \$ \F{Lijda.cevni} \B a .zoi.\ gi
+		\item la'oi .\F{nothing}.\ du ko'e goi la'o zoi.\ \F{Lijda.cevni} \B a .zoi.\ gi
 		\item ga je selcei fa lo ro seljda be ko'a gi\ldots
 		\begin{itemize}
 			\item ga je ko'e me'oi .\F{just}.\ lo'i cevni be ko'a gi
