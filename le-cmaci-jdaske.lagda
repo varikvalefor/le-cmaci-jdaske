@@ -77,6 +77,9 @@ open import Data.List
     map;
     List
   )
+  renaming (
+    lookup to _!_
+  )
 open import Data.Maybe
   using (
     Maybe
