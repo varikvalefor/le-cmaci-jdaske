@@ -231,6 +231,7 @@ record Prenu : Set
 ni'o la .varik.\ cu djica ko'a goi lo nu su'o da zo'u da me'oi .\AgdaKeyword{field}.\ la'oi .\AgdaRecord{Prenu}.\ je cu ctaipe ja co'e la'oi .\F{Lijda}.  .i ku'i la .varik.\ cu na birti lo du'u ma kau zabna je su'u rinka ja co'e ko'a  .i ga je le velcki be la'oi .\AgdaRecord{Prenu}.\ cu lidne le velcki be la'oi .\AgdaRecord{Lijda}.\ gi lo nu lo me'oi .\AgdaKeyword{field}.\ be la'oi .\AgdaRecord{Lijda}.\ cu srana lo prenu cu zmadu lo nu lo me'oi .\AgdaKeyword{field}.\ be la'oi .\AgdaRecord{Prenu}.\ cu srana lo lijda kei le ka ce'u seldji la .varik.
 
 .i la .varik.\ cu djica curmi lo nu stidi
+
 \subsection{le me'oi .\AgdaKeyword{instance}.}
 
 \begin{code}
