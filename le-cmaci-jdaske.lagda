@@ -242,13 +242,13 @@ postulate instance eqPrenu : Eq Prenu
 ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\AgdaRecord{Lijda}.\ gi\ldots
 \begin{itemize}
 	\item ga je la'o zoi.\ \AgdaField{Lijda.marde} \B a .zoi.\ marde lo seljda be ko'a gi
-	\item ga je ga jonai ga je su'o da zo'u da jdanunza'omro fi ko'a gi ko'e goi la'o zoi.\ \F{mapₘ} \AgdaField{Selcmima.liste} \OpF \$ \AgdaField{Lijda.jdanunza'omro} \B a .zoi.\ me'oi .\F{just}.\ lo'i jdanunza'omro be fi ko'a gi ko'e du la'oi .\F{nothing}.\ gi
+	\item ga je ga jonai ga je su'o da zo'u da jdanunza'omro fi ko'a gi ko'e goi la'o zoi.\ \F{mapₘ} \AgdaField{Selcmima.liste} \OpF \$ \AgdaField{Lijda.jdanunza'omro} \B a .zoi.\ me'oi .\AgdaInductiveConstructor{just}.\ lo'i jdanunza'omro be fi ko'a gi ko'e du la'oi .\AgdaInductiveConstructor{nothing}.\ gi
 	\item ga jonai\ldots
 	\begin{itemize}
-		\item la'oi .\F{nothing}.\ du ko'e goi la'o zoi.\ \AgdaField{Lijda.cevni} \B a .zoi.\ gi
+		\item la'oi .\AgdaInductiveConstructor{nothing}.\ du ko'e goi la'o zoi.\ \AgdaField{Lijda.cevni} \B a .zoi.\ gi
 		\item ga je selcei fa lo ro seljda be ko'a gi\ldots
 		\begin{itemize}
-			\item ga je ko'e me'oi .\F{just}.\ lo'i cevni be ko'a gi
+			\item ga je ko'e me'oi .\AgdaInductiveConstructor{just}.\ lo'i cevni be ko'a gi
 			\item ga jo la'o zoi.\ \B t\ .zoi.\ ctaipe la'o zoi.\ \F{Is-just} \OpF \$ \AgdaField{Lijda.cevni} \B a\ .zoi.\ gi ga jo la'o zoi.\ \B Z\ .zoi.\ du la'o zoi.\ \F{Data.Maybe.to-witness} \B t\ .zoi.\ gi la'o zoi.\ \Sym(proj₂ \B Z\Sym) \B m \B n\ .zoi.\ co'e ja ni la'o zoi.\ \AgdaField{proj₁} \OpF \Sym(\AgdaField{proj₁} \B Z\Sym) \OpF !\ \B m .zoi.\ nelci la'o zoi.\ \AgdaField{proj₁} \OpF \Sym(\AgdaField{proj₁} \B Z\Sym) \OpF !\ \B n .zoi.
 		\end{itemize}
 	\end{itemize}
