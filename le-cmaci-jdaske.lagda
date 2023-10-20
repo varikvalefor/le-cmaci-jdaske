@@ -119,7 +119,7 @@ open import Truthbrary.Record.LLC
 \chapter{le jicmu}
 
 \section{la'oi .\AgdaRecord{Multiset}.}
-ni'o ga jo ko'a goi la'o zoi.\ \B x\ .zoi.\ ctaipe la'o zoi.\ \AgdaRecord{Multiset} \B X\ .zoi.\ gi ko'a me'oi .multiset.\ je cu se cmima lo ro cmima be la'o zoi.\ \F{Multiset.liste} \B x\ .zoi.\ be'o ku po'o  .i lo me'oi .multiset.\ cu smimlu lo liste  .i ku'i lo co'e ja se porsi be lo me'oi .multiset.\ cu na vajni fi lo nu facki lo jei dunli
+ni'o ga jo ko'a goi la'o zoi.\ \B x\ .zoi.\ ctaipe la'o zoi.\ \AgdaRecord{Multiset} \B X\ .zoi.\ gi ko'a me'oi .multiset.\ je cu se cmima lo ro cmima be la'o zoi.\ \AgdaField{Multiset.liste} \B x\ .zoi.\ be'o ku po'o  .i lo me'oi .multiset.\ cu smimlu lo liste  .i ku'i lo co'e ja se porsi be lo me'oi .multiset.\ cu na vajni fi lo nu facki lo jei dunli
 
 \begin{code}
 record Multiset {a} (A : Set a) : Set a
@@ -132,7 +132,7 @@ record Multiset {a} (A : Set a) : Set a
 ni'o le su'u la .varik.\ cu me'oi .\AgdaKeyword{record}.\ ciksi la'oi .\AgdaRecord{Multiset}.\ jenai cu gasnu lo nu la'oi .\F{Multiset}.\ du la'oi .\D{List}.\ cu se krinu le su'u la .varik.\ cu toldji lo nu frili fa lo nu vukna ja co'e lo ctaipe be la'o zoi.\ \AgdaRecord{Multiset} \B x\ .zoi.\ lo ctaipe be la'o zoi.\ \D{List} \B x\ .zoi.
 
 \section{la'oi .\AgdaRecord{Selcmima}.}
-ni'o la'oi .\AgdaRecord{Selcmima}.\ smimlu la'oi .\AgdaRecord{Multiset}.  .i ku'i ga jo la'o zoi.\ \B a .zoi.\ ctaipe la'o zoi.\ \AgdaRecord{Selcmima} \B A .zoi.\ gi la'o zoi.\ \F{Selcmima.narpanra} \B a .zoi.\ ctaipe lo su'u ro da poi ke'a cmima ja co'e la'o zoi.\ \F{Selcmima.liste} \B a .zoi.\ zo'u li pa nilzilcmi lo'i ro cmima be la'o zoi.\ \F{Selcmima.liste} \B a .zoi.\ be'o poi ke'a du da
+ni'o la'oi .\AgdaRecord{Selcmima}.\ smimlu la'oi .\AgdaRecord{Multiset}.  .i ku'i ga jo la'o zoi.\ \B a .zoi.\ ctaipe la'o zoi.\ \AgdaRecord{Selcmima} \B A .zoi.\ gi la'o zoi.\ \AgdaField{Selcmima.narpanra} \B a .zoi.\ ctaipe lo su'u ro da poi ke'a cmima ja co'e la'o zoi.\ \AgdaField{Selcmima.liste} \B a .zoi.\ zo'u li pa nilzilcmi lo'i ro cmima be la'o zoi.\ \AgdaField{Selcmima.liste} \B a .zoi.\ be'o poi ke'a du da
 
 \begin{code}
 record Selcmima {a} (A : Set a) ⦃ _ : Eq A ⦄ : Set a
@@ -173,11 +173,11 @@ postulate instance eqSelpre : Eq Selpre
 \section{la'oi .\AgdaRecord{Jdanunza'omro}.}
 ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'o zoi.\ \AgdaRecord{Jdanunza'omro} .zoi.\ gi ga je ko'a jdanuza'omro gi\ldots
 \begin{itemize}
-	\item ga je ko'a selcme lo ro cmima be la'o zoi.\ \F{Jdanunza'omro.cmene} \B a .zoi.\ gi
+	\item ga je ko'a selcme lo ro cmima be la'o zoi.\ \AgdaField{Jdanunza'omro.cmene} \B a .zoi.\ gi
 	\item krici le du'u\ldots
 	\begin{itemize}
-		\item ga je ga jo la'o zoi.\ \B s .zoi.\ selvau la'o zoi.\ \F{Selcmima.liste} \OpF \$ \F{Jdanunza'omro.velski} \B a .zoi.\ gi la'o zoi.\ \B s .zoi.\ jetnu je cu velski ko'a gi
-		\item ko'a jdanunza'omro lo ro prenu poi ke'a zukte lo cmima be la'o zoi.\ \F{Selcmima.liste} \OpF \$ \F{Jdanunza'omro.krinu} \B a .zoi.
+		\item ga je ga jo la'o zoi.\ \B s .zoi.\ selvau la'o zoi.\ \AgdaField{Selcmima.liste} \OpF \$ \AgdaField{Jdanunza'omro.velski} \B a .zoi.\ gi la'o zoi.\ \B s .zoi.\ jetnu je cu velski ko'a gi
+		\item ko'a jdanunza'omro lo ro prenu poi ke'a zukte lo cmima be la'o zoi.\ \AgdaField{Selcmima.liste} \OpF \$ \AgdaField{Jdanunza'omro.krinu} \B a .zoi.
 	\end{itemize}
 \end{itemize}
 
@@ -213,9 +213,9 @@ postulate instance eqMarde : Eq Marde
 \section{la'oi .\AgdaRecord{Prenu}.}
 ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\AgdaRecord{Prenu}.\ gi\ldots
 \begin{itemize}
-	\item ga je ko'a se cmene lo ro cmima be la'o zoi.\ \F{Selcmima.liste} \OpF \$ \F{Prenu.cmene} \B a .zoi.\ gi
-	\item ga je la'o zoi.\ \F{Prenu.marde} \B a .zoi.\ marde ko'a gi
-	\item la'o zoi.\ \F{Prenu.selpre} \B a .zoi.\ selpre ko'a
+	\item ga je ko'a se cmene lo ro cmima be la'o zoi.\ \AgdaField{Selcmima.liste} \OpF \$ \AgdaField{Prenu.cmene} \B a .zoi.\ gi
+	\item ga je la'o zoi.\ \AgdaField{Prenu.marde} \B a .zoi.\ marde ko'a gi
+	\item la'o zoi.\ \AgdaField{Prenu.selpre} \B a .zoi.\ selpre ko'a
 \end{itemize}
 
 \begin{code}
@@ -241,15 +241,15 @@ postulate instance eqPrenu : Eq Prenu
 \section{la'oi .\AgdaRecord{Lijda}.}
 ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\AgdaRecord{Lijda}.\ gi\ldots
 \begin{itemize}
-	\item ga je la'o zoi.\ \F{Lijda.marde} \B a .zoi.\ marde lo seljda be ko'a gi
-	\item ga je ga jonai ga je su'o da zo'u da jdanunza'omro fi ko'a gi ko'e goi la'o zoi.\ \F{mapₘ} \F{Selcmima.liste} \OpF \$ \F{Lijda.jdanunza'omro} \B a .zoi.\ me'oi .\F{just}.\ lo'i jdanunza'omro be fi ko'a gi ko'e du la'oi .\F{nothing}.\ gi
+	\item ga je la'o zoi.\ \AgdaField{Lijda.marde} \B a .zoi.\ marde lo seljda be ko'a gi
+	\item ga je ga jonai ga je su'o da zo'u da jdanunza'omro fi ko'a gi ko'e goi la'o zoi.\ \F{mapₘ} \AgdaField{Selcmima.liste} \OpF \$ \AgdaField{Lijda.jdanunza'omro} \B a .zoi.\ me'oi .\F{just}.\ lo'i jdanunza'omro be fi ko'a gi ko'e du la'oi .\F{nothing}.\ gi
 	\item ga jonai\ldots
 	\begin{itemize}
-		\item la'oi .\F{nothing}.\ du ko'e goi la'o zoi.\ \F{Lijda.cevni} \B a .zoi.\ gi
+		\item la'oi .\F{nothing}.\ du ko'e goi la'o zoi.\ \AgdaField{Lijda.cevni} \B a .zoi.\ gi
 		\item ga je selcei fa lo ro seljda be ko'a gi\ldots
 		\begin{itemize}
 			\item ga je ko'e me'oi .\F{just}.\ lo'i cevni be ko'a gi
-			\item ga jo la'o zoi.\ \B t\ .zoi.\ ctaipe la'o zoi.\ \F{Is-just} \OpF \$ \F{Lijda.cevni} \B a\ .zoi.\ gi ga jo la'o zoi.\ \B Z\ .zoi.\ du la'o zoi.\ \F{Data.Maybe.to-witness} \B t\ .zoi.\ gi la'o zoi.\ \Sym(proj₂ \B Z\Sym) \B m \B n\ .zoi.\ co'e ja ni la'o zoi.\ \F{proj₁} \OpF \Sym(\F{proj₁} \B Z\Sym) \OpF !\ \B m .zoi.\ nelci la'o zoi.\ \F{proj₁} \OpF \Sym(\F{proj₁} \B Z\Sym) \OpF !\ \B n .zoi.
+			\item ga jo la'o zoi.\ \B t\ .zoi.\ ctaipe la'o zoi.\ \F{Is-just} \OpF \$ \AgdaField{Lijda.cevni} \B a\ .zoi.\ gi ga jo la'o zoi.\ \B Z\ .zoi.\ du la'o zoi.\ \F{Data.Maybe.to-witness} \B t\ .zoi.\ gi la'o zoi.\ \Sym(proj₂ \B Z\Sym) \B m \B n\ .zoi.\ co'e ja ni la'o zoi.\ \AgdaField{proj₁} \OpF \Sym(\AgdaField{proj₁} \B Z\Sym) \OpF !\ \B m .zoi.\ nelci la'o zoi.\ \AgdaField{proj₁} \OpF \Sym(\AgdaField{proj₁} \B Z\Sym) \OpF !\ \B n .zoi.
 		\end{itemize}
 	\end{itemize}
 \end{itemize}
