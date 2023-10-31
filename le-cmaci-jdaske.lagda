@@ -25,7 +25,7 @@
 \newunicodechar{ν}{\ensuremath{\mathnormal{\nu}}}
 \newunicodechar{μ}{\ensuremath{\mathnormal{\mu}}}
 \newunicodechar{∸}{\ensuremath{\mathnormal\dotdiv}}
-\newunicodechar{ᵇ}{\ensuremath{\mathnormal{^\mathrm{b}}}}
+\newunicodechar{ᵇ}{\ensuremath{\mathnormal{^\AgdaFontStyle{b}}}}
 \newunicodechar{≥}{\ensuremath{\mathnormal{\geq}}}
 \newunicodechar{ϕ}{\ensuremath{\mathnormal{\phi}}}
 \newunicodechar{∧}{\ensuremath{\mathnormal{\wedge}}}
@@ -37,7 +37,7 @@
 \newunicodechar{α}{\ensuremath{\mathnormal{\alpha}}}
 \newunicodechar{₁}{\ensuremath{_1}}
 \newunicodechar{₂}{\ensuremath{_2}}
-\newunicodechar{ₘ}{\ensuremath{_\mathsf{m}}}
+\newunicodechar{ₘ}{\ensuremath{_\AgdaFontStyle{m}}}
 \newunicodechar{⦃}{\ensuremath{\mathnormal{\lbrace\!\lbrace}}}
 \newunicodechar{⦄}{\ensuremath{\mathnormal{\rbrace\!\rbrace}}}
 
