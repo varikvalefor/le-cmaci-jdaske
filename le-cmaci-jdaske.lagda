@@ -170,7 +170,7 @@ postulate Selpre : Set
 postulate instance eqSelpre : Eq Selpre
 \end{code}
 
-\chapter{le srana be lo lijda ja zo'e}
+\chapter{le srana be lo lijda ja co'e}
 
 \section{la'oi .\AgdaRecord{Jdanunza'omro}.}
 ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'o zoi.\ \AgdaRecord{Jdanunza'omro} .zoi.\ gi ga je ko'a jdanuza'omro gi\ldots
