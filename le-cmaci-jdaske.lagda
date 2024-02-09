@@ -144,8 +144,8 @@ record Selcmima {a} (A : Set a) ⦃ _ : Eq A ⦄ : Set a
     narpanra : nu,iork liste
 \end{code}
 
-\section{la'oi .\F{Fasnu}.}
-ni'o ro da zo'u da ctaipe la'oi .\F{Fasnu}.\ jo cu fasnu
+\section{la'oi .\AgdaPostulate{Fasnu}.}
+ni'o ro da zo'u da ctaipe la'oi .\AgdaPostulate{Fasnu}.\ jo cu fasnu
 
 \begin{code}
 postulate Fasnu : Set
@@ -157,8 +157,8 @@ postulate Fasnu : Set
 postulate instance eqFasnu : Eq Fasnu
 \end{code}
 
-\section{la'oi .\F{Selpre}.}
-ni'o ro da zo'u da ctaipe la'oi .\F{Selpre}.\ jo cu selpre
+\section{la'oi .\AgdaPostulate{Selpre}.}
+ni'o ro da zo'u da ctaipe la'oi .\AgdaPostulate{Selpre}.\ jo cu selpre
 
 \begin{code}
 postulate Selpre : Set
