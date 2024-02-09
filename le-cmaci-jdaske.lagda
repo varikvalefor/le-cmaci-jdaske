@@ -119,7 +119,7 @@ open import Truthbrary.Record.LLC
 \chapter{le jicmu}
 
 \section{la'oi .\AgdaRecord{Multiset}.}
-ni'o ga jo ko'a goi la'o zoi.\ \B x\ .zoi.\ ctaipe la'o zoi.\ \AgdaRecord{Multiset} \B X\ .zoi.\ gi ko'a me'oi .multiset.\ je cu se cmima lo ro cmima be la'o zoi.\ \AgdaField{Multiset.liste} \B x\ .zoi.\ be'o ku po'o
+ni'o ga jo ko'a goi la'o zoi.\ \B x\ .zoi.\ ctaipe la'o zoi.\ \AgdaRecord{Multiset} \B X\ .zoi.\ gi ga je ko'a me'oi .multiset.\ gi lo'i ro se cmima be ko'a cu du lo'i ro se cmima be la'o zoi.\ \AgdaField{Multiset.liste} \B x\ .zoi.
 
 .i lo me'oi .multiset.\ cu smimlu lo liste  .i ku'i lo co'e ja se porsi be lo me'oi .multiset.\ cu na vajni fi lo nu facki lo jei dunli
 
