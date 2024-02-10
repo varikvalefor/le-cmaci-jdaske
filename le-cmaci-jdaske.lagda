@@ -144,6 +144,18 @@ record Selcmima {a} (A : Set a) ⦃ _ : Eq A ⦄ : Set a
     narpanra : nu,iork liste
 \end{code}
 
+\subsection{le me'oi .\AgdaKeyword{instance}.}
+
+\subsubsection{la'o zoi.\ \AgdaPostulate{eqSelcmima}.}
+ni'o ro da poi ke'a ctaipe ko'a goi la'o zoi.\ \AgdaRecord{Selcmima} \AgdaUnderscore{}\ .zoi.\ zo'u ro de poi ke'a ctaipe ko'a zo'u da jo di cmima da jo de
+
+\begin{code}
+postulate
+  eqSelcmima : ∀ {a} → {A : Set a}
+             → ⦃ _ : Eq A ⦄
+             → Eq $ Selcmima A
+\end{code}
+
 \section{la'oi .\AgdaPostulate{Fasnu}.}
 ni'o ro da zo'u da ctaipe la'oi .\AgdaPostulate{Fasnu}.\ jo cu fasnu
 
