@@ -72,6 +72,10 @@ open import Data.Nat
     ℕ
   )
 open import Function
+  using (
+    _∘_;
+    _$_
+  )
 open import Data.List
   using (
     map;
