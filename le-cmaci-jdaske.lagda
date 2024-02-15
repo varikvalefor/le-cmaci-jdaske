@@ -13,28 +13,28 @@
 \newunicodechar{λ}{\ensuremath{\mathnormal\lambda}}
 \newunicodechar{∷}{\ensuremath{\mathnormal\Colon}}
 \newunicodechar{∨}{\ensuremath{\mathnormal\vee}}
-\newunicodechar{ℕ}{\ensuremath{\mathnormal{\mathbb{N}}}}
-\newunicodechar{ℚ}{\ensuremath{\mathnormal{\mathbb{Q}}}}
+\newunicodechar{ℕ}{\ensuremath{\mathnormal{\mathbb N}}}
+\newunicodechar{ℚ}{\ensuremath{\mathnormal{\mathbb Q}}}
 \newunicodechar{∈}{\ensuremath{\mathnormal\in}}
 \newunicodechar{≡}{\ensuremath{\mathnormal\equiv}}
 \newunicodechar{∶}{\ensuremath{\mathnormal\colon\!\!}}
-\newunicodechar{ℙ}{\ensuremath{\mathbb{P}}}
-\newunicodechar{𝔽}{\ensuremath{\mathbb{F}}}
-\newunicodechar{𝕄}{\ensuremath{\mathbb{M}}}
-\newunicodechar{𝔹}{\ensuremath{\mathbb{B}}}
-\newunicodechar{ν}{\ensuremath{\mathnormal{\nu}}}
-\newunicodechar{μ}{\ensuremath{\mathnormal{\mu}}}
+\newunicodechar{ℙ}{\ensuremath{\mathbb P}}
+\newunicodechar{𝔽}{\ensuremath{\mathbb F}}
+\newunicodechar{𝕄}{\ensuremath{\mathbb M}}
+\newunicodechar{𝔹}{\ensuremath{\mathbb B}}
+\newunicodechar{ν}{\ensuremath{\mathnormal\nu}}
+\newunicodechar{μ}{\ensuremath{\mathnormal\mu}}
 \newunicodechar{∸}{\ensuremath{\mathnormal\dotdiv}}
 \newunicodechar{ᵇ}{\ensuremath{\mathnormal{^\AgdaFontStyle{b}}}}
-\newunicodechar{≥}{\ensuremath{\mathnormal{\geq}}}
-\newunicodechar{ϕ}{\ensuremath{\mathnormal{\phi}}}
-\newunicodechar{∧}{\ensuremath{\mathnormal{\wedge}}}
+\newunicodechar{≥}{\ensuremath{\mathnormal\geq}}
+\newunicodechar{ϕ}{\ensuremath{\mathnormal\phi}}
+\newunicodechar{∧}{\ensuremath{\mathnormal\wedge}}
 \newunicodechar{∣}{\ensuremath{\mathnormal{|}}}
-\newunicodechar{∘}{\ensuremath{\mathnormal{\circ}}}
-\newunicodechar{∀}{\ensuremath{\mathnormal{\forall}}}
-\newunicodechar{ℓ}{\ensuremath{\mathnormal{\ell}}}
-\newunicodechar{σ}{\ensuremath{\mathnormal{\sigma}}}
-\newunicodechar{α}{\ensuremath{\mathnormal{\alpha}}}
+\newunicodechar{∘}{\ensuremath{\mathnormal\circ}}
+\newunicodechar{∀}{\ensuremath{\mathnormal\forall}}
+\newunicodechar{ℓ}{\ensuremath{\mathnormal\ell}}
+\newunicodechar{σ}{\ensuremath{\mathnormal\sigma}}
+\newunicodechar{α}{\ensuremath{\mathnormal\alpha}}
 \newunicodechar{₁}{\ensuremath{_1}}
 \newunicodechar{₂}{\ensuremath{_2}}
 \newunicodechar{ₘ}{\ensuremath{_\AgdaFontStyle{m}}}
