@@ -13,15 +13,15 @@
 \newunicodechar{λ}{\ensuremath{\mathnormal\lambda}}
 \newunicodechar{∷}{\ensuremath{\mathnormal\Colon}}
 \newunicodechar{∨}{\ensuremath{\mathnormal\vee}}
+\newunicodechar{𝔹}{\ensuremath{\mathnormal{\mathbb B}}}
+\newunicodechar{𝔽}{\ensuremath{\mathnormal{\mathbb F}}}
+\newunicodechar{𝕄}{\ensuremath{\mathnormal{\mathbb M}}}
 \newunicodechar{ℕ}{\ensuremath{\mathnormal{\mathbb N}}}
+\newunicodechar{ℙ}{\ensuremath{\mathnormal{\mathbb P}}}
 \newunicodechar{ℚ}{\ensuremath{\mathnormal{\mathbb Q}}}
 \newunicodechar{∈}{\ensuremath{\mathnormal\in}}
 \newunicodechar{≡}{\ensuremath{\mathnormal\equiv}}
 \newunicodechar{∶}{\ensuremath{\mathnormal\colon\!\!}}
-\newunicodechar{ℙ}{\ensuremath{\mathnormal{\mathbb P}}}
-\newunicodechar{𝔽}{\ensuremath{\mathnormal{\mathbb F}}}
-\newunicodechar{𝕄}{\ensuremath{\mathnormal{\mathbb M}}}
-\newunicodechar{𝔹}{\ensuremath{\mathnormal{\mathbb B}}}
 \newunicodechar{ν}{\ensuremath{\mathnormal\nu}}
 \newunicodechar{μ}{\ensuremath{\mathnormal\mu}}
 \newunicodechar{∸}{\ensuremath{\mathnormal\dotdiv}}
