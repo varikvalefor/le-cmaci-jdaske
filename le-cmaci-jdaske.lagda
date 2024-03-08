@@ -107,6 +107,10 @@ open import Data.Rational
   using (
     ℚ
   )
+open import Relation.Binary
+  using (
+    Setoid
+  )
 open import Truthbrary.Record.Eq
   using (
     Eq
@@ -115,8 +119,14 @@ open import Truthbrary.Record.LLC
   using (
     nu,iork;
     length;
+    _∈_;
     LL;
     UL
+  )
+
+import Data.List.Relation.Unary.All
+  using (
+    All
   )
 \end{code}
 
@@ -148,16 +158,20 @@ record Selcmima {a} (A : Set a) ⦃ _ : Eq A ⦄ : Set a
     narpanra : nu,iork liste
 \end{code}
 
-\subsection{le me'oi .\AgdaKeyword{instance}.}
+\subsection{le me'oi .\AgdaKeyword{record}.\ co'e}
 
-\subsubsection{la'o zoi.\ \AgdaPostulate{eqSelcmima}.}
-ni'o ro da poi ke'a ctaipe ko'a goi la'o zoi.\ \AgdaRecord{Selcmima} \AgdaUnderscore{}\ .zoi.\ zo'u ro de poi ke'a ctaipe ko'a zo'u da jo di cmima da jo de
+\subsubsection{la'o zoi.\ \AgdaPostulate{setoidSelcmima}.}
+ni'o la .varik.\ cu stidi lo nu tcidu le velcki fa lo na jimpe\ldots kei je cu stidi lo nu tadni la'oi .Agda.\ fa lo na jimpe be fi le velcki
 
 \begin{code}
-postulate
-  eqSelcmima : ∀ {a} → {A : Set a}
-             → ⦃ _ : Eq A ⦄
-             → Eq $ Selcmima A
+setoidSelcmima : ∀ {a} → {A : Set a} → ⦃ Eq A ⦄ → Setoid a a
+setoidSelcmima {A = A} = record {
+  Carrier = Selcmima A;
+  _≈_ = λ a b → Al (_∈ L b) (L a) × Al (_∈ L a) (L b);
+  isEquivalence = {!!}}
+  where
+  L = Selcmima.liste
+  Al = Data.List.Relation.Unary.All.All
 \end{code}
 
 \section{la'oi .\AgdaPostulate{Fasnu}.}
