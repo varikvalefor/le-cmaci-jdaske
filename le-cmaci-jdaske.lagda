@@ -168,7 +168,10 @@ setoidSelcmima : ∀ {a} → {A : Set a} → ⦃ Eq A ⦄ → Setoid a a
 setoidSelcmima {A = A} = record {
   Carrier = Selcmima A;
   _≈_ = λ a b → Al (_∈ L b) (L a) × Al (_∈ L a) (L b);
-  isEquivalence = {!!}}
+  isEquivalence = record {
+    refl = {!!};
+    sym = {!!};
+    trans = {!!}}}
   where
   L = Selcmima.liste
   Al = Data.List.Relation.Unary.All.All
