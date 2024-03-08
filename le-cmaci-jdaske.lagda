@@ -160,7 +160,7 @@ record Selcmima {a} (A : Set a) ⦃ _ : Eq A ⦄ : Set a
 
 \subsection{le me'oi .\AgdaKeyword{record}.\ co'e}
 
-\subsubsection{la'o zoi.\ \AgdaPostulate{setoidSelcmima}.}
+\subsubsection{la'o zoi.\ \AgdaPostulate{setoidSelcmima}.\ .zoi.}
 ni'o la .varik.\ cu stidi lo nu tcidu le velcki fa lo na jimpe\ldots kei je cu stidi lo nu tadni la'oi .Agda.\ fa lo na jimpe be fi le velcki
 
 \begin{code}
