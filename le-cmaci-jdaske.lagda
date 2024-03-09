@@ -176,14 +176,14 @@ setoidMultiset {A = A} = record {
           (_×_
             (nu,iork x)
             (Function.flip Al x
-              (λ x' →
+              (λ (x₁ , x₂) →
                 (_×_
-                  (proj₁ x' ∈ L)
+                  (x₁ ∈ L)
                   (_≡_
-                    (proj₂ x')
+                    (x₂)
                     (length
                       (Data.List.filter
-                        (_≟ proj₁ x')
+                        (_≟ x₁)
                         L)))))))))
   G = {!!}
   GL = proj₁ ∘ G ∘ Multiset.liste
