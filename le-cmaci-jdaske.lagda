@@ -213,12 +213,16 @@ setoidSelcmima {A = A} = record {
   Carrier = Selcmima A;
   _≈_ = λ a b → Al (_∈ L b) (L a) × Al (_∈ L a) (L b);
   isEquivalence = record {
-    refl = {!!};
+    refl = λ {x} → G $ Selcmima.liste x;
     sym = Data.Product.swap;
     trans = {!!}}}
   where
   L = Selcmima.liste
   Al = Data.List.Relation.Unary.All.All
+  G : (x : List A) → Al (_∈ x) (x) × Al (_∈ x) (x)
+  G A with A
+  ... | List.[] = ?
+  ... | (x List.∷ z) = {!!}
 \end{code}
 
 \section{la'oi .\AgdaPostulate{Fasnu}.}
