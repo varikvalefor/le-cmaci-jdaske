@@ -174,22 +174,20 @@ setoidMultiset {A = A} = record {
   G : ∀ {a}
     → {A : Set a}
     → ⦃ _ : Eq A ⦄
-    → (L : List A)
-    → (Σ
-        (List $ A × ℕ)
-        (λ x →
-          (_×_
-            (nu,iork x)
-            (Function.flip Al x
-              (λ (x₁ , x₂) →
-                (_×_
-                  (x₁ ∈ L)
-                  (_≡_
-                    x₂
-                    (length
-                      (Data.List.filter (_≟ x₁) L)))))))))
+    → List A
+    → UL $ List $ A × ℕ
   G = {!!}
   GL = proj₁ ∘ G ∘ Multiset.liste
+  module Veritas where
+    GV : ∀ {a} → {A : Set a}
+       → ⦃ _ : Eq A ⦄
+       → (L : List A)
+       → (Function.flip Al (proj₁ $ G L)
+           (λ (x₁ , x₂) →
+             (_×_
+               (x₁ ∈ L)
+               (x₂ ≡ length (Data.List.filter (_≟ x₁) L)))))
+    GV = {!!}
 \end{code}
 
 \section{la'oi .\AgdaRecord{Selcmima}.}
