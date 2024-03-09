@@ -167,6 +167,8 @@ setoidMultiset {A = A} = record {
   }
   where
   Al = Data.List.Relation.Unary.All.All
+  --  ni'o cumki fa lo nu zo'oi .G. co'e ja cu
+  -- cmavlaka'i zo girzu
   G : ∀ {a}
     → {A : Set a}
     → ⦃ _ : Eq A ⦄
