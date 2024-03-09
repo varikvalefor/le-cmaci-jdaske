@@ -41,6 +41,7 @@
 \newunicodechar{ₘ}{\ensuremath{_\AgdaFontStyle{m}}}
 \newunicodechar{⦃}{\ensuremath{\mathnormal{\lbrace\!\lbrace}}}
 \newunicodechar{⦄}{\ensuremath{\mathnormal{\rbrace\!\rbrace}}}
+\newunicodechar{≟}{\ensuremath{\mathnormal{\stackrel{?}{=}}}}
 
 \newcommand\Sym\AgdaSymbol
 \newcommand\D\AgdaDatatype
