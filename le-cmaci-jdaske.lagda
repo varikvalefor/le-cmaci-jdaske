@@ -21,6 +21,7 @@
 \newunicodechar{ℚ}{\ensuremath{\mathnormal{\mathbb Q}}}
 \newunicodechar{∈}{\ensuremath{\mathnormal\in}}
 \newunicodechar{≡}{\ensuremath{\mathnormal\equiv}}
+\newunicodechar{≈}{\ensuremath{\mathnormal\approx}}
 \newunicodechar{∶}{\ensuremath{\mathnormal\colon\!\!}}
 \newunicodechar{ν}{\ensuremath{\mathnormal\nu}}
 \newunicodechar{μ}{\ensuremath{\mathnormal\mu}}
