@@ -148,6 +148,28 @@ record Multiset {a} (A : Set a) : Set a
 \subsection{le krinu be tu'a zo'oi .\AgdaKeyword{record}.}
 ni'o le su'u la .varik.\ cu me'oi .\AgdaKeyword{record}.\ ciksi la'oi .\AgdaRecord{Multiset}.\ jenai cu gasnu lo nu la'oi .\AgdaRecord{Multiset}.\ du la'oi .\D{List}.\ cu se krinu le su'u la .varik.\ cu toldji lo nu frili fa lo nu vukna ja co'e lo ctaipe be la'o zoi.\ \AgdaRecord{Multiset} \B x\ .zoi.\ lo ctaipe be la'o zoi.\ \D{List} \B x\ .zoi.
 
+\subsection{le me'oi .\AgdaKeyword{record}.\ co'e}
+
+\subsubsection{la'o zoi.\ \AgdaPostulate{setoidMultiset}\ .zoi.}
+
+\begin{code}
+setoidMultiset : ∀ {a} → {A : Set a} → ⦃ Eq A ⦄ → Setoid a a
+setoidMultiset {A = A} = record {
+  Carrier = Multiset A;
+  _≈_ = λ a b → Al (_∈ GL a) (GL b) × Al (_∈ GL b) (GL a);
+  isEquivalence = {!!}
+  }
+  where
+  Al = Data.List.Relation.Unary.All.All
+  G : ∀ {a}
+    → {A : Set a}
+    → ⦃ _ : Eq A ⦄
+    → (L : List A)
+    → UL $ List A
+  G = {!!}
+  GL = proj₁ ∘ G ∘ Multiset.liste
+\end{code}
+
 \section{la'oi .\AgdaRecord{Selcmima}.}
 ni'o la'oi .\AgdaRecord{Selcmima}.\ smimlu la'oi .\AgdaRecord{Multiset}.  .i ku'i ga jo la'o zoi.\ \B a .zoi.\ ctaipe la'o zoi.\ \AgdaRecord{Selcmima} \AgdaUnderscore .zoi.\ gi la'o zoi.\ \AgdaField{Selcmima.narpanra} \B a .zoi.\ ctaipe lo su'u ro da poi ke'a cmima ja co'e ko'a goi la'o zoi.\ \AgdaField{Selcmima.liste} \B a .zoi.\ zo'u li pa nilzilcmi lo'i ro co'e poi da du lo meirmoi be ke'a bei fo ko'a
 
