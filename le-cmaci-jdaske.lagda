@@ -221,7 +221,7 @@ setoidSelcmima {A = A} = record {
   Al = Data.List.Relation.Unary.All.All
   G : (x : List A) → Al (_∈ x) (x) × Al (_∈ x) (x)
   G A with A
-  ... | List.[] = ?
+  ... | List.[] = (λ x → x , x) Data.List.Relation.Unary.All.All.[]
   ... | (x List.∷ z) = {!!}
 \end{code}
 
