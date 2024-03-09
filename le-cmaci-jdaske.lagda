@@ -163,7 +163,10 @@ setoidMultiset : ∀ {a} → {A : Set a} → ⦃ Eq A ⦄ → Setoid a a
 setoidMultiset {A = A} = record {
   Carrier = Multiset A;
   _≈_ = λ a b → Al (_∈ GL a) (GL b) × Al (_∈ GL b) (GL a);
-  isEquivalence = {!!}
+  isEquivalence = record {
+    refl = {!!};
+    sym = {!!};
+    trans = {!!}}
   }
   where
   Al = Data.List.Relation.Unary.All.All
