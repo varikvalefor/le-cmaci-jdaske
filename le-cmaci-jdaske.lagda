@@ -180,7 +180,7 @@ setoidMultiset {A = A} = record {
                 (_×_
                   (x₁ ∈ L)
                   (_≡_
-                    (x₂)
+                    x₂
                     (length
                       (Data.List.filter
                         (_≟ x₁)
