@@ -114,6 +114,7 @@ open import Relation.Binary
   )
 open import Truthbrary.Record.Eq
   using (
+    _≟_;
     Eq
   )
 open import Truthbrary.Record.LLC
@@ -123,6 +124,10 @@ open import Truthbrary.Record.LLC
     _∈_;
     LL;
     UL
+  )
+open import Relation.Binary.PropositionalEquality
+  using (
+    _≡_
   )
 
 import Data.List.Relation.Unary.All
@@ -165,7 +170,21 @@ setoidMultiset {A = A} = record {
     → {A : Set a}
     → ⦃ _ : Eq A ⦄
     → (L : List A)
-    → UL $ List A
+    → (Σ
+        (List $ A × ℕ)
+        (λ x →
+          (_×_
+            (nu,iork x)
+            (Function.flip Al x
+              (λ x' →
+                (_×_
+                  (proj₁ x' ∈ L)
+                  (_≡_
+                    (proj₂ x')
+                    (length
+                      (Data.List.filter
+                        (_≟ proj₁ x')
+                        L)))))))))
   G = {!!}
   GL = proj₁ ∘ G ∘ Multiset.liste
 \end{code}
