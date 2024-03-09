@@ -75,8 +75,14 @@ open import Data.Nat
   )
 open import Function
   using (
+    _∘₂_;
     _∘_;
     _$_
+  )
+open import Data.Bool
+  using (
+    not;
+    T?
   )
 open import Data.List
   using (
@@ -115,6 +121,7 @@ open import Relation.Binary
   )
 open import Truthbrary.Record.Eq
   using (
+    _≡ᵇ_;
     _≟_;
     Eq
   )
@@ -179,7 +186,13 @@ setoidMultiset {A = A} = record {
     where
     F = λ a b → length $ Data.List.filter (_≟ a) b
     tU : ∀ {a} → {A : Set a} → ⦃ _ : Eq A ⦄ → List A → UL $ List A
-    tU x = {!!} , {!!}
+    tU x = tU₁ x , {!!}
+      where
+      tU₁ : ∀ {a} → {A : Set a} → ⦃ _ : Eq A ⦄ → List A → List A
+      tU₁ List.[] = List.[]
+      tU₁ (x List.∷ z) = x List.∷ Data.List.filter (nek x) z
+        where
+        nek = T? ∘₂ not ∘₂ _≡ᵇ_
   GL = G ∘ Multiset.liste
   module Veritas where
     GV : ∀ {a} → {A : Set a}
