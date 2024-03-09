@@ -174,16 +174,16 @@ setoidMultiset {A = A} = record {
   G : ∀ {a} → {A : Set a}
     → ⦃ _ : Eq A ⦄
     → List A
-    → UL $ List $ A × ℕ
-  G L = map (λ n → n , length (F n L)) L , {!!}
+    → List $ A × ℕ
+  G L = map (λ n → n , length (F n L)) L
     where
     F = λ a b → length $ Data.List.filter (_≟ a) b
-  GL = proj₁ ∘ G ∘ Multiset.liste
+  GL = G ∘ Multiset.liste
   module Veritas where
     GV : ∀ {a} → {A : Set a}
        → ⦃ _ : Eq A ⦄
        → (L : List A)
-       → (Function.flip Al (proj₁ $ G L)
+       → (Function.flip Al (G L)
            (λ (x₁ , x₂) →
              (_×_
                (x₁ ∈ L)
