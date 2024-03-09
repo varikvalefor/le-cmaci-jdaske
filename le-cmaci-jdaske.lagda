@@ -175,7 +175,7 @@ setoidMultiset {A = A} = record {
     → ⦃ _ : Eq A ⦄
     → List A
     → UL $ List $ A × ℕ
-  G List.[] = {!!}
+  G List.[] = List.[] , _≡_.refl
   G (x List.∷ xs) = {!!}
   GL = proj₁ ∘ G ∘ Multiset.liste
   module Veritas where
