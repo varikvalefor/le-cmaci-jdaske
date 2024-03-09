@@ -166,8 +166,7 @@ setoidMultiset {A = A} = record {
   isEquivalence = record {
     refl = {!!};
     sym = {!!};
-    trans = {!!}}
-  }
+    trans = {!!}}}
   where
   Al = Data.List.Relation.Unary.All.All
   --  ni'o cumki fa lo nu zo'oi .G. co'e ja cu
