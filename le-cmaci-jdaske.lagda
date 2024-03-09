@@ -165,7 +165,7 @@ setoidMultiset {A = A} = record {
   _≈_ = λ a b → Al (_∈ GL a) (GL b) × Al (_∈ GL b) (GL a);
   isEquivalence = record {
     refl = {!!};
-    sym = {!!};
+    sym = Data.Product.swap;
     trans = {!!}}}
   where
   Al = Data.List.Relation.Unary.All.All
@@ -214,7 +214,7 @@ setoidSelcmima {A = A} = record {
   _≈_ = λ a b → Al (_∈ L b) (L a) × Al (_∈ L a) (L b);
   isEquivalence = record {
     refl = {!!};
-    sym = {!!};
+    sym = Data.Product.swap;
     trans = {!!}}}
   where
   L = Selcmima.liste
