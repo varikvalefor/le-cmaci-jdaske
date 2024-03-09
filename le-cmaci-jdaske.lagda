@@ -175,9 +175,11 @@ setoidMultiset {A = A} = record {
     → ⦃ _ : Eq A ⦄
     → List A
     → List $ A × ℕ
-  G L = map (λ n → n , length (F n L)) L
+  G L = map (λ n → n , length (F n L)) $ proj₁ $ tU L
     where
     F = λ a b → length $ Data.List.filter (_≟ a) b
+    tU : ∀ {a} → {A : Set a} → ⦃ _ : Eq A ⦄ → List A → UL $ List A
+    tU x = {!!} , {!!}
   GL = G ∘ Multiset.liste
   module Veritas where
     GV : ∀ {a} → {A : Set a}
