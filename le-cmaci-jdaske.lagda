@@ -182,9 +182,7 @@ setoidMultiset {A = A} = record {
                   (_≡_
                     x₂
                     (length
-                      (Data.List.filter
-                        (_≟ x₁)
-                        L)))))))))
+                      (Data.List.filter (_≟ x₁) L)))))))))
   G = {!!}
   GL = proj₁ ∘ G ∘ Multiset.liste
 \end{code}
