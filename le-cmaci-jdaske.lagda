@@ -208,8 +208,14 @@ setoidMultiset {A = A} = record {
                (x₁ ∈ L)
                (x₂ ≡ length (Data.List.filter (_≟ x₁) L)))))
     GV List.[] = Data.List.Relation.Unary.All.All.[]
-    GV (x List.∷ xs) = ({!!} , {!!}) A.∷ {!!}
+    GV (x List.∷ xs) = (pamoin x xs , {!!}) A.∷ {!!}
       where
+      pamoin : ∀ {a} → {A : Set a}
+             → ⦃ _ : Eq A ⦄
+             → (x : A)
+             → (xs : List A)
+             → x ∈_ $ x List.∷ xs
+      pamoin = {!!}
       import Data.List.Relation.Unary.All
         as A
 \end{code}
