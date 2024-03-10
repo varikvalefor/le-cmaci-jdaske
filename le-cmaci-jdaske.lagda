@@ -208,7 +208,10 @@ setoidMultiset {A = A} = record {
                (x₁ ∈ L)
                (x₂ ≡ length (Data.List.filter (_≟ x₁) L)))))
     GV List.[] = Data.List.Relation.Unary.All.All.[]
-    GV (x List.∷ xs) = {!!}
+    GV (x List.∷ xs) = {!!} A.∷ {!!}
+      where
+      import Data.List.Relation.Unary.All
+        as A
 \end{code}
 
 \section{la'oi .\AgdaRecord{Selcmima}.}
