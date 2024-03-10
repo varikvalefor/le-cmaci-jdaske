@@ -197,7 +197,8 @@ setoidMultiset {A = A} = record {
         where
         nek = T? ∘₂ not ∘₂ _≡ᵇ_
       tU₂ : (x : List A) → nu,iork $ tU₁ x
-      tU₂ = {!!}
+      tU₂ List.[] = {!!}
+      tU₂ (x List.∷ xs) = {!!}
   GL = G ∘ Multiset.liste
   module Veritas where
     GV : ∀ {a} → {A : Set a}
