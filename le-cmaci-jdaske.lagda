@@ -148,6 +148,50 @@ import Data.List.Relation.Unary.All
   )
 \end{code}
 
+\chapter{le vrici je fancu}
+
+\section{la'oi .\F{G}.}
+ni'o la .varik.\ na birti lo du'u ciksi la'oi .\F{G}.\ fo ma kau poi ke'a zabna je cu lojbo
+
+.i ku'i cumki fa lo nu filri'a fi le su'u cumki fa lo nu zo'oi .G.\ cmavlaka'i zo girzu\ldots ja cu co'e
+
+\begin{code}
+G : ∀ {a} → {A : Set a}
+  → ⦃ _ : Eq A ⦄
+  → List A
+  → List $ A × ℕ
+G {A = A} L = (zipmap $ λ n → length $ F n L) $ proj₁ $ tU L
+  where
+  zipmap = λ f x → zip x $ map f x
+  F = λ a b → length $ Data.List.filter (_≟ a) b
+  tU : List A → UL $ List A
+  tU x = tU₁ x , tU₂ x
+    where
+    tU₁ : List A → List A
+    tU₁ List.[] = List.[]
+    tU₁ (x List.∷ z) = x List.∷ Data.List.filter (nek x) z
+      where
+      nek = T? ∘₂ not ∘₂ _≡ᵇ_
+    tU₂ : (x : List A) → nu,iork $ tU₁ x
+    tU₂ List.[] = refl
+    tU₂ (x List.∷ xs) = nuk x {!!} $ filnek x xs
+      where
+      filnek : ∀ {a} → {A : Set a}
+             → ⦃ _ : Eq A ⦄
+             → (e : A)
+             → (x : List A)
+             → e ∉ Data.List.filter (T? ∘ not ∘ _≡ᵇ_ e) x
+      filnek = {!!}
+      nuk : ∀ {a} → {A : Set a}
+          → ⦃ _ : Eq A ⦄
+          → (e : A)
+          → {x : List A}
+          → nu,iork x
+          → e ∉ x
+          → nu,iork $ e List.∷ x
+      nuk = {!!}
+\end{code}
+
 \chapter{le jicmu}
 
 \section{la'oi .\AgdaRecord{Multiset}.}
@@ -182,40 +226,6 @@ setoidMultiset {A = A} = record {
   Al = Data.List.Relation.Unary.All.All
   --  ni'o cumki fa lo nu zo'oi .G. co'e ja cu
   -- cmavlaka'i zo girzu
-  G : ∀ {a} → {A : Set a}
-    → ⦃ _ : Eq A ⦄
-    → List A
-    → List $ A × ℕ
-  G {A = A} L = (zipmap $ λ n → length $ F n L) $ proj₁ $ tU L
-    where
-    zipmap = λ f x → zip x $ map f x
-    F = λ a b → length $ Data.List.filter (_≟ a) b
-    tU : List A → UL $ List A
-    tU x = tU₁ x , tU₂ x
-      where
-      tU₁ : List A → List A
-      tU₁ List.[] = List.[]
-      tU₁ (x List.∷ z) = x List.∷ Data.List.filter (nek x) z
-        where
-        nek = T? ∘₂ not ∘₂ _≡ᵇ_
-      tU₂ : (x : List A) → nu,iork $ tU₁ x
-      tU₂ List.[] = refl
-      tU₂ (x List.∷ xs) = nuk x {!!} $ filnek x xs
-        where
-        filnek : ∀ {a} → {A : Set a}
-               → ⦃ _ : Eq A ⦄
-               → (e : A)
-               → (x : List A)
-               → e ∉ Data.List.filter (T? ∘ not ∘ _≡ᵇ_ e) x
-        filnek = {!!}
-        nuk : ∀ {a} → {A : Set a}
-            → ⦃ _ : Eq A ⦄
-            → (e : A)
-            → {x : List A}
-            → nu,iork x
-            → e ∉ x
-            → nu,iork $ e List.∷ x
-        nuk = {!!}
   GL = G ∘ Multiset.liste
   module Veritas where
     GV : ∀ {a} → {A : Set a}
@@ -261,14 +271,14 @@ setoidSelcmima {A = A} = record {
   Carrier = Selcmima A;
   _≈_ = λ a b → Al (_∈ L b) (L a) × Al (_∈ L a) (L b);
   isEquivalence = record {
-    refl = λ {x} → G $ Selcmima.liste x;
+    refl = λ {x} → G' $ Selcmima.liste x;
     sym = Data.Product.swap;
     trans = {!!}}}
   where
   L = Selcmima.liste
   Al = Data.List.Relation.Unary.All.All
-  G : (x : List A) → Al (_∈ x) (x) × Al (_∈ x) (x)
-  G A with A
+  G' : (x : List A) → Al (_∈ x) (x) × Al (_∈ x) (x)
+  G' A with A
   ... | List.[] = (λ x → x , x) Data.List.Relation.Unary.All.All.[]
   ... | (x List.∷ z) = {!!}
 \end{code}
