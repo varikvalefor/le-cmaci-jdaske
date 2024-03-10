@@ -136,6 +136,7 @@ open import Truthbrary.Record.LLC
   )
 open import Relation.Binary.PropositionalEquality
   using (
+    refl;
     _≡_
   )
 
@@ -208,7 +209,7 @@ setoidMultiset {A = A} = record {
                (x₁ ∈ L)
                (x₂ ≡ length (Data.List.filter (_≟ x₁) L)))))
     GV List.[] = Data.List.Relation.Unary.All.All.[]
-    GV (x List.∷ xs) = (pamoin x xs , _≡_.refl) A.∷ {!!}
+    GV (x List.∷ xs) = (pamoin x xs , refl) A.∷ {!!}
       where
       pamoin : ∀ {a} → {A : Set a}
              → ⦃ _ : Eq A ⦄
