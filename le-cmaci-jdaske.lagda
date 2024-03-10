@@ -207,7 +207,7 @@ setoidMultiset {A = A} = record {
              (_×_
                (x₁ ∈ L)
                (x₂ ≡ length (Data.List.filter (_≟ x₁) L)))))
-    GV List.[] = {!!}
+    GV List.[] = Data.List.Relation.Unary.All.All.[]
     GV (x List.∷ xs) = {!!}
 \end{code}
 
