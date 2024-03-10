@@ -194,8 +194,7 @@ setoidMultiset {A = A} = record {
       tU₁ (x List.∷ z) = x List.∷ Data.List.filter (nek x) z
         where
         nek = T? ∘₂ not ∘₂ _≡ᵇ_
-      tU₂ : (x : List A)
-          → nu,iork $ tU₁ x
+      tU₂ : (x : List A) → nu,iork $ tU₁ x
       tU₂ = {!!}
   GL = G ∘ Multiset.liste
   module Veritas where
