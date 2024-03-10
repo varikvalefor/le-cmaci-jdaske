@@ -150,17 +150,15 @@ import Data.List.Relation.Unary.All
 
 \chapter{le vrici je fancu}
 
-\section{la'oi .\F{G}.}
-ni'o la .varik.\ na birti lo du'u ciksi la'oi .\F{G}.\ fo ma kau poi ke'a zabna je cu lojbo
-
-.i ku'i cumki fa lo nu filri'a fi le su'u cumki fa lo nu zo'oi .G.\ cmavlaka'i zo girzu\ldots ja cu co'e
+\section{la \F{girzu}}
+ni'o la .varik.\ na birti lo du'u ciksi la \F{girzu} fo ma kau poi ke'a zabna je cu lojbo
 
 \begin{code}
-G : ∀ {a} → {A : Set a}
-  → ⦃ _ : Eq A ⦄
-  → List A
-  → List $ A × ℕ
-G {A = A} L = (zipmap $ λ n → length $ F n L) $ proj₁ $ tU L
+girzu : ∀ {a} → {A : Set a}
+      → ⦃ _ : Eq A ⦄
+      → List A
+      → List $ A × ℕ
+girzu {A = A} L = (zipmap $ λ n → length $ F n L) $ proj₁ $ tU L
   where
   zipmap = λ f x → zip x $ map f x
   F = λ a b → length $ Data.List.filter (_≟ a) b
@@ -226,12 +224,12 @@ setoidMultiset {A = A} = record {
   Al = Data.List.Relation.Unary.All.All
   --  ni'o cumki fa lo nu zo'oi .G. co'e ja cu
   -- cmavlaka'i zo girzu
-  GL = G ∘ Multiset.liste
+  GL = girzu ∘ Multiset.liste
   module Veritas where
     GV : ∀ {a} → {A : Set a}
        → ⦃ _ : Eq A ⦄
        → (L : List A)
-       → (Function.flip Al (G L)
+       → (Function.flip Al (girzu L)
            (λ (x₁ , x₂) →
              (_×_
                (x₁ ∈ L)
