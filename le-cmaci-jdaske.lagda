@@ -190,6 +190,31 @@ girzu {A = A} L = (zipmap $ λ n → length $ F n L) $ proj₁ $ tU L
       nuk = {!!}
 \end{code}
 
+\subsection{le su'u la \F{girzu} cu mapti}
+
+\begin{code}
+module GirzuVeritas where
+  pav : ∀ {a} → {A : Set a}
+      → ⦃ _ : Eq A ⦄
+      → (L : List A)
+      → (Function.flip Data.List.Relation.Unary.All.All (girzu L)
+          (λ (x₁ , x₂) →
+            (_×_
+              (x₁ ∈ L)
+              (x₂ ≡ length (Data.List.filter (_≟ x₁) L)))))
+  pav List.[] = Data.List.Relation.Unary.All.All.[]
+  pav (x List.∷ xs) = (pamoin x xs , refl) A.∷ {!!}
+    where
+    pamoin : ∀ {a} → {A : Set a}
+           → ⦃ _ : Eq A ⦄
+           → (x : A)
+           → (xs : List A)
+           → x ∈_ $ x List.∷ xs
+    pamoin = {!!}
+    import Data.List.Relation.Unary.All
+      as A
+\end{code}
+
 \chapter{le jicmu}
 
 \section{la'oi .\AgdaRecord{Multiset}.}
@@ -225,26 +250,6 @@ setoidMultiset {A = A} = record {
   --  ni'o cumki fa lo nu zo'oi .G. co'e ja cu
   -- cmavlaka'i zo girzu
   GL = girzu ∘ Multiset.liste
-  module Veritas where
-    GV : ∀ {a} → {A : Set a}
-       → ⦃ _ : Eq A ⦄
-       → (L : List A)
-       → (Function.flip Al (girzu L)
-           (λ (x₁ , x₂) →
-             (_×_
-               (x₁ ∈ L)
-               (x₂ ≡ length (Data.List.filter (_≟ x₁) L)))))
-    GV List.[] = Data.List.Relation.Unary.All.All.[]
-    GV (x List.∷ xs) = (pamoin x xs , refl) A.∷ {!!}
-      where
-      pamoin : ∀ {a} → {A : Set a}
-             → ⦃ _ : Eq A ⦄
-             → (x : A)
-             → (xs : List A)
-             → x ∈_ $ x List.∷ xs
-      pamoin = {!!}
-      import Data.List.Relation.Unary.All
-        as A
 \end{code}
 
 \section{la'oi .\AgdaRecord{Selcmima}.}
