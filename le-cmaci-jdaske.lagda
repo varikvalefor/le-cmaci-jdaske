@@ -207,7 +207,8 @@ setoidMultiset {A = A} = record {
              (_×_
                (x₁ ∈ L)
                (x₂ ≡ length (Data.List.filter (_≟ x₁) L)))))
-    GV = {!!}
+    GV List.[] = {!!}
+    GV (x List.∷ xs) = {!!}
 \end{code}
 
 \section{la'oi .\AgdaRecord{Selcmima}.}
