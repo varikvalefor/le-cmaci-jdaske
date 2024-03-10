@@ -183,8 +183,9 @@ setoidMultiset {A = A} = record {
     → ⦃ _ : Eq A ⦄
     → List A
     → List $ A × ℕ
-  G {A = A} L = (λ x → zip x $ map (λ n → length $ F n L) x) $ proj₁ $ tU L
+  G {A = A} L = (Z $ λ n → length $ F n L) $ proj₁ $ tU L
     where
+    Z = λ f x → zip x $ map f x
     F = λ a b → length $ Data.List.filter (_≟ a) b
     tU : List A → UL $ List A
     tU x = tU₁ x , tU₂ x
