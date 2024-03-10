@@ -187,13 +187,18 @@ setoidMultiset {A = A} = record {
     where
     F = λ a b → length $ Data.List.filter (_≟ a) b
     tU : ∀ {a} → {A : Set a} → ⦃ _ : Eq A ⦄ → List A → UL $ List A
-    tU x = tU₁ x , {!!}
+    tU x = tU₁ x , tU₂ x
       where
       tU₁ : ∀ {a} → {A : Set a} → ⦃ _ : Eq A ⦄ → List A → List A
       tU₁ List.[] = List.[]
       tU₁ (x List.∷ z) = x List.∷ Data.List.filter (nek x) z
         where
         nek = T? ∘₂ not ∘₂ _≡ᵇ_
+      tU₂ : ∀ {a} → {A : Set a}
+          → ⦃ _ : Eq A ⦄
+          → (x : List A)
+          → nu,iork $ tU₁ x
+      tU₂ = {!!}
   GL = G ∘ Multiset.liste
   module Veritas where
     GV : ∀ {a} → {A : Set a}
