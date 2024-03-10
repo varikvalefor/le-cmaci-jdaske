@@ -20,6 +20,7 @@
 \newunicodechar{ℙ}{\ensuremath{\mathnormal{\mathbb P}}}
 \newunicodechar{ℚ}{\ensuremath{\mathnormal{\mathbb Q}}}
 \newunicodechar{∈}{\ensuremath{\mathnormal\in}}
+\newunicodechar{∉}{\ensuremath{\mathnormal\notin}}
 \newunicodechar{≡}{\ensuremath{\mathnormal\equiv}}
 \newunicodechar{≈}{\ensuremath{\mathnormal\approx}}
 \newunicodechar{∶}{\ensuremath{\mathnormal\colon\!\!}}
@@ -130,6 +131,7 @@ open import Truthbrary.Record.LLC
   using (
     nu,iork;
     length;
+    _∉_;
     _∈_;
     LL;
     UL
@@ -198,7 +200,16 @@ setoidMultiset {A = A} = record {
         nek = T? ∘₂ not ∘₂ _≡ᵇ_
       tU₂ : (x : List A) → nu,iork $ tU₁ x
       tU₂ List.[] = refl
-      tU₂ (x List.∷ xs) = {!!}
+      tU₂ (x List.∷ xs) = nuk x {!!} {!!}
+        where
+        nuk : ∀ {a} → {A : Set a}
+            → ⦃ _ : Eq A ⦄
+            → (e : A)
+            → {x : List A}
+            → nu,iork x
+            → e ∉ x
+            → nu,iork $ e List.∷ x
+        nuk = {!!}
   GL = G ∘ Multiset.liste
   module Veritas where
     GV : ∀ {a} → {A : Set a}
