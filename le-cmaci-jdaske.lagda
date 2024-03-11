@@ -255,7 +255,7 @@ setoidMultiset {A = A} = record {
   Carrier = Multiset A;
   _≈_ = λ a b → Al (_∈ GL a) (GL b) × Al (_∈ GL b) (GL a);
   isEquivalence = record {
-    refl = {!!};
+    refl = λ {a} → (λ x → x , x) $ refif $ GL a;
     sym = Data.Product.swap;
     trans = {!!}}}
   where
