@@ -280,7 +280,7 @@ setoidSelcmima {A = A} = record {
   where
   L = Selcmima.liste
   Al = Data.List.Relation.Unary.All.All
-  refif : (x : List A) → Al (_∈ x) (x) × Al (_∈ x) (x)
+  refif : (x : List A) → Al (_∈ x) x × Al (_∈ x) x
   refif A with A
   ... | List.[] = (λ x → x , x) Data.List.Relation.Unary.All.All.[]
   ... | (x List.∷ z) = {!!}
