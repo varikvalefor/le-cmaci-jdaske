@@ -230,7 +230,7 @@ record Multiset {a} (A : Set a) : Set a
 \end{code}
 
 \subsection{le krinu be tu'a zo'oi .\AgdaKeyword{record}.}
-ni'o le su'u la .varik.\ cu me'oi .\AgdaKeyword{record}.\ ciksi la'oi .\AgdaRecord{Multiset}.\ jenai cu gasnu lo nu la'oi .\AgdaRecord{Multiset}.\ du la'oi .\D{List}.\ cu se krinu le su'u la .varik.\ cu toldji lo nu frili fa lo nu vukna ja co'e lo ctaipe be la'o zoi.\ \AgdaRecord{Multiset} \B x\ .zoi.\ lo ctaipe be la'o zoi.\ \D{List} \B x\ .zoi.
+ni'o la .varik.\ cu me'oi .\AgdaKeyword{record}.\ ciksi la'oi .\AgdaRecord{Multiset}.\ jenai cu gasnu lo nu la'oi .\AgdaRecord{Multiset}.\ du la'oi .\D{List}.  .i krinu la'e di'u fa le su'u la .varik.\ cu toldji lo nu frili fa lo nu vukna ja co'e lo ctaipe be la'o zoi.\ \AgdaRecord{Multiset} \B x\ .zoi.\ lo ctaipe be la'o zoi.\ \D{List} \B x\ .zoi.
 
 \subsection{le me'oi .\AgdaKeyword{record}.\ co'e}
 
