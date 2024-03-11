@@ -215,6 +215,19 @@ module GirzuVeritas where
       as A
 \end{code}
 
+\section{la .\F{refif}.}
+ni'o xu sarcu fa lo nu ciksi bau la .lojban.
+
+\begin{code}
+refif : ∀ {a} → {A : Set a}
+      → ⦃ _ : Eq A ⦄
+      → (x : List A)
+      → Data.List.Relation.Unary.All.All (_∈ x) x
+refif A with A
+... | List.[] = Data.List.Relation.Unary.All.All.[]
+... | (x List.∷ z) = {!!}
+\end{code}
+
 \chapter{le jicmu}
 
 \section{la'oi .\AgdaRecord{Multiset}.}
@@ -280,10 +293,6 @@ setoidSelcmima {A = A} = record {
   where
   L = Selcmima.liste
   Al = Data.List.Relation.Unary.All.All
-  refif : (x : List A) → Al (_∈ x) x
-  refif A with A
-  ... | List.[] = Data.List.Relation.Unary.All.All.[]
-  ... | (x List.∷ z) = {!!}
 \end{code}
 
 \section{la'oi .\AgdaPostulate{Fasnu}.}
