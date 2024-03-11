@@ -408,6 +408,7 @@ ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\AgdaRecord{Lijda}.\ gi
 \end{itemize}
 
 % ni'o xu cadga fa lo nu la .varik. cu ciksi lo co'e ja ctaipe be le su'u pilno la'o zoi. UL $ List Prenu .zoi. jenai la'o zoi. Selcmima Prenu .zoi.
+% .i lakne  .i la .varik. na morji lo du'u ma kau krinu kei ca le nu la .varik. cu cusku dei
 
 \begin{code}
 record Lijda : Set
