@@ -274,15 +274,15 @@ setoidSelcmima {A = A} = record {
   Carrier = Selcmima A;
   _≈_ = λ a b → Al (_∈ L b) (L a) × Al (_∈ L a) (L b);
   isEquivalence = record {
-    refl = λ {x} → refif $ Selcmima.liste x;
+    refl = λ {x} → (λ x → x , x) $ refif $ Selcmima.liste x;
     sym = Data.Product.swap;
     trans = {!!}}}
   where
   L = Selcmima.liste
   Al = Data.List.Relation.Unary.All.All
-  refif : (x : List A) → Al (_∈ x) x × Al (_∈ x) x
+  refif : (x : List A) → Al (_∈ x) x
   refif A with A
-  ... | List.[] = (λ x → x , x) Data.List.Relation.Unary.All.All.[]
+  ... | List.[] = Data.List.Relation.Unary.All.All.[]
   ... | (x List.∷ z) = {!!}
 \end{code}
 
