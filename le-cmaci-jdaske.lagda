@@ -157,8 +157,8 @@ ni'o la'o zoi.\ \F{nu,iorks} \B x\ .zoi.\ .orsi li re zo'e poi ro da zo'u da cmi
 nu,iorks : ∀ {a} → {A : Set a}
          → ⦃ _ : Eq A ⦄
          → List A
-         → UL $ List A
-nu,iorks {A = A} x = nu,iorks₁ x , nu,iorks₂ x
+         → List A
+nu,iorks {A = A} x = nu,iorks₁ x
   where
   nu,iorks₁ : List A → List A
   nu,iorks₁ List.[] = List.[]
@@ -193,7 +193,7 @@ girzu : ∀ {a} → {A : Set a}
       → ⦃ _ : Eq A ⦄
       → List A
       → List $ A × ℕ
-girzu {A = A} L = (zipmap $ λ n → length $ F n L) $ proj₁ $ nu,iorks L
+girzu {A = A} L = (zipmap $ λ n → length $ F n L) $ nu,iorks L
   where
   zipmap = λ f x → zip x $ map f x
   F = λ a b → length $ Data.List.filter (_≟ a) b
