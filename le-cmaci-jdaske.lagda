@@ -235,6 +235,13 @@ module GirzuVeritas where
     pamoin = {!!}
     import Data.List.Relation.Unary.All
       as A
+
+  rel : ∀ {a} → {A : Set a}
+      → ⦃ _ : Eq A ⦄
+      → (L : List A)
+      → (Function.flip Data.List.Relation.Unary.All.All L
+          (_∈ Data.List.map proj₁ (girzu L)))
+  rel = {!!}
 \end{code}
 
 \section{la .\F{refif}.}
