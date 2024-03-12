@@ -190,7 +190,7 @@ girzu {A = A} L = (zipmap $ λ n → length $ F n L) $ proj₁ $ tU L
       nuk = {!!}
 \end{code}
 
-\subsection{le su'u la \F{girzu} cu mapti}
+\subsection{le su'u la \F{girzu}\ cu mapti}
 
 \begin{code}
 module GirzuVeritas where
