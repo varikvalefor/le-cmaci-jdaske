@@ -15,6 +15,7 @@
 \newunicodechar{∨}{\ensuremath{\mathnormal\vee}}
 \newunicodechar{𝔹}{\ensuremath{\mathnormal{\mathbb B}}}
 \newunicodechar{𝔽}{\ensuremath{\mathnormal{\mathbb F}}}
+\newunicodechar{𝕃}{\ensuremath{\mathnormal{\mathbb L}}}
 \newunicodechar{𝕄}{\ensuremath{\mathnormal{\mathbb M}}}
 \newunicodechar{ℕ}{\ensuremath{\mathnormal{\mathbb N}}}
 \newunicodechar{ℙ}{\ensuremath{\mathnormal{\mathbb P}}}
@@ -86,6 +87,7 @@ open import Data.Bool
     T?
   )
 open import Data.List
+  as 𝕃
   using (
     map;
     zip;
@@ -158,8 +160,8 @@ nu,iorks : ∀ {a} → {A : Set a}
          → ⦃ _ : Eq A ⦄
          → List A
          → List A
-nu,iorks List.[] = List.[]
-nu,iorks (x List.∷ z) = x List.∷ Data.List.filter (nek x) z
+nu,iorks 𝕃.[] = 𝕃.[]
+nu,iorks (x 𝕃.∷ z) = x 𝕃.∷ 𝕃.filter (nek x) z
   where
   nek = T? ∘₂ not ∘₂ _≡ᵇ_
 \end{code}
@@ -172,14 +174,14 @@ module Nu,iorksVeritas where
       → ⦃ _ : Eq A ⦄
       → (x : List A)
       → nu,iork $ nu,iorks x
-  pav List.[] = refl
-  pav (x List.∷ xs) = nuk x {!!} $ filnek x xs
+  pav 𝕃.[] = refl
+  pav (x 𝕃.∷ xs) = nuk x {!!} $ filnek x xs
     where
     filnek : ∀ {a} → {A : Set a}
            → ⦃ _ : Eq A ⦄
            → (e : A)
            → (x : List A)
-           → e ∉ Data.List.filter (T? ∘ not ∘ _≡ᵇ_ e) x
+           → e ∉ 𝕃.filter (T? ∘ not ∘ _≡ᵇ_ e) x
     filnek = {!!}
     nuk : ∀ {a} → {A : Set a}
         → ⦃ _ : Eq A ⦄
@@ -187,7 +189,7 @@ module Nu,iorksVeritas where
         → {x : List A}
         → nu,iork x
         → e ∉ x
-        → nu,iork $ e List.∷ x
+        → nu,iork $ e 𝕃.∷ x
     nuk = {!!}
 
   rel : ∀ {a} → {A : Set a}
@@ -209,7 +211,7 @@ girzu : ∀ {a} → {A : Set a}
 girzu {A = A} L = (zipmap $ λ n → length $ F n L) $ nu,iorks L
   where
   zipmap = λ f x → zip x $ map f x
-  F = λ a b → length $ Data.List.filter (_≟ a) b
+  F = λ a b → length $ 𝕃.filter (_≟ a) b
 \end{code}
 
 \subsection{le su'u la \F{girzu}\ cu mapti}
@@ -223,15 +225,15 @@ module GirzuVeritas where
           (λ (x₁ , x₂) →
             (_×_
               (x₁ ∈ L)
-              (x₂ ≡_ $ length $ Data.List.filter (_≟ x₁) L))))
-  pav List.[] = Data.List.Relation.Unary.All.All.[]
-  pav (x List.∷ xs) = (pamoin x xs , refl) A.∷ {!!}
+              (x₂ ≡_ $ length $ 𝕃.filter (_≟ x₁) L))))
+  pav 𝕃.[] = Data.List.Relation.Unary.All.All.[]
+  pav (x 𝕃.∷ xs) = (pamoin x xs , refl) A.∷ {!!}
     where
     pamoin : ∀ {a} → {A : Set a}
            → ⦃ _ : Eq A ⦄
            → (x : A)
            → (xs : List A)
-           → x ∈_ $ x List.∷ xs
+           → x ∈_ $ x 𝕃.∷ xs
     pamoin = {!!}
     import Data.List.Relation.Unary.All
       as A
@@ -240,7 +242,7 @@ module GirzuVeritas where
       → ⦃ _ : Eq A ⦄
       → (L : List A)
       → (Function.flip Data.List.Relation.Unary.All.All L
-          (_∈ Data.List.map proj₁ (girzu L)))
+          (_∈ 𝕃.map proj₁ (girzu L)))
   rel = {!!}
 \end{code}
 
@@ -253,8 +255,8 @@ refif : ∀ {a} → {A : Set a}
       → (x : List A)
       → Data.List.Relation.Unary.All.All (_∈ x) x
 refif A with A
-... | List.[] = Data.List.Relation.Unary.All.All.[]
-... | (x List.∷ z) = {!!}
+... | 𝕃.[] = Data.List.Relation.Unary.All.All.[]
+... | (x 𝕃.∷ z) = {!!}
 \end{code}
 
 \chapter{le jicmu}
