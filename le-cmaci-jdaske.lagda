@@ -260,8 +260,6 @@ setoidMultiset {A = A} = record {
     trans = {!!}}}
   where
   Al = Data.List.Relation.Unary.All.All
-  --  ni'o cumki fa lo nu zo'oi .G. co'e ja cu
-  -- cmavlaka'i zo girzu
   GL = girzu ∘ Multiset.liste
 \end{code}
 
