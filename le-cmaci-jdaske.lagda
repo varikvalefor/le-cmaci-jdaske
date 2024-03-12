@@ -150,6 +150,41 @@ import Data.List.Relation.Unary.All
 
 \chapter{le vrici je fancu}
 
+\section{la'oi .\F{tU}.}
+ni'o la'o zoi.\ \F{tU} \B x\ .zoi.\ .orsi li re zo'e poi ro da zo'u da cmima ke'a jo cu du lo su'o cmima be la'oi .\B x.
+
+\begin{code}
+tU : ∀ {a} → {A : Set a}
+   → ⦃ _ : Eq A ⦄
+   → List A
+   → UL $ List A
+tU {A = A} x = tU₁ x , tU₂ x
+  where
+  tU₁ : List A → List A
+  tU₁ List.[] = List.[]
+  tU₁ (x List.∷ z) = x List.∷ Data.List.filter (nek x) z
+    where
+    nek = T? ∘₂ not ∘₂ _≡ᵇ_
+  tU₂ : (x : List A) → nu,iork $ tU₁ x
+  tU₂ List.[] = refl
+  tU₂ (x List.∷ xs) = nuk x {!!} $ filnek x xs
+    where
+    filnek : ∀ {a} → {A : Set a}
+           → ⦃ _ : Eq A ⦄
+           → (e : A)
+           → (x : List A)
+           → e ∉ Data.List.filter (T? ∘ not ∘ _≡ᵇ_ e) x
+    filnek = {!!}
+    nuk : ∀ {a} → {A : Set a}
+        → ⦃ _ : Eq A ⦄
+        → (e : A)
+        → {x : List A}
+        → nu,iork x
+        → e ∉ x
+        → nu,iork $ e List.∷ x
+    nuk = {!!}
+\end{code}
+
 \section{la \F{girzu}}
 ni'o la .varik.\ na birti lo du'u ciksi la \F{girzu} fo ma kau poi ke'a zabna je cu lojbo
 
@@ -162,32 +197,6 @@ girzu {A = A} L = (zipmap $ λ n → length $ F n L) $ proj₁ $ tU L
   where
   zipmap = λ f x → zip x $ map f x
   F = λ a b → length $ Data.List.filter (_≟ a) b
-  tU : List A → UL $ List A
-  tU x = tU₁ x , tU₂ x
-    where
-    tU₁ : List A → List A
-    tU₁ List.[] = List.[]
-    tU₁ (x List.∷ z) = x List.∷ Data.List.filter (nek x) z
-      where
-      nek = T? ∘₂ not ∘₂ _≡ᵇ_
-    tU₂ : (x : List A) → nu,iork $ tU₁ x
-    tU₂ List.[] = refl
-    tU₂ (x List.∷ xs) = nuk x {!!} $ filnek x xs
-      where
-      filnek : ∀ {a} → {A : Set a}
-             → ⦃ _ : Eq A ⦄
-             → (e : A)
-             → (x : List A)
-             → e ∉ Data.List.filter (T? ∘ not ∘ _≡ᵇ_ e) x
-      filnek = {!!}
-      nuk : ∀ {a} → {A : Set a}
-          → ⦃ _ : Eq A ⦄
-          → (e : A)
-          → {x : List A}
-          → nu,iork x
-          → e ∉ x
-          → nu,iork $ e List.∷ x
-      nuk = {!!}
 \end{code}
 
 \subsection{le su'u la \F{girzu}\ cu mapti}
