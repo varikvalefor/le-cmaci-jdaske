@@ -150,24 +150,24 @@ import Data.List.Relation.Unary.All
 
 \chapter{le vrici je fancu}
 
-\section{la'oi .\F{tU}.}
-ni'o la'o zoi.\ \F{tU} \B x\ .zoi.\ .orsi li re zo'e poi ro da zo'u da cmima ke'a jo cu du lo su'o cmima be la'oi .\B x.
+\section{la'oi .\F{nu,iorks}.}
+ni'o la'o zoi.\ \F{nu,iorks} \B x\ .zoi.\ .orsi li re zo'e poi ro da zo'u da cmima ke'a jo cu du lo su'o cmima be la'oi .\B x.
 
 \begin{code}
-tU : ∀ {a} → {A : Set a}
-   → ⦃ _ : Eq A ⦄
-   → List A
-   → UL $ List A
-tU {A = A} x = tU₁ x , tU₂ x
+nu,iorks : ∀ {a} → {A : Set a}
+         → ⦃ _ : Eq A ⦄
+         → List A
+         → UL $ List A
+nu,iorks {A = A} x = nu,iorks₁ x , nu,iorks₂ x
   where
-  tU₁ : List A → List A
-  tU₁ List.[] = List.[]
-  tU₁ (x List.∷ z) = x List.∷ Data.List.filter (nek x) z
+  nu,iorks₁ : List A → List A
+  nu,iorks₁ List.[] = List.[]
+  nu,iorks₁ (x List.∷ z) = x List.∷ Data.List.filter (nek x) z
     where
     nek = T? ∘₂ not ∘₂ _≡ᵇ_
-  tU₂ : (x : List A) → nu,iork $ tU₁ x
-  tU₂ List.[] = refl
-  tU₂ (x List.∷ xs) = nuk x {!!} $ filnek x xs
+  nu,iorks₂ : (x : List A) → nu,iork $ nu,iorks₁ x
+  nu,iorks₂ List.[] = refl
+  nu,iorks₂ (x List.∷ xs) = nuk x {!!} $ filnek x xs
     where
     filnek : ∀ {a} → {A : Set a}
            → ⦃ _ : Eq A ⦄
@@ -193,7 +193,7 @@ girzu : ∀ {a} → {A : Set a}
       → ⦃ _ : Eq A ⦄
       → List A
       → List $ A × ℕ
-girzu {A = A} L = (zipmap $ λ n → length $ F n L) $ proj₁ $ tU L
+girzu {A = A} L = (zipmap $ λ n → length $ F n L) $ proj₁ $ nu,iorks L
   where
   zipmap = λ f x → zip x $ map f x
   F = λ a b → length $ Data.List.filter (_≟ a) b
