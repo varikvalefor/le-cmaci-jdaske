@@ -189,6 +189,13 @@ module Nu,iorksVeritas where
         → e ∉ x
         → nu,iork $ e List.∷ x
     nuk = {!!}
+
+  rel : ∀ {a} → {A : Set a}
+      → ⦃ _ : Eq A ⦄
+      → (x : List A)
+      → (e : A)
+      → e ∈ x → e ∈ nu,iorks x
+  rel = {!!}
 \end{code}
 
 \section{la \F{girzu}}
