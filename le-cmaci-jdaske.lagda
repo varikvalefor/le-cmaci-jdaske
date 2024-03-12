@@ -162,9 +162,7 @@ nu,iorks : ∀ {a} → {A : Set a}
          → List A
          → List A
 nu,iorks 𝕃.[] = 𝕃.[]
-nu,iorks (x 𝕃.∷ z) = x 𝕃.∷ 𝕃.filter (nek x) z
-  where
-  nek = T? ∘₂ not ∘₂ _≡ᵇ_
+nu,iorks (x 𝕃.∷ z) = x 𝕃.∷ 𝕃.filter (T? ∘ not ∘ _≡ᵇ_ x) z
 \end{code}
 
 \subsection{le ctaipe be le su'u mapti}
