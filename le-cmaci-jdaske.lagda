@@ -201,7 +201,7 @@ module GirzuVeritas where
           (λ (x₁ , x₂) →
             (_×_
               (x₁ ∈ L)
-              (x₂ ≡ length (Data.List.filter (_≟ x₁) L)))))
+              (x₂ ≡_ $ length $ Data.List.filter (_≟ x₁) L))))
   pav List.[] = Data.List.Relation.Unary.All.All.[]
   pav (x List.∷ xs) = (pamoin x xs , refl) A.∷ {!!}
     where
