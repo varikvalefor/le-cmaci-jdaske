@@ -165,9 +165,18 @@ nu,iorks {A = A} x = nu,iorks₁ x
   nu,iorks₁ (x List.∷ z) = x List.∷ Data.List.filter (nek x) z
     where
     nek = T? ∘₂ not ∘₂ _≡ᵇ_
-  nu,iorks₂ : (x : List A) → nu,iork $ nu,iorks₁ x
-  nu,iorks₂ List.[] = refl
-  nu,iorks₂ (x List.∷ xs) = nuk x {!!} $ filnek x xs
+\end{code}
+
+\subsection{le ctaipe be le su'u mapti}
+
+\begin{code}
+module Nu,iorksVeritas where
+  pav : ∀ {a} → {A : Set a}
+      → ⦃ _ : Eq A ⦄
+      → (x : List A)
+      → nu,iork $ nu,iorks x
+  pav List.[] = refl
+  pav (x List.∷ xs) = nuk x {!!} $ filnek x xs
     where
     filnek : ∀ {a} → {A : Set a}
            → ⦃ _ : Eq A ⦄
