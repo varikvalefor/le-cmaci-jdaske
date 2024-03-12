@@ -197,7 +197,7 @@ module Nu,iorksVeritas where
 \end{code}
 
 \section{la \F{girzu}}
-ni'o la .varik.\ na birti lo du'u ciksi la \F{girzu} fo ma kau poi ke'a zabna je cu lojbo
+ni'o ga jo la'oi .\B{G}.\ du la'o zoi.\ \F{girzu} \B g\ .zoi.\ gi ro da poi ke'a cmima la'oi .\B{G}.\ zo'u ga je cmim la'oi .\B{g}.\ lo te orsi be da gi lo ve .orsi be da cu du lo co'e ja nilzilcmi be lo'i ro cmima be la'oi .\B{g}.\ .zoi.\ poi ke'a du lo te .orsi be da
 
 \begin{code}
 girzu : ∀ {a} → {A : Set a}
