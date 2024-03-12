@@ -439,9 +439,9 @@ ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\AgdaRecord{Lijda}.\ gi
 record Lijda : Set
   where
   private
-    𝔽L : ∀ {a} → {A : Set a}
-       → ⦃ Q : LL A ⦄ → ⦃ _ : Eq $ LL.e Q ⦄
-       → UL A → Set
+    𝔽L : ∀ {a b} → {A : Set a} → {B : A → Set b}
+       → ⦃ Q : LL A ⦄
+       → Σ A B → Set
     𝔽L = Fin ∘ length ∘ proj₁
   field
     cevni : Maybe $ Σ (UL $ List Prenu) $ (λ X → X → X → ℚ) ∘ 𝔽L
