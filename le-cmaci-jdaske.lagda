@@ -424,7 +424,7 @@ postulate instance eqPrenu : Eq Prenu
 \section{la'oi .\AgdaRecord{Lijda}.}
 ni'o ga jo ko'a goi la'o zoi.\ \B a .zoi.\ ctaipe la'oi .\AgdaRecord{Lijda}.\ gi\ldots
 \begin{itemize}
-	\item ga je la'o zoi.\ \AgdaField{Lijda.marde} \B a .zoi.\ marde lo ro seljda be ko'a\footnote{.i jitfa fa le du'u ro da zo'u da srana lo marde be da be'o jo lo marde be lo ro seljda be lo lijda be da  .i su'o da zo'u su'o de zo'u ga je de pagbu lo marde be da gi su'o di poi lijda ke'a fa lo lijda be da zo'u de pagbu lo marde be da be'o jenai lo marde be di} gi
+	\item ga je la'o zoi.\ \AgdaField{Lijda.marde} \B a .zoi.\ marde lo ro seljda be ko'a\footnote{.i jitfa fa le du'u ro da zo'u da srana lo marde be da be'o jo lo marde be lo ro seljda be lo lijda be da  .i su'o da zo'u su'o de zo'u ga je de pagbu lo marde be da gi su'o di poi ke'a seljda lo lijda be da zo'u de pagbu lo marde be da be'o jenai lo marde be di} gi
 	\item ga je ga jonai la'oi .\AgdaInductiveConstructor{nothing}.\ du ko'e goi la'o zoi.\ \F{mapₘ} \AgdaField{Selcmima.liste} \OpF \$ \AgdaField{Lijda.jdanunza'omro} \B a .zoi.\ gi ga je su'o da zo'u da jdanunza'omro fi ko'a gi ko'e me'oi .\AgdaInductiveConstructor{just}.\ lo'i jdanunza'omro be fi ko'a gi
 	\item ga jonai\ldots
 	\begin{itemize}
