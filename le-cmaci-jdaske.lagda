@@ -158,13 +158,10 @@ nu,iorks : ∀ {a} → {A : Set a}
          → ⦃ _ : Eq A ⦄
          → List A
          → List A
-nu,iorks {A = A} x = nu,iorks₁ x
+nu,iorks List.[] = List.[]
+nu,iorks (x List.∷ z) = x List.∷ Data.List.filter (nek x) z
   where
-  nu,iorks₁ : List A → List A
-  nu,iorks₁ List.[] = List.[]
-  nu,iorks₁ (x List.∷ z) = x List.∷ Data.List.filter (nek x) z
-    where
-    nek = T? ∘₂ not ∘₂ _≡ᵇ_
+  nek = T? ∘₂ not ∘₂ _≡ᵇ_
 \end{code}
 
 \subsection{le ctaipe be le su'u mapti}
