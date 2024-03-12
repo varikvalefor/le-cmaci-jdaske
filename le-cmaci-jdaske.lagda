@@ -157,10 +157,7 @@ import Data.List.Relation.Unary.All
 ni'o la'o zoi.\ \F{nu,iorks} \B x\ .zoi.\ .orsi li re zo'e poi ro da zo'u da cmima ke'a jo cu du lo su'o cmima be la'oi .\B x.
 
 \begin{code}
-nu,iorks : ∀ {a} → {A : Set a}
-         → ⦃ _ : Eq A ⦄
-         → List A
-         → List A
+nu,iorks : ∀ {a} → {A : Set a} → ⦃ _ : Eq A ⦄ → List A → List A
 nu,iorks 𝕃.[] = 𝕃.[]
 nu,iorks (x 𝕃.∷ z) = x 𝕃.∷ 𝕃.filter (T? ∘ not ∘ _≡ᵇ_ x) z
 \end{code}
