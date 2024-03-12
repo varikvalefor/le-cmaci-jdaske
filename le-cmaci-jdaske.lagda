@@ -145,6 +145,7 @@ open import Relation.Binary.PropositionalEquality
   )
 
 import Data.List.Relation.Unary.All
+  as LUA
   using (
     All
   )
@@ -221,12 +222,12 @@ module GirzuVeritas where
   pav : ∀ {a} → {A : Set a}
       → ⦃ _ : Eq A ⦄
       → (L : List A)
-      → (Function.flip Data.List.Relation.Unary.All.All (girzu L)
+      → (Function.flip LUA.All (girzu L)
           (λ (x₁ , x₂) →
             (_×_
               (x₁ ∈ L)
               (x₂ ≡_ $ length $ 𝕃.filter (_≟ x₁) L))))
-  pav 𝕃.[] = Data.List.Relation.Unary.All.All.[]
+  pav 𝕃.[] = LUA.All.[]
   pav (x 𝕃.∷ xs) = (pamoin x xs , refl) A.∷ {!!}
     where
     pamoin : ∀ {a} → {A : Set a}
@@ -241,7 +242,7 @@ module GirzuVeritas where
   rel : ∀ {a} → {A : Set a}
       → ⦃ _ : Eq A ⦄
       → (L : List A)
-      → (Function.flip Data.List.Relation.Unary.All.All L
+      → (Function.flip LUA.All L
           (_∈ 𝕃.map proj₁ (girzu L)))
   rel = {!!}
 \end{code}
@@ -253,9 +254,9 @@ ni'o xu sarcu fa lo nu ciksi bau la .lojban.
 refif : ∀ {a} → {A : Set a}
       → ⦃ _ : Eq A ⦄
       → (x : List A)
-      → Data.List.Relation.Unary.All.All (_∈ x) x
+      → LUA.All (_∈ x) x
 refif A with A
-... | 𝕃.[] = Data.List.Relation.Unary.All.All.[]
+... | 𝕃.[] = LUA.All.[]
 ... | (x 𝕃.∷ z) = {!!}
 \end{code}
 
@@ -290,7 +291,7 @@ setoidMultiset {A = A} = record {
     sym = Data.Product.swap;
     trans = {!!}}}
   where
-  Al = Data.List.Relation.Unary.All.All
+  Al = LUA.All
   GL = girzu ∘ Multiset.liste
 \end{code}
 
@@ -321,7 +322,7 @@ setoidSelcmima {A = A} = record {
     trans = {!!}}}
   where
   L = Selcmima.liste
-  Al = Data.List.Relation.Unary.All.All
+  Al = LUA.All
 \end{code}
 
 \section{la'oi .\AgdaPostulate{Fasnu}.}
