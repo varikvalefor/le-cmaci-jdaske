@@ -264,7 +264,7 @@ refif : ∀ {a} → {A : Set a}
       → (x : List A)
       → LUA.All (_∈ x) x
 refif 𝕃.[] = LUA.All.[]
-refif (x 𝕃.∷ z) = {!!} LUA.All.∷ {!!}
+refif (x 𝕃.∷ z) = cmimakonk x z LUA.All.∷ {!!}
 \end{code}
 
 \chapter{le jicmu}
