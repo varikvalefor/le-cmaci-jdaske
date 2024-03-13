@@ -153,6 +153,18 @@ import Data.List.Relation.Unary.All
 
 \chapter{le vrici je fancu}
 
+\section{la .\F{cmimakonk}.}
+ni'o la .\F{cmimakonk}.\ ctaipe le su'u ro da poi ke'a co'e zo'u ro de poi ke'a co'e zo'u da cmima lo konkatena be da bei de
+
+\begin{code}
+cmimakonk : ∀ {a} → {A : Set a}
+          → ⦃ _ : Eq A ⦄
+          → (x : A)
+          → (xs : List A)
+          → x ∈_ $ x 𝕃.∷ xs
+cmimakonk = {!!}
+\end{code}
+
 \section{la'oi .\F{nu,iorks}.}
 ni'o la'o zoi.\ \F{nu,iorks} \B x\ .zoi.\ .orsi li re zo'e poi ro da zo'u da cmima ke'a jo cu du lo su'o cmima be la'oi .\B x.
 
@@ -230,14 +242,8 @@ module GirzuVeritas where
               (x₁ ∈ L)
               (x₂ ≡_ $ length $ 𝕃.filter (_≟ x₁) L))))
   pav 𝕃.[] = LUA.All.[]
-  pav (x 𝕃.∷ xs) = (pamoin x xs , refl) A.∷ {!!}
+  pav (x 𝕃.∷ xs) = (cmimakonk x xs , refl) A.∷ {!!}
     where
-    pamoin : ∀ {a} → {A : Set a}
-           → ⦃ _ : Eq A ⦄
-           → (x : A)
-           → (xs : List A)
-           → x ∈_ $ x 𝕃.∷ xs
-    pamoin = {!!}
     import Data.List.Relation.Unary.All
       as A
 
