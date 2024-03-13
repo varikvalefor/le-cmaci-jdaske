@@ -204,7 +204,7 @@ girzu : ∀ {a} → {A : Set a}
       → ⦃ _ : Eq A ⦄
       → List A
       → List $ A × ℕ
-girzu {A = A} L = (zipmap $ λ n → length $ F n L) $ nu,iorks L
+girzu L = (zipmap $ λ n → length $ F n L) $ nu,iorks L
   where
   zipmap = λ f x → zip x $ map f x
   F = λ a b → length $ 𝕃.filter (_≟ a) b
