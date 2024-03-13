@@ -207,7 +207,7 @@ girzu : ∀ {a} → {A : Set a}
 girzu L = (zipmap $ λ n → length $ F n L) $ nu,iorks L
   where
   zipmap = λ f x → zip x $ map f x
-  F = λ a b → length $ 𝕃.filter (_≟ a) b
+  F = λ a → length ∘ 𝕃.filter (_≟ a)
 \end{code}
 
 \subsection{le su'u la \F{girzu}\ cu mapti}
