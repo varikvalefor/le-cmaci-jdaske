@@ -250,9 +250,8 @@ refif : ∀ {a} → {A : Set a}
       → ⦃ _ : Eq A ⦄
       → (x : List A)
       → LUA.All (_∈ x) x
-refif A with A
-... | 𝕃.[] = LUA.All.[]
-... | (x 𝕃.∷ z) = {!!}
+refif 𝕃.[] = LUA.All.[]
+refif (x 𝕃.∷ z) = {!!}
 \end{code}
 
 \chapter{le jicmu}
