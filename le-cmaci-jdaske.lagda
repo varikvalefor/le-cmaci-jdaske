@@ -194,6 +194,13 @@ module Nu,iorksVeritas where
       → (e : A)
       → e ∈ x → e ∈ nu,iorks x
   rel = {!!}
+
+  cib : ∀ {a} → {A : Set a}
+      → ⦃ _ : Eq A ⦄
+      → (x : List A)
+      → (e : A)
+      → e ∈ nu,iorks x → e ∈ x
+  cib = {!!}
 \end{code}
 
 \section{la \F{girzu}}
