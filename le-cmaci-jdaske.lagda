@@ -290,7 +290,7 @@ ni'o la .varik.\ cu me'oi .\AgdaKeyword{record}.\ ciksi la'oi .\AgdaRecord{Multi
 
 \subsection{le me'oi .\AgdaKeyword{record}.\ co'e}
 
-\subsubsection{la'o zoi.\ \AgdaPostulate{setoidMultiset}\ .zoi.}
+\subsubsection{la'o zoi.\ \F{setoidMultiset}\ .zoi.}
 
 \begin{code}
 setoidMultiset : ∀ {a} → {A : Set a} → ⦃ Eq A ⦄ → Setoid a a
@@ -319,7 +319,7 @@ record Selcmima {a} (A : Set a) ⦃ _ : Eq A ⦄ : Set a
 
 \subsection{le me'oi .\AgdaKeyword{record}.\ co'e}
 
-\subsubsection{la'o zoi.\ \AgdaPostulate{setoidSelcmima}\ .zoi.}
+\subsubsection{la'o zoi.\ \F{setoidSelcmima}\ .zoi.}
 ni'o la .varik.\ cu stidi lo nu tcidu le velcki fa lo na jimpe\ldots kei je cu stidi lo nu tadni la'oi .Agda.\ fa lo na jimpe be fi le velcki
 
 \begin{code}
