@@ -81,6 +81,7 @@ open import Data.Nat
 open import Function
   using (
     _∘₂_;
+    flip;
     _∘_;
     _$_
   )
@@ -239,7 +240,7 @@ module GirzuVeritas where
   pav : ∀ {a} → {A : Set a}
       → ⦃ _ : Eq A ⦄
       → (L : List A)
-      → (Function.flip LUA.All (girzu L)
+      → (flip LUA.All (girzu L)
           (λ (x₁ , x₂) →
             (_×_
               (x₁ ∈ L)
@@ -253,7 +254,7 @@ module GirzuVeritas where
   rel : ∀ {a} → {A : Set a}
       → ⦃ _ : Eq A ⦄
       → (L : List A)
-      → (Function.flip LUA.All L
+      → (flip LUA.All L
           (_∈ 𝕃.map proj₁ (girzu L)))
   rel = {!!}
 \end{code}
