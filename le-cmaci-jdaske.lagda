@@ -62,7 +62,7 @@
 \tableofcontents
 
 \chapter{le me'oi .disclaimer.}
-ni'o na mulno
+ni'o na mulno  .i la .varik.\ cu stidi lo nu na ci'au .ue sai lo nu vo'a mutce lo ka ce'u bixygau pe'a
 
 \chapter{le vrici}
 
