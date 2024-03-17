@@ -22,7 +22,10 @@
 \newunicodechar{ℚ}{\ensuremath{\mathnormal{\mathbb Q}}}
 \newunicodechar{∈}{\ensuremath{\mathnormal\in}}
 \newunicodechar{∉}{\ensuremath{\mathnormal\notin}}
+\newunicodechar{⟨}{\ensuremath{\mathnormal\langle}}
+\newunicodechar{⟩}{\ensuremath{\mathnormal\rangle}}
 \newunicodechar{≡}{\ensuremath{\mathnormal\equiv}}
+\newunicodechar{∎}{\ensuremath{\mathnormal\blacksquare}}
 \newunicodechar{≈}{\ensuremath{\mathnormal\approx}}
 \newunicodechar{∶}{\ensuremath{\mathnormal\colon\!\!}}
 \newunicodechar{ν}{\ensuremath{\mathnormal\nu}}
