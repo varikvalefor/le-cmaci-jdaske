@@ -44,8 +44,8 @@
 \newunicodechar{₁}{\ensuremath{_1}}
 \newunicodechar{₂}{\ensuremath{_2}}
 \newunicodechar{ₘ}{\ensuremath{_\AgdaFontStyle{m}}}
-\newunicodechar{⦃}{\ensuremath{\mathnormal{\lbrace\!\lbrace}}}
-\newunicodechar{⦄}{\ensuremath{\mathnormal{\rbrace\!\rbrace}}}
+\newunicodechar{⦃}{\ensuremath{\mathnormal{\lbrace\hspace{-0.3em}|}}}
+\newunicodechar{⦄}{\ensuremath{\mathnormal{|\hspace{-0.3em}\rbrace}}}
 \newunicodechar{≟}{\ensuremath{\mathnormal{\stackrel{?}{=}}}}
 
 \newcommand\Sym\AgdaSymbol
