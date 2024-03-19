@@ -256,6 +256,18 @@ module GirzuVeritas where
   rel (x 𝕃.∷ xs) = {!!} LUA.All.∷ {!!}
 \end{code}
 
+\subsection{la .\F{prefif}.}
+ni'o xu sarcu fa lo nu ciksi bau la .lojban.
+
+\begin{code}
+prefif : ∀ {a} → {A : Set a}
+       → ⦃ _ : Eq A ⦄
+       → (x : A)
+       → (xs : List A)
+       → LUA.All (_∈ (x 𝕃.∷ xs)) xs
+prefif = {!!}
+\end{code}
+
 \section{la .\F{refif}.}
 ni'o xu sarcu fa lo nu ciksi bau la .lojban.
 
