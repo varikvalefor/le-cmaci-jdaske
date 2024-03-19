@@ -255,7 +255,8 @@ module GirzuVeritas where
       → ⦃ _ : Eq A ⦄
       → (L : List A)
       → flip LUA.All L $ _∈ 𝕃.map proj₁ (girzu L)
-  rel = {!!}
+  rel 𝕃.[] = {!!}
+  rel (x 𝕃.∷ xs) = {!!}
 \end{code}
 
 \section{la .\F{refif}.}
