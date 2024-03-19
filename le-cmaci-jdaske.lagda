@@ -254,8 +254,7 @@ module GirzuVeritas where
   rel : ∀ {a} → {A : Set a}
       → ⦃ _ : Eq A ⦄
       → (L : List A)
-      → (flip LUA.All L
-          (_∈ 𝕃.map proj₁ (girzu L)))
+      → (flip LUA.All L (_∈ 𝕃.map proj₁ (girzu L)))
   rel = {!!}
 \end{code}
 
