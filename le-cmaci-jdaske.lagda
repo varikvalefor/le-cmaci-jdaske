@@ -246,10 +246,7 @@ module GirzuVeritas where
               (x₁ ∈ L)
               (x₂ ≡_ $ length $ 𝕃.filter (_≟ x₁) L))))
   pav 𝕃.[] = LUA.All.[]
-  pav (x 𝕃.∷ xs) = (cmimakonk x xs , refl) A.∷ {!!}
-    where
-    import Data.List.Relation.Unary.All
-      as A
+  pav (x 𝕃.∷ xs) = (cmimakonk x xs , refl) LUA.All.∷ {!!}
 
   rel : ∀ {a} → {A : Set a}
       → ⦃ _ : Eq A ⦄
