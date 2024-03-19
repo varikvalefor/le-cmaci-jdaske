@@ -233,7 +233,7 @@ girzu L = (zipmap $ length ∘ flip F L) $ nu,iorks L
   F = λ a → length ∘ 𝕃.filter (_≟ a)
 \end{code}
 
-\subsection{le su'u la \F{girzu}\ cu mapti}
+\subsection{le ctaipe be le su'u la \F{girzu}\ cu mapti}
 
 \begin{code}
 module GirzuVeritas where
