@@ -25,6 +25,7 @@
 \newunicodechar{⟨}{\ensuremath{\mathnormal\langle}}
 \newunicodechar{⟩}{\ensuremath{\mathnormal\rangle}}
 \newunicodechar{≡}{\ensuremath{\mathnormal\equiv}}
+\newunicodechar{≢}{\ensuremath{\mathnormal\nequiv}}
 \newunicodechar{∎}{\ensuremath{\mathnormal\blacksquare}}
 \newunicodechar{≈}{\ensuremath{\mathnormal\approx}}
 \newunicodechar{∶}{\ensuremath{\mathnormal\colon\!\!}}
@@ -175,7 +176,9 @@ ni'o la'o zoi.\ \F{nu,iorks} \B x\ .zoi.\ .orsi li re zo'e poi ro da zo'u da cmi
 \begin{code}
 nu,iorks : ∀ {a} → {A : Set a} → ⦃ _ : Eq A ⦄ → List A → List A
 nu,iorks 𝕃.[] = 𝕃.[]
-nu,iorks (x 𝕃.∷ z) = x 𝕃.∷ 𝕃.filter (T? ∘ not ∘ _≡ᵇ_ x) (nu,iorks z)
+nu,iorks (x 𝕃.∷ z) = x 𝕃.∷ 𝕃.filter (_≢?_ x) (nu,iorks z)
+  where
+  _≢?_ = T? ∘₂ not ∘₂ _≡ᵇ_
 \end{code}
 
 \subsection{le ctaipe be le su'u mapti}
