@@ -41,8 +41,8 @@
 \newunicodechar{ℓ}{\ensuremath{\mathnormal\ell}}
 \newunicodechar{σ}{\ensuremath{\mathnormal\sigma}}
 \newunicodechar{α}{\ensuremath{\mathnormal\alpha}}
-\newunicodechar{₁}{\ensuremath{_1}}
-\newunicodechar{₂}{\ensuremath{_2}}
+\newunicodechar{₁}{\ensuremath{\mathnormal{_1}}}
+\newunicodechar{₂}{\ensuremath{\mathnormal{_2}}}
 \newunicodechar{ₘ}{\ensuremath{_\AgdaFontStyle{m}}}
 \newunicodechar{⦃}{\ensuremath{\mathnormal{\lbrace\hspace{-0.3em}|}}}
 \newunicodechar{⦄}{\ensuremath{\mathnormal{|\hspace{-0.3em}\rbrace}}}
