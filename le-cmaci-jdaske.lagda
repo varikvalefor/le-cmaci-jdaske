@@ -175,7 +175,7 @@ ni'o la'o zoi.\ \F{nu,iorks} \B x\ .zoi.\ .orsi li re zo'e poi ro da zo'u da cmi
 \begin{code}
 nu,iorks : ∀ {a} → {A : Set a} → ⦃ _ : Eq A ⦄ → List A → List A
 nu,iorks 𝕃.[] = 𝕃.[]
-nu,iorks (x 𝕃.∷ z) = x 𝕃.∷ 𝕃.filter (T? ∘ not ∘ _≡ᵇ_ x) z
+nu,iorks (x 𝕃.∷ z) = x 𝕃.∷ 𝕃.filter (T? ∘ not ∘ _≡ᵇ_ x) (nu,iorks z)
 \end{code}
 
 \subsection{le ctaipe be le su'u mapti}
@@ -187,7 +187,7 @@ module Nu,iorksVeritas where
       → (x : List A)
       → nu,iork $ nu,iorks x
   pav 𝕃.[] = refl
-  pav (x 𝕃.∷ xs) = nuk x {!!} $ filnek x xs
+  pav (x 𝕃.∷ xs) = nuk x {!!} $ filnek x $ nu,iorks xs
     where
     filnek : ∀ {a} → {A : Set a}
            → ⦃ _ : Eq A ⦄
