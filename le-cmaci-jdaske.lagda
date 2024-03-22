@@ -197,7 +197,8 @@ module Nu,iorksVeritas where
            → (e : A)
            → (x : List A)
            → e ∉ 𝕃.filter (T? ∘ not ∘ _≡ᵇ_ e) x
-    filnek = {!!}
+    filnek e 𝕃.[] = {!!}
+    filnek e (x 𝕃.∷ xs) = {!!}
     nuk : ∀ {a} → {A : Set a}
         → ⦃ _ : Eq A ⦄
         → (e : A)
