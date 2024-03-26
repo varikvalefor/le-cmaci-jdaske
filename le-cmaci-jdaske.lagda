@@ -270,7 +270,14 @@ module GirzuVeritas where
       → (L : List A)
       → flip LUA.All L $ _∈ 𝕃.map proj₁ (girzu L)
   rel 𝕃.[] = LUA.All.[]
-  rel (x 𝕃.∷ xs) = {!!} LUA.All.∷ {!!}
+  rel (x 𝕃.∷ xs) = girzu₁ x xs LUA.All.∷ {!!}
+    where
+    girzu₁ : ∀ {a} → {A : Set a}
+           → ⦃ _ : Eq A ⦄
+           → (x : A)
+           → (xs : List A)
+           → x ∈ map proj₁ (girzu $ x 𝕃.∷ xs)
+    girzu₁ = {!!}
 \end{code}
 
 \subsection{la .\F{prefif}.}
