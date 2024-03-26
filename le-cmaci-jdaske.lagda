@@ -170,6 +170,19 @@ cmimakonk : ∀ {a} → {A : Set a}
 cmimakonk = {!!}
 \end{code}
 
+\section{la .\F{cmimapred}.}
+ni'o la .\F{cmimapred}.\ ctaipe le su'u ro da poi ke'a co'e zo'u ro de poi ke'a co'e zo'u ro di poi ke'a co'e zo'u da cmima di naja lo konkatena be de bei di
+
+\begin{code}
+cmimapred : ∀ {a} → {A : Set a}
+          → ⦃ _ : Eq A ⦄
+          → (x z : A)
+          → (xs : List A)
+          → x ∈ xs
+          → x ∈_ $ z 𝕃.∷ xs
+cmimapred = {!!}
+\end{code}
+
 \section{la'oi .\F{nu,iorks}.}
 ni'o la'o zoi.\ \F{nu,iorks} \B x\ .zoi.\ .orsi li re zo'e poi ro da zo'u da cmima ke'a jo cu du lo su'o cmima be la'oi .\B x.
 
