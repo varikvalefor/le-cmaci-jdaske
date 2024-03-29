@@ -497,7 +497,7 @@ record Lijda : Set
   where
   private
     𝔽L : ∀ {a b} → {A : Set a} → {B : A → Set b}
-       → ⦃ Q : LL A ⦄
+       → ⦃ LL A ⦄
        → Σ A B → Set
     𝔽L = Fin ∘ length ∘ proj₁
   field
