@@ -169,7 +169,12 @@ cmimakonk : ∀ {a} → {A : Set a}
           → (x : A)
           → (xs : List A)
           → x ∈_ $ x 𝕃.∷ xs
-cmimakonk = {!!}
+cmimakonk x xs = sym $ begin
+  length (𝕃.take 1 $ 𝕃.filter (_≟_ x) $ x 𝕃.∷ _) ≡⟨ {!!} ⟩
+  1 ∎
+  where
+  open import Relation.Binary.PropositionalEquality
+  open ≡-Reasoning
 \end{code}
 
 \section{la .\F{cmimapred}.}
