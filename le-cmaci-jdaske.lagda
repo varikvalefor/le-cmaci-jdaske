@@ -152,7 +152,9 @@ open import Relation.Binary.PropositionalEquality
 import Data.List.Relation.Unary.All
   as LUA
   using (
-    All
+    _∷_;
+    All;
+    []
   )
 \end{code}
 
@@ -262,8 +264,8 @@ module GirzuVeritas where
             (_×_
               (x₁ ∈ L)
               (x₂ ≡_ $ length $ 𝕃.filter (_≟ x₁) L))))
-  pav 𝕃.[] = LUA.All.[]
-  pav (x 𝕃.∷ xs) = (cmimakonk x xs , refl) LUA.All.∷ {!!}
+  pav 𝕃.[] = LUA.[]
+  pav (x 𝕃.∷ xs) = (cmimakonk x xs , refl) LUA.∷ {!!}
 
   rel : ∀ {a} → {A : Set a}
       → ⦃ _ : Eq A ⦄
@@ -301,8 +303,8 @@ refif : ∀ {a} → {A : Set a}
       → ⦃ _ : Eq A ⦄
       → (x : List A)
       → LUA.All (_∈ x) x
-refif 𝕃.[] = LUA.All.[]
-refif (x 𝕃.∷ z) = cmimakonk x z LUA.All.∷ prefif x z
+refif 𝕃.[] = LUA.[]
+refif (x 𝕃.∷ z) = cmimakonk x z LUA.∷ prefif x z
 \end{code}
 
 \chapter{le jicmu}
