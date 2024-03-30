@@ -215,7 +215,7 @@ module DunVeritasJaZo'e where
   T = {!!}
 \end{code}
 \section{la'oi .\F{nu,iorks}.}
-ni'o la'o zoi.\ \F{nu,iorks} \B x\ .zoi.\ .orsi li re zo'e poi ro da zo'u da cmima ke'a jo cu du lo su'o cmima be la'oi .\B x.
+ni'o ro da zo'u da cmima la'o zoi.\ \F{nu,iorks} \B x\ .zoi.\ jo cu du lo su'o cmima be la'oi .\B x.
 
 \begin{code}
 nu,iorks : ∀ {a} → {A : Set a} → ⦃ _ : Eq A ⦄ → List A → List A
