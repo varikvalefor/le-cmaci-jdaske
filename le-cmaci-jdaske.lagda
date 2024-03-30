@@ -197,7 +197,8 @@ ni'o xu sarcu fa lo nu ciksi bau la .lojban.
 \begin{code}
 Dun : ∀ {a} → {A : Set a}
     → ⦃ Eq A ⦄
-    → (x z : List A) → Set a
+    → (x z : List A)
+    → Set a
 Dun x z = LUA.All (_∈ x) z × LUA.All (_∈ z) x
 \end{code}
 
