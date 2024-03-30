@@ -367,7 +367,6 @@ setoidMultiset {A = A} = record {
     trans = T}}
   where
   open DunVeritasJaZo'e using (T)
-  Al = LUA.All
   GL : ∀ {a} → {A : Set a}
      → ⦃ Eq A ⦄
      → Multiset A → List $ A × ℕ
