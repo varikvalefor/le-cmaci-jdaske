@@ -82,6 +82,7 @@ open import Data.Nat
 open import Function
   using (
     _∘₂_;
+    _on_;
     flip;
     _∘_;
     _$_
@@ -337,7 +338,7 @@ ni'o la .varik.\ cu me'oi .\AgdaKeyword{record}.\ ciksi la'oi .\AgdaRecord{Multi
 setoidMultiset : ∀ {a} → {A : Set a} → ⦃ Eq A ⦄ → Setoid a a
 setoidMultiset {A = A} = record {
   Carrier = Multiset A;
-  _≈_ = λ a b → Al (_∈ GL a) (GL b) × Al (_∈ GL b) (GL a);
+  _≈_ = Dun on GL;
   isEquivalence = record {
     refl = (λ x → x , x) $ refif _;
     sym = Data.Product.swap;
@@ -348,12 +349,16 @@ setoidMultiset {A = A} = record {
      → ⦃ Eq A ⦄
      → Multiset A → List $ A × ℕ
   GL = girzu ∘ Multiset.liste
+  Dun : ∀ {a} → {A : Set a}
+      → ⦃ Eq A ⦄
+      → (x z : List A) → Set a
+  Dun x z = Al (_∈ x) z × Al (_∈ z) x
   T : ∀ {a} → {A : Set a}
     → ⦃ _ : Eq A ⦄
     → {i j k : List A}
-    → Al (_∈ i) j × Al (_∈ j) i
-    → Al (_∈ j) k × Al (_∈ k) j
-    → Al (_∈ i) k × Al (_∈ k) i
+    → Dun i j
+    → Dun j k
+    → Dun i k
   T = {!!}
 \end{code}
 
