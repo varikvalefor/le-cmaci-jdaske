@@ -268,7 +268,7 @@ module Nu,iorksVeritas where
 \end{code}
 
 \section{la \F{girzu}}
-ni'o ga jo la'oi .\B{G}.\ du la'o zoi.\ \F{map} \AgdaField{proj₁} \OpF \$ \F{girzu} \B g\ .zoi.\ gi ro da poi ke'a cmima la'oi .\B{G}.\ zo'u ga je cmim la'oi .\B{g}.\ lo te orsi be da gi lo ve .orsi be da cu du lo co'e ja nilzilcmi be lo'i ro cmima be la'oi .\B{G}.\ .zoi.\ poi ke'a du lo te .orsi be da
+ni'o ga jo la'oi .\B{G}.\ du la'o zoi.\ \F{map} \AgdaField{proj₁} \OpF \$ \F{girzu} \B g\ .zoi.\ gi ro da poi ke'a cmima la'oi .\B{G}.\ zo'u ga je cmima la'oi .\B{g}.\ lo te orsi be da gi lo ve .orsi be da cu du lo co'e ja nilzilcmi be lo'i ro cmima be la'oi .\B{G}.\ .zoi.\ poi ke'a du lo te .orsi be da
 
 \begin{code}
 girzu : ∀ {a} → {A : Set a}
