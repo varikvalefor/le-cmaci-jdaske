@@ -350,10 +350,10 @@ setoidMultiset {A = A} = record {
   GL = girzu ∘ Multiset.liste
   T : ∀ {a} → {A : Set a}
     → ⦃ _ : Eq A ⦄
-    → {i j k : Multiset A}
-    → Al (_∈ GL i) (GL j) × Al (_∈ GL j) (GL i)
-    → Al (_∈ GL j) (GL k) × Al (_∈ GL k) (GL j)
-    → Al (_∈ GL i) (GL k) × Al (_∈ GL k) (GL i)
+    → {i j k : List A}
+    → Al (_∈ i) j × Al (_∈ j) i
+    → Al (_∈ j) k × Al (_∈ k) j
+    → Al (_∈ i) k × Al (_∈ k) i
   T = {!!}
 \end{code}
 
