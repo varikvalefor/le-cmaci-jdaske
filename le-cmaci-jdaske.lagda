@@ -191,6 +191,16 @@ cmimapred : ∀ {a} → {A : Set a}
 cmimapred = {!!}
 \end{code}
 
+\section{la'oi .\F{Dun}.}
+ni'o xu sarcu fa lo nu ciksi bau la .lojban.
+
+\begin{code}
+Dun : ∀ {a} → {A : Set a}
+    → ⦃ Eq A ⦄
+    → (x z : List A) → Set a
+Dun x z = LUA.All (_∈ x) z × LUA.All (_∈ z) x
+\end{code}
+
 \section{la'oi .\F{nu,iorks}.}
 ni'o la'o zoi.\ \F{nu,iorks} \B x\ .zoi.\ .orsi li re zo'e poi ro da zo'u da cmima ke'a jo cu du lo su'o cmima be la'oi .\B x.
 
@@ -349,10 +359,6 @@ setoidMultiset {A = A} = record {
      → ⦃ Eq A ⦄
      → Multiset A → List $ A × ℕ
   GL = girzu ∘ Multiset.liste
-  Dun : ∀ {a} → {A : Set a}
-      → ⦃ Eq A ⦄
-      → (x z : List A) → Set a
-  Dun x z = Al (_∈ x) z × Al (_∈ z) x
   T : ∀ {a} → {A : Set a}
     → ⦃ _ : Eq A ⦄
     → {i j k : List A}
