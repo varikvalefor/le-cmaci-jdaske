@@ -201,6 +201,18 @@ Dun : ∀ {a} → {A : Set a}
 Dun x z = LUA.All (_∈ x) z × LUA.All (_∈ z) x
 \end{code}
 
+\subsection{le ctaipe be zo'e ja le su'u la'oi .\F{Dun}.\ mapti}
+
+\begin{code}
+module DunVeritasJaZo'e where
+  T : ∀ {a} → {A : Set a}
+    → ⦃ _ : Eq A ⦄
+    → {i j k : List A}
+    → Dun i j
+    → Dun j k
+    → Dun i k
+  T = {!!}
+\end{code}
 \section{la'oi .\F{nu,iorks}.}
 ni'o la'o zoi.\ \F{nu,iorks} \B x\ .zoi.\ .orsi li re zo'e poi ro da zo'u da cmima ke'a jo cu du lo su'o cmima be la'oi .\B x.
 
@@ -354,18 +366,12 @@ setoidMultiset {A = A} = record {
     sym = Data.Product.swap;
     trans = T}}
   where
+  open DunVeritasJaZo'e using (T)
   Al = LUA.All
   GL : ∀ {a} → {A : Set a}
      → ⦃ Eq A ⦄
      → Multiset A → List $ A × ℕ
   GL = girzu ∘ Multiset.liste
-  T : ∀ {a} → {A : Set a}
-    → ⦃ _ : Eq A ⦄
-    → {i j k : List A}
-    → Dun i j
-    → Dun j k
-    → Dun i k
-  T = {!!}
 \end{code}
 
 \section{la'oi .\AgdaRecord{Selcmima}.}
