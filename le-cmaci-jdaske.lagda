@@ -309,6 +309,12 @@ module GirzuVeritas where
            → (xs : List A)
            → x ∈ map proj₁ (girzu $ x 𝕃.∷ xs)
     girzu₁ = {!!}
+
+  sum : ∀ {a} → {A : Set a}
+      → ⦃ _ : Eq A ⦄
+      → (L : List A)
+      → 𝕃.sum (𝕃.map proj₂ $ girzu L) ≡ length L
+  sum = {!!}
 \end{code}
 
 \subsection{la .\F{prefif}.}
