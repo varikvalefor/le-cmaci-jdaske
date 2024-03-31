@@ -519,6 +519,18 @@ ni'o la .varik.\ cu djica ko'a goi lo nu su'o da zo'u da me'oi .\AgdaKeyword{fie
 postulate instance eqPrenu : Eq Prenu
 \end{code}
 
+\subsection{le me'oi .\AgdaKeyword{record}.\ co'e}
+
+\subsubsection{la'oi .\F{setoidPrenu}.}
+
+\begin{code}
+setoidPrenu : (λ x → Setoid x x) _
+setoidPrenu = record {
+  Carrier = Prenu;
+  _≈_ = {!!};
+  isEquivalence = {!!}}
+\end{code}
+
 \section{la'oi .\AgdaRecord{Lijda}.}
 ni'o ga jo ko'a goi la'oi .\B{a}.\ ctaipe la'oi .\AgdaRecord{Lijda}.\ gi\ldots
 \begin{itemize}
