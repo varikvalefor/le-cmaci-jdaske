@@ -476,6 +476,21 @@ Marde = Fasnu → ℚ
 postulate instance eqMarde : Eq Marde
 \end{code}
 
+\subsection{le me'oi .\AgdaKeyword{record}.\ co'e}
+
+\subsubsection{la'oi .\F{setoidMarde}.}
+
+\begin{code}
+setoidMarde : Setoid _ _
+setoidMarde = record {
+  Carrier = Marde;
+  _≈_ = λ a b → (z : Fasnu) → a z ≡ b z;
+  isEquivalence = record {
+    refl = λ z → refl;
+    sym = λ {a b} x z → {!!};
+    trans = {!!}}}
+\end{code}
+
 \section{la'oi .\AgdaRecord{Prenu}.}
 ni'o ga jo ko'a goi la'oi .\B{a}.\ ctaipe la'oi .\AgdaRecord{Prenu}.\ gi\ldots
 \begin{itemize}
