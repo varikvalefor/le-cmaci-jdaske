@@ -314,7 +314,7 @@ module GirzuVeritas where
       → ⦃ _ : Eq A ⦄
       → (L : List A)
       → 𝕃.sum (𝕃.map proj₂ $ girzu L) ≡ length L
-  sum 𝕃.[] = {!!}
+  sum 𝕃.[] = refl
   sum (x 𝕃.∷ xs) = {!!}
 \end{code}
 
