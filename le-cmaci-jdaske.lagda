@@ -563,4 +563,15 @@ record Lijda : Set
     marde : Marde
     jdanunza'omro : Maybe $ Selcmima Jdanunza'omro
 \end{code}
+
+\subsection{le me'oi .\AgdaKeyword{record}.\ co'e}
+
+\begin{code}
+setoidLijda : (λ x → Setoid x x) _
+setoidLijda = record {
+  Carrier = Lijda;
+  _≈_ = λ a b → Lijda.marde a ≡ Lijda.marde b
+              × {!!};
+  isEquivalence = {!!} }
+\end{code}
 \end{document}
