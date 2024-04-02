@@ -102,9 +102,15 @@ open import Data.List
   renaming (
     lookup to _!_
   )
+open import Data.Empty
+  using (
+    ⊥
+  )
 open import Data.Maybe
   using (
-    Maybe
+    nothing;
+    Maybe;
+    just
   )
   renaming (
     map to mapₘ
@@ -579,7 +585,13 @@ setoidLijda = record {
   SLJ : (λ x → Setoid x x) _
   SLJ = record {
     Carrier = Maybe $ Selcmima Jdanunza'omro;
-    _≈_ = {!!};
+    _≈_ = SLJdu;
     isEquivalence = {!!}}
+    where
+    SLJdu : _ → _ → Set
+    SLJdu a@nothing b@nothing = a ≡ b
+    SLJdu nothing _ = ⊥
+    SLJdu _ nothing = ⊥
+    SLJdu (just a) (just b) = Setoid._≈_ setoidSelcmima a b
 \end{code}
 \end{document}
