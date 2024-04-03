@@ -588,7 +588,7 @@ setoidLijda = record {
     _≈_ = SLJdu;
     isEquivalence = {!!}}
     where
-    SLJdu : _ → _ → Set
+    SLJdu : (λ x → x → x → Set) _
     SLJdu a@nothing b@nothing = a ≡ b
     SLJdu nothing _ = ⊥
     SLJdu _ nothing = ⊥
