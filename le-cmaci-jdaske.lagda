@@ -12,6 +12,7 @@
 
 \newunicodechar{λ}{\ensuremath{\mathnormal\lambda}}
 \newunicodechar{∷}{\ensuremath{\mathnormal\Colon}}
+\newunicodechar{⊥}{\ensuremath{\mathnormal\bot}}
 \newunicodechar{∨}{\ensuremath{\mathnormal\vee}}
 \newunicodechar{𝔹}{\ensuremath{\mathnormal{\mathbb B}}}
 \newunicodechar{𝔽}{\ensuremath{\mathnormal{\mathbb F}}}
