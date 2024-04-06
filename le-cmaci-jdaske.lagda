@@ -169,7 +169,7 @@ import Data.List.Relation.Unary.All
 \chapter{le vrici je fancu}
 
 \section{la .\F{cmimakonk}.}
-ni'o la .\F{cmimakonk}.\ ctaipe le su'u ro da poi ke'a co'e zo'u ro de poi ke'a co'e zo'u da cmima lo konkatena be da bei de
+ni'o la .\F{cmimakonk}.\ cu ctaipe le su'u ro da poi ke'a co'e zo'u ro de poi ke'a co'e zo'u da cmima lo konkatena be da bei de
 
 \begin{code}
 cmimakonk : ∀ {a} → {A : Set a}
@@ -186,7 +186,7 @@ cmimakonk x xs = sym $ begin
 \end{code}
 
 \section{la .\F{cmimapred}.}
-ni'o la .\F{cmimapred}.\ ctaipe le su'u ro da poi ke'a co'e zo'u ro de poi ke'a co'e zo'u ro di poi ke'a co'e zo'u da cmima di naja lo konkatena be de bei di
+ni'o la .\F{cmimapred}.\ cu ctaipe le su'u ro da poi ke'a co'e zo'u ro de poi ke'a co'e zo'u ro di poi ke'a co'e zo'u da cmima di naja lo konkatena be de bei di
 
 \begin{code}
 cmimapred : ∀ {a} → {A : Set a}
