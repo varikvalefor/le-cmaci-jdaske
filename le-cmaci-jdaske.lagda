@@ -591,8 +591,7 @@ setoidLijda = record {
     where
     SLJdu : (λ x → x → x → Set) _
     SLJdu a@nothing b@nothing = a ≡ b
-    SLJdu nothing _ = ⊥
-    SLJdu _ nothing = ⊥
     SLJdu (just a) (just b) = Setoid._≈_ setoidSelcmima a b
+    SLJdu _ _ = ⊥
 \end{code}
 \end{document}
