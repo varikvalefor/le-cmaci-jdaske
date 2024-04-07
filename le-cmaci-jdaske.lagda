@@ -334,7 +334,7 @@ prefif : ∀ {a} → {A : Set a}
        → (x : A)
        → (xs : List A)
        → LUA.All (_∈ (x 𝕃.∷ xs)) xs
-prefif x 𝕃.[] = {!!}
+prefif x 𝕃.[] = LUA.[]
 prefif e (x 𝕃.∷ xs) = {!!}
 \end{code}
 
