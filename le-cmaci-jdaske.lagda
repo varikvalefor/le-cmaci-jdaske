@@ -88,6 +88,9 @@ open import Function
     _∘_;
     _$_
   )
+  renaming (
+    _|>_ to _▹_
+  )
 open import Data.Bool
   using (
     not;
@@ -157,6 +160,7 @@ open import Relation.Binary.PropositionalEquality
     _≡_
   )
 
+import Data.Vec
 import Data.List.Relation.Unary.All
   as LUA
   using (
@@ -178,11 +182,20 @@ cmimakonk : ∀ {a} → {A : Set a}
           → (xs : List A)
           → x ∈_ $ x 𝕃.∷ xs
 cmimakonk x xs = sym $ begin
-  length (𝕃.take 1 $ 𝕃.filter (x ≟_) $ x 𝕃.∷ _) ≡⟨ {!!} ⟩
+  length (𝕃.take 1 $ 𝕃.filter (x ≟_) $ x 𝕃.∷ _) ≡⟨ x≡1↑f[x∷xs'] x xs ▹ sym ▹ cong length ⟩
   length (x 𝕃.∷ 𝕃.[]) ≡⟨ refl ⟩
   1 ∎
   where
   open import Relation.Binary.PropositionalEquality
+  x≡1↑f[x∷xs'] : ∀ {a} → {A : Set a}
+              → ⦃ _ : Eq A ⦄
+              → (x : A)
+              → (xs : List A)
+              → (_≡_
+                  (x 𝕃.∷ 𝕃.[])
+                  (𝕃.take 1 $ 𝕃.filter (x ≟_) $ 𝕃._∷_ x
+                    (Data.Vec.toList $ Data.Vec.fromList xs)))
+  x≡1↑f[x∷xs'] = {!!}
   open ≡-Reasoning
 \end{code}
 
