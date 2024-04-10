@@ -179,6 +179,7 @@ cmimakonk : ∀ {a} → {A : Set a}
           → x ∈_ $ x 𝕃.∷ xs
 cmimakonk x xs = sym $ begin
   length (𝕃.take 1 $ 𝕃.filter (x ≟_) $ x 𝕃.∷ _) ≡⟨ {!!} ⟩
+  length (x 𝕃.∷ 𝕃.[]) ≡⟨ refl ⟩
   1 ∎
   where
   open import Relation.Binary.PropositionalEquality
