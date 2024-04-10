@@ -182,7 +182,8 @@ cmimakonk : ∀ {a} → {A : Set a}
           → (xs : List A)
           → x ∈_ $ x 𝕃.∷ xs
 cmimakonk x xs = sym $ begin
-  length (𝕃.take 1 $ 𝕃.filter (x ≟_) $ x 𝕃.∷ _) ≡⟨ x≡1↑f[x∷xs'] x xs ▹ sym ▹ cong length ⟩
+  length (𝕃.take 1 $ 𝕃.filter (x ≟_) $ x 𝕃.∷ _) ≡⟨ refl ⟩
+  _ ≡⟨ x≡1↑f[x∷xs'] x xs ▹ sym ▹ cong length ⟩
   length (x 𝕃.∷ 𝕃.[]) ≡⟨ refl ⟩
   1 ∎
   where
