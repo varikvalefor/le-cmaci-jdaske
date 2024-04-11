@@ -196,9 +196,7 @@ cmimakonk x xs = sym $ begin
               → (_≡_
                   (x 𝕃.∷ 𝕃.[])
                   (𝕃.take 1 $ 𝕃.filter (x ≟_)
-                    (𝕃._∷_
-                      x
-                      (𝕍.toList $ 𝕍.fromList xs))))
+                    (x 𝕃.∷_ $ 𝕍.toList $ 𝕍.fromList xs)))
   x≡1↑f[x∷xs'] = {!!}
   open ≡-Reasoning
 \end{code}
