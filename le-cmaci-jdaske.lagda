@@ -21,6 +21,7 @@
 \newunicodechar{ℕ}{\ensuremath{\mathnormal{\mathbb N}}}
 \newunicodechar{ℙ}{\ensuremath{\mathnormal{\mathbb P}}}
 \newunicodechar{ℚ}{\ensuremath{\mathnormal{\mathbb Q}}}
+\newunicodechar{𝕍}{\ensuremath{\mathnormal{\mathbb V}}}
 \newunicodechar{∈}{\ensuremath{\mathnormal\in}}
 \newunicodechar{∉}{\ensuremath{\mathnormal\notin}}
 \newunicodechar{⟨}{\ensuremath{\mathnormal\langle}}
@@ -49,6 +50,7 @@
 \newunicodechar{⦃}{\ensuremath{\mathnormal{\lbrace\hspace{-0.3em}|}}}
 \newunicodechar{⦄}{\ensuremath{\mathnormal{|\hspace{-0.3em}\rbrace}}}
 \newunicodechar{≟}{\ensuremath{\mathnormal{\stackrel{?}{=}}}}
+\newunicodechar{▹}{\ensuremath{\mathnormal\triangleright}}
 
 \newcommand\Sym\AgdaSymbol
 \newcommand\D\AgdaDatatype
