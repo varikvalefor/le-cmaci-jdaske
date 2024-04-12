@@ -467,7 +467,7 @@ ni'o ga jo ko'a goi la'oi .\B{a}.\ ctaipe la'oi .\AgdaRecord{Jdanunza'omro}.\ gi
 	\item ga je ko'a selcme lo ro cmima be la'o zoi.\ \AgdaField{Jdanunza'omro.cmene} \B a .zoi.\ gi
 	\item krici le du'u\ldots
 	\begin{itemize}
-		\item ga je ro da zo'u da selvau la'o zoi.\ \AgdaField{Selcmima.liste} \OpF \$ \AgdaField{Jdanunza'omro.velski} \B a .zoi.\ jo cu jetnu je cu velski ko'a gi
+		\item ga je ro da zo'u da cmima la'o zoi.\ \AgdaField{Selcmima.liste} \OpF \$ \AgdaField{Jdanunza'omro.velski} \B a .zoi.\ jo cu jetnu je cu velski ko'a gi
 		\item ko'a jdanunza'omro lo ro prenu poi ke'a zukte lo cmima be la'o zoi.\ \AgdaField{Selcmima.liste} \OpF \$ \AgdaField{Jdanunza'omro.krinu} \B a .zoi.
 	\end{itemize}
 \end{itemize}
