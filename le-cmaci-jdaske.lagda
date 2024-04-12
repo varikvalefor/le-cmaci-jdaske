@@ -106,10 +106,6 @@ open import Data.List
   renaming (
     lookup to _!_
   )
-open import Data.Empty
-  using (
-    ⊥
-  )
 open import Data.Maybe
   using (
     nothing;
@@ -153,6 +149,10 @@ open import Truthbrary.Record.LLC
     _∈_;
     LL;
     UL
+  )
+open import Data.Empty.Polymorphic
+  using (
+    ⊥
   )
 open import Relation.Binary.PropositionalEquality
   using (
@@ -605,7 +605,11 @@ setoidLijda = record {
     _≈_ = SLJdu;
     isEquivalence = {!!}}
     where
-    SLJdu : (λ x → x → x → Set) _
+    SLJdu : ∀ {a} → {A : Set a}
+          → ⦃ _ : Eq A ⦄
+          → Maybe $ Selcmima A
+          → Maybe $ Selcmima A
+          → Set a
     SLJdu a@nothing b@nothing = a ≡ b
     SLJdu (just a) (just b) = Setoid._≈_ setoidSelcmima a b
     SLJdu _ _ = ⊥
