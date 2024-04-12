@@ -595,10 +595,11 @@ setoidLijda = record {
   Carrier = Lijda;
   _≈_ = λ a b → Lijda.marde a ≡ Lijda.marde b
               × Setoid._≈_ SLJ (LJ a) (LJ b)
-              × {!!};
+              × Setoid._≈_ SLC (LC a) (LC b);
   isEquivalence = {!!} }
   where
   LJ = Lijda.jdanunza'omro
+  LC = Lijda.cevni
   SLJ : (λ x → Setoid x x) _
   SLJ = record {
     Carrier = Maybe $ Selcmima Jdanunza'omro;
@@ -613,5 +614,10 @@ setoidLijda = record {
     SLJdu a@nothing b@nothing = a ≡ b
     SLJdu (just a) (just b) = Setoid._≈_ setoidSelcmima a b
     SLJdu _ _ = ⊥
+  SLC : (λ x → Setoid x x) _
+  SLC = record {
+    Carrier = _;
+    _≈_ = {!!};
+    isEquivalence = {!!}}
 \end{code}
 \end{document}
