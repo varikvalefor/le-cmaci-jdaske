@@ -343,7 +343,7 @@ module GirzuVeritas where
   sum (x 𝕃.∷ xs) = {!!}
 \end{code}
 
-\subsection{la .\F{prefif}.}
+\section{la .\F{prefif}.}
 ni'o xu sarcu fa lo nu ciksi bau la .lojban.
 
 \begin{code}
