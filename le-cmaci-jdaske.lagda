@@ -239,6 +239,7 @@ module DunVeritasJaZo'e where
     → Dun i k
   T = {!!}
 \end{code}
+
 \section{la'oi .\F{nu,iorks}.}
 ni'o ro da zo'u da cmima la'o zoi.\ \F{nu,iorks} \B x\ .zoi.\ jo cu du lo su'o cmima be la'oi .\B x.
 
