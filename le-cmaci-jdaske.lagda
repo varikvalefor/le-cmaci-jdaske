@@ -283,7 +283,8 @@ module Nu,iorksVeritas where
       → ⦃ _ : Eq A ⦄
       → (x : List A)
       → (e : A)
-      → e ∈ x → e ∈ nu,iorks x
+      → e ∈ x
+      → e ∈ nu,iorks x
   rel = {!!}
 
   cib : ∀ {a} → {A : Set a}
