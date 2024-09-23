@@ -291,7 +291,8 @@ module Nu,iorksVeritas where
       → ⦃ _ : Eq A ⦄
       → (x : List A)
       → (e : A)
-      → e ∈ nu,iorks x → e ∈ x
+      → e ∈ nu,iorks x
+      → e ∈ x
   cib = {!!}
 \end{code}
 
