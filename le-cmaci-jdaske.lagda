@@ -517,7 +517,7 @@ setoidMarde = record {
   _≈_ = _≗_;
   isEquivalence = record {
     refl = λ z → refl;
-    sym = λ {a b} x z → Relation.Binary.PropositionalEquality.sym $ x z;
+    sym = λ x z → Relation.Binary.PropositionalEquality.sym $ x z;
     trans = {!!}}}
 \end{code}
 
