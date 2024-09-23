@@ -122,6 +122,7 @@ open import Data.String
     String
   )
 open import Data.Product
+  as Σ
   using (
     Σ;
     _×_;
@@ -397,7 +398,7 @@ setoidMultiset {A = A} = record {
   _≈_ = Dun on GL;
   isEquivalence = record {
     refl = (λ x → x , x) $ refif _;
-    sym = Data.Product.swap;
+    sym = Σ.swap;
     trans = T}}
   where
   open DunVeritasJaZo'e using (T)
@@ -427,7 +428,7 @@ setoidSelcmima {A = A} = record {
   _≈_ = λ a b → Al (_∈ L b) (L a) × Al (_∈ L a) (L b);
   isEquivalence = record {
     refl = λ {x} → (λ x → x , x) $ refif $ Selcmima.liste x;
-    sym = Data.Product.swap;
+    sym = Σ.swap;
     trans = {!!}}}
   where
   L = Selcmima.liste
