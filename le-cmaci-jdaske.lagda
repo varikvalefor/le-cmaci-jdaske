@@ -158,6 +158,7 @@ open import Data.Empty.Polymorphic
     ⊥
   )
 open import Relation.Binary.PropositionalEquality
+  as ≡R
   using (
     refl;
     _≗_;
@@ -519,7 +520,7 @@ setoidMarde = record {
   isEquivalence = record {
     refl = λ _ → refl;
     sym = sym ∘₂ _$_;
-    trans = λ x x₁ x₂ → Relation.Binary.PropositionalEquality.trans (x x₂) (x₁ x₂)}}
+    trans = λ x x₁ x₂ → ≡R.trans (x x₂) (x₁ x₂)}}
 \end{code}
 
 \section{la'oi .\AgdaRecord{Prenu}.}
