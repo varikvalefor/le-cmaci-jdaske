@@ -451,7 +451,7 @@ postulate instance eqFasnu : Eq Fasnu
 \end{code}
 
 \section{la'oi .\AgdaPostulate{Selpre}.}
-ni'o ro da zo'u da ctaipe la'oi .\AgdaPostulate{Selpre}.\ jo cu selpre
+ni'o ro da zo'u da selpre jo cu ctaipe la'oi .\AgdaPostulate{Selpre}.\
 
 \begin{code}
 postulate Selpre : Set
