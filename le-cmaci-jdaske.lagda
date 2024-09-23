@@ -218,7 +218,7 @@ cmimapred = {!!}
 \end{code}
 
 \section{la'oi .\F{Dun}.}
-ni'o xu sarcu fa lo nu ciksi bau la .lojban.
+ni'o ga jo ctaipe la'o zoi.\ \F{Dun} \B x \B z\ .zoi.\ gi ro da zo'u da cmima la'oi .\B x.\ jo la'oi .\B z.
 
 \begin{code}
 Dun : ∀ {a} → {A : Set a}
