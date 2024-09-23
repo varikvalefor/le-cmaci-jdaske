@@ -517,7 +517,7 @@ setoidMarde = record {
   Carrier = Marde;
   _≈_ = _≗_;
   isEquivalence = record {
-    refl = λ z → refl;
+    refl = λ _ → refl;
     sym = sym ∘₂ _$_;
     trans = {!!}}}
 \end{code}
