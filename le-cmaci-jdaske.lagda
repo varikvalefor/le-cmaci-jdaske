@@ -514,7 +514,7 @@ postulate instance eqMarde : Eq Marde
 setoidMarde : Setoid _ _
 setoidMarde = record {
   Carrier = Marde;
-  _≈_ = λ a b → a ≗ b;
+  _≈_ = _≗_;
   isEquivalence = record {
     refl = λ z → refl;
     sym = λ {a b} x z → {!!};
