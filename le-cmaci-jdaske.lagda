@@ -513,7 +513,7 @@ postulate instance eqMarde : Eq Marde
 setoidMarde : Setoid _ _
 setoidMarde = record {
   Carrier = Marde;
-  _≈_ = λ a b → (z : Fasnu) → a z ≡ b z;
+  _≈_ = λ a b → a Relation.Binary.PropositionalEquality.≗ b;
   isEquivalence = record {
     refl = λ z → refl;
     sym = λ {a b} x z → {!!};
