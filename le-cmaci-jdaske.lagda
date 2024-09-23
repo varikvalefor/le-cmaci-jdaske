@@ -161,7 +161,8 @@ open import Relation.Binary.PropositionalEquality
   using (
     refl;
     _≗_;
-    _≡_
+    _≡_;
+    sym
   )
 
 import Data.Vec
@@ -517,7 +518,7 @@ setoidMarde = record {
   _≈_ = _≗_;
   isEquivalence = record {
     refl = λ z → refl;
-    sym = Relation.Binary.PropositionalEquality.sym ∘₂ _$_;
+    sym = sym ∘₂ _$_;
     trans = {!!}}}
 \end{code}
 
