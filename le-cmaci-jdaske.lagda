@@ -466,7 +466,7 @@ postulate instance eqSelpre : Eq Selpre
 \chapter{le srana be lo lijda ja co'e}
 
 \section{la'oi .\AgdaRecord{Jdanunza'omro}.}
-ni'o ga jo ko'a goi la'oi .\B{a}.\ ctaipe la'oi .\AgdaRecord{Jdanunza'omro}.\ gi ga je ko'a jdanuza'omro gi\ldots
+ni'o ga jo ko'a goi la'oi .\B a.\ ctaipe la'oi .\AgdaRecord{Jdanunza'omro}.\ gi ga je ko'a jdanuza'omro gi\ldots
 \begin{itemize}
 	\item ga je ko'a selcme lo ro cmima be la'o zoi.\ \AgdaField{Jdanunza'omro.cmene} \B a .zoi.\ gi
 	\item krici le du'u\ldots
