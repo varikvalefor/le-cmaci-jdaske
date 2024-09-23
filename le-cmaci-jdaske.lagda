@@ -160,6 +160,7 @@ open import Data.Empty.Polymorphic
 open import Relation.Binary.PropositionalEquality
   using (
     refl;
+    _≗_;
     _≡_
   )
 
@@ -513,7 +514,7 @@ postulate instance eqMarde : Eq Marde
 setoidMarde : Setoid _ _
 setoidMarde = record {
   Carrier = Marde;
-  _≈_ = λ a b → a Relation.Binary.PropositionalEquality.≗ b;
+  _≈_ = λ a b → a ≗ b;
   isEquivalence = record {
     refl = λ z → refl;
     sym = λ {a b} x z → {!!};
