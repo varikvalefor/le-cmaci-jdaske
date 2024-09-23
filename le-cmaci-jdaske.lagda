@@ -377,7 +377,7 @@ refif (x 𝕃.∷ z) = cmimakonk x z LUA.∷ prefif x z
 \section{la'oi .\AgdaRecord{Multiset}.}
 ni'o ga jo ko'a goi la'oi .\B{x}.\ ctaipe la'o zoi.\ \AgdaRecord{Multiset} \B X\ .zoi.\ gi ga je ko'a me'oi .multiset.\ gi lo'i ro se cmima be ko'a cu du lo'i ro se cmima be la'o zoi.\ \AgdaField{Multiset.liste} \B x\ .zoi.
 
-.i lo me'oi .multiset.\ cu smimlu lo liste  .i ku'i ro da poi ke'a me'oi .multiset.\ zo'u ro de poi ke'a .multiset.\ zo'u jitfa fa le du'u lo co'e ja se porsi cu vajni fi lo nu facki lo jei da dunli de
+.i lo me'oi .multiset.\ cu smimlu lo liste  .i ku'i ro da poi ke'a me'oi .multiset.\ zo'u ro de poi ke'a .multiset.\ zo'u ga je jitfa fa le du'u lo co'e ja se porsi cu vajni fi lo nu facki lo jei da dunli de gi ga jo da du de gi ro di zo'u di cmima da jo de
 
 \begin{code}
 record Multiset {a} (A : Set a) : Set a
