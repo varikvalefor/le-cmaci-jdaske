@@ -250,7 +250,7 @@ ni'o ro da zo'u da cmima la'o zoi.\ \F{nu,iorks} \B x\ .zoi.\ jo cu du lo su'o c
 \begin{code}
 nu,iorks : ∀ {a} → {A : Set a} → ⦃ _ : Eq A ⦄ → List A → List A
 nu,iorks 𝕃.[] = 𝕃.[]
-nu,iorks (x 𝕃.∷ z) = x 𝕃.∷ 𝕃.filter (_≢?_ x) (nu,iorks z)
+nu,iorks (x 𝕃.∷ z) = x 𝕃.∷ 𝕃.filter (x ≢?_) (nu,iorks z)
   where
   _≢?_ = T? ∘₂ not ∘₂ _≡ᵇ_
 \end{code}
