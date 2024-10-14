@@ -298,7 +298,7 @@ module Nu,iorksVeritas where
 
   rel : ∀ {a} → {A : Set a}
       → ⦃ _ : Eq A ⦄
-      → (x : List A)
+      → {x : List A}
       → (e : A)
       → e ∈ x
       → e ∈ nu,iorks x
