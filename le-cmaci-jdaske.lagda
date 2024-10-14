@@ -323,7 +323,7 @@ girzu : ∀ {a} → {A : Set a}
       → List $ A × ℕ
 girzu L = zipmap (length ∘ flip F L) $ nu,iorks L
   where
-  zipmap = λ f → ((zip Function.ˢ_) ∘ map) f
+  zipmap = ((zip Function.ˢ_) ∘ map)
   F = λ a → length ∘ 𝕃.filter (_≟ a)
 \end{code}
 
