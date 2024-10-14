@@ -444,14 +444,14 @@ ni'o la .varik.\ cu stidi lo nu tcidu le velcki fa lo na jimpe\ldots kei je cu s
 setoidSelcmima : ∀ {a} → {A : Set a} → ⦃ Eq A ⦄ → Setoid a a
 setoidSelcmima {A = A} = record {
   Carrier = Selcmima A;
-  _≈_ = λ a b → Al (_∈ L b) (L a) × Al (_∈ L a) (L b);
+  _≈_ = λ a b → Sup (L b) (L a) × Sup (L a) (L b);
   isEquivalence = record {
     refl = λ {x} → (λ x → x , x) $ refif $ Selcmima.liste x;
     sym = Σ.swap;
     trans = {!!}}}
   where
   L = Selcmima.liste
-  Al = LUA.All
+  Sup = λ x → LUA.All $ _∈ x
 \end{code}
 
 \section{la'oi .\AgdaPostulate{Fasnu}.}
