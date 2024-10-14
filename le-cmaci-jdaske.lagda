@@ -288,7 +288,7 @@ module Nu,iorksVeritas where
     nufil : ∀ {a p} → {A : Set a}
           → ⦃ _ : Eq A ⦄
           → {P : A → Set p}
-          → (P? : (x : A) → Dec $ P x)
+          → (P? : (x : _) → Dec $ P x)
           → {xs : List A}
           → nu,iork xs
           → nu,iork $ 𝕃.filter P? xs
