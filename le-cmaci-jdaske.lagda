@@ -451,7 +451,7 @@ setoidSelcmima {A = A} = record {
     trans = {!!}}}
   where
   L = Selcmima.liste
-  Sup = λ x → LUA.All $ _∈ x
+  Sup = λ x → LUA.All $ flip _∈_ x
 \end{code}
 
 \section{la'oi .\AgdaPostulate{Fasnu}.}
