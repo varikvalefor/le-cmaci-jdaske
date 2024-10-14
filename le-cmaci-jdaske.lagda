@@ -318,12 +318,12 @@ ni'o ga jo la'oi .\B{G}.\ du la'o zoi.\ \F{map} \AgdaField{proj₁} \OpF \$ \F{g
 
 \begin{code}
 girzu : ∀ {a} → {A : Set a}
-      → ⦃ _ : Eq A ⦄
+      → ⦃ Eq A ⦄
       → List A
       → List $ A × ℕ
 girzu L = zipmap (length ∘ flip F L) $ nu,iorks L
   where
-  zipmap = λ f x → zip x $ map f x
+  zipmap = λ f x → (zip Function.ˢ map f) x
   F = λ a → length ∘ 𝕃.filter (_≟ a)
 \end{code}
 
