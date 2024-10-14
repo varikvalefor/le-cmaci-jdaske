@@ -157,6 +157,10 @@ open import Data.Empty.Polymorphic
   using (
     ⊥
   )
+open import Relation.Nullary
+  using (
+    Dec
+  )
 open import Relation.Binary.PropositionalEquality
   as ≡R
   using (
@@ -264,7 +268,7 @@ module Nu,iorksVeritas where
       → (x : List A)
       → nu,iork $ nu,iorks x
   pav 𝕃.[] = refl
-  pav (x 𝕃.∷ xs) = nuk {!!} $ filnek x $ nu,iorks xs
+  pav (x 𝕃.∷ xs) = nuk (nufil {!!} {xs = nu,iorks xs} {!!}) $ filnek x $ nu,iorks xs
     where
     filnek : ∀ {a} → {A : Set a}
            → ⦃ _ : Eq A ⦄
@@ -281,6 +285,14 @@ module Nu,iorksVeritas where
         → e ∉ x
         → nu,iork $ e 𝕃.∷ x
     nuk = {!!}
+    nufil : ∀ {a p} → {A : Set a}
+          → ⦃ _ : Eq A ⦄
+          → {P : A → Set p}
+          → (P? : (x : A) → Dec $ P x)
+          → {xs : List A}
+          → nu,iork xs
+          → nu,iork $ 𝕃.filter P? xs
+    nufil = {!!}
 
   rel : ∀ {a} → {A : Set a}
       → ⦃ _ : Eq A ⦄
