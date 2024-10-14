@@ -268,7 +268,7 @@ module Nu,iorksVeritas where
       → (x : List A)
       → nu,iork $ nu,iorks x
   pav 𝕃.[] = refl
-  pav (x 𝕃.∷ xs) = nuk (nufil {!!} {xs = nu,iorks xs} (pav xs)) $ filnek x $ nu,iorks xs
+  pav (x 𝕃.∷ xs) = nuk (nufil {!!} {xs = nu,iorks xs} $ pav xs) $ filnek x $ nu,iorks xs
     where
     filnek : ∀ {a} → {A : Set a}
            → ⦃ _ : Eq A ⦄
