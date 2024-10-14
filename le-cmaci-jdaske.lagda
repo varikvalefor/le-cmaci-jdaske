@@ -268,7 +268,7 @@ module Nu,iorksVeritas where
       → (x : List A)
       → nu,iork $ nu,iorks x
   pav 𝕃.[] = refl
-  pav (x 𝕃.∷ xs) = nuk (nufil {!!} $ pav xs) $ filnek _ $ nu,iorks xs
+  pav (x 𝕃.∷ xs) = nuk (nufil dun $ pav xs) $ filnek _ $ nu,iorks xs
     where
     filnek : ∀ {a} → {A : Set a}
            → ⦃ _ : Eq A ⦄
@@ -293,6 +293,8 @@ module Nu,iorksVeritas where
           → nu,iork xs
           → nu,iork $ 𝕃.filter P? xs
     nufil = {!!}
+    dun : (x₁ : _) → Dec $ Data.Bool.T ((not ∘ _≡ᵇ_ x) x₁)
+    dun = {!!}
 
   rel : ∀ {a} → {A : Set a}
       → ⦃ _ : Eq A ⦄
