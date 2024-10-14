@@ -340,7 +340,7 @@ module GirzuVeritas where
               (x₁ ∈ L)
               (x₂ ≡_ $ length $ 𝕃.filter (_≟ x₁) L))))
   pav 𝕃.[] = LUA.[]
-  pav (x 𝕃.∷ xs) = (cmimakonk x xs , refl) LUA.∷ {!!}
+  pav (x 𝕃.∷ xs) = (cmimakonk x _ , refl) LUA.∷ {!!}
 
   rel : ∀ {a} → {A : Set a}
       → ⦃ _ : Eq A ⦄
