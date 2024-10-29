@@ -638,6 +638,9 @@ setoidLijda = record {
   SLC = record {
     Carrier = _;
     _≈_ = {!!};
-    isEquivalence = {!!}}
+    isEquivalence = record {
+      refl = {!!};
+      sym = {!!};
+      trans = {!!}}}
 \end{code}
 \end{document}
