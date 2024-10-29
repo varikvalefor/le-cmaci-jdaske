@@ -291,7 +291,7 @@ module Nu,iorksVeritas where
           → nu,iork xs
           → nu,iork $ 𝕃.filter P? xs
     nufil = {!!}
-    dun : (x₁ : _) → Dec $ Data.Bool.T ((not ∘ _≡ᵇ_ x) x₁)
+    dun : (x₁ : _) → Dec $ Data.Bool.T $ (not ∘ _≡ᵇ_ x) x₁
     dun = {!!}
 
   rel : ∀ {a} → {A : Set a}
