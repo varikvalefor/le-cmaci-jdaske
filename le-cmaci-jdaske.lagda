@@ -599,7 +599,8 @@ record Lijda : Set
   private
     𝔽L : ∀ {a b} → {A : Set a} → {B : A → Set b}
        → ⦃ LL A ⦄
-       → Σ A B → Set
+       → Σ A B
+       → Set
     𝔽L = Fin ∘ length ∘ proj₁
   field
     cevni : Maybe $ Σ (UL $ List Prenu) $ (λ X → X → X → ℚ) ∘ 𝔽L
