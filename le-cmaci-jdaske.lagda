@@ -136,6 +136,7 @@ open import Data.Rational
   )
 open import Relation.Binary
   using (
+    Transitive;
     Setoid
   )
 open import Truthbrary.Record.Eq
@@ -241,7 +242,7 @@ Dun x z = LUA.All (_∈ x) z × LUA.All (_∈ z) x
 module DunVeritasJaZo'e where
   T : ∀ {a} → {A : Set a}
     → ⦃ _ : Eq A ⦄
-    → Relation.Binary.Transitive $ Dun {A = A}
+    → Transitive $ Dun {A = A}
   T = {!!}
 \end{code}
 
